@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './Navbar/Navbar';
 import AboutUs from './AboutUs/AboutUs';
 import Feedback from './Feedback/Feedback';
 import Footer from './Footer/Footer';
@@ -8,6 +9,7 @@ import Subscribe from './Subscribe/Subscribe';
 const Home = () => {
     return (
         <div>
+            <Navbar></Navbar>
             <Feedback></Feedback>
             <AboutUs></AboutUs>
             <div className='mb-24'>
