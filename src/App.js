@@ -1,5 +1,4 @@
 import DevSixer from "./Components/DevSixer";
-
 function App() {
   return (
     <div>
