@@ -8,7 +8,7 @@ import { MdCloudDone } from "react-icons/md";
 
 const Hero = () => {
     return (
-        <div className='relative w-[100vw] lg:h-[90vh] md:px-10 px-2 '>
+        <div className='relative w-[100vw] lg:h-[90vh] md:px-10 px-2'>
             <div style={{ fontFamily: 'Nunito' }} className=' lg:flex  items-center justify-between h-full overflow-hidden'>
                 <div className=' lg:w-[50%] w-full pl-10 pr-16'>
                     <h1 className='xl:text-7xl md:text-6xl text-4xl font-extrabold mb-10'>Learning made<br /> easy and Fun</h1>

@@ -10,7 +10,7 @@ import UpcomingEvents from './UpcomingEvents/UpcomingEvents';
 
 const Home = () => {
     return (
-        <div>
+        <div className='overflow-hidden'>
             <Hero></Hero>
             <Guideline></Guideline>
             <Feedback></Feedback>
