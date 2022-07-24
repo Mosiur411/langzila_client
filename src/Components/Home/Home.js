@@ -5,12 +5,14 @@ import Footer from './Footer/Footer';
 import Guideline from './Guideline/Guideline';
 import Hero from './Hero/Hero';
 import LatestBlog from './LatestBlog/LatestBlog';
+import Navbar from './Navbar/Navbar';
 import Subscribe from './Subscribe/Subscribe';
 import UpcomingEvents from './UpcomingEvents/UpcomingEvents';
 
 const Home = () => {
     return (
         <div className='overflow-hidden'>
+            <Navbar></Navbar>
             <Hero></Hero>
             <Guideline></Guideline>
             <Feedback></Feedback>
