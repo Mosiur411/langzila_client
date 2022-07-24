@@ -11,8 +11,8 @@ import UpcomingEvents from './UpcomingEvents/UpcomingEvents';
 const Home = () => {
     return (
         <div>
-            <Guideline></Guideline>
             <Hero></Hero>
+            <Guideline></Guideline>
             <Feedback></Feedback>
             <AboutUs></AboutUs>
             <UpcomingEvents></UpcomingEvents>

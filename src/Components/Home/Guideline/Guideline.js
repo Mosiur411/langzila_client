@@ -6,7 +6,7 @@ import { AiFillSmile } from "react-icons/ai";
 
 const Guideline = () => {
     return (
-        <div className='bg-[#EEE8DF] font-nunito pb-10'>
+        <div className='bg-[#EEE8DF] font-nunito pt-10 pb-10'>
             <div className='text-center'>
                 <h3 className='text-4xl font-bold text-[#221638]'>Join With us</h3>
                 <h2 className='text-2xl text-[#FE4A55]'>Guideline</h2>
