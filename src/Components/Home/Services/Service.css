@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+  background-color: #f7ebeb;
+  height: 100%;
+  padding: 50px;
+  background-image: url(../../assets/./Servicsimg/bag.png), url(../../assets/./Servicsimg/bgwid.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right top, 60px 100%;
+
+
+}
+
+.text-section {
+  position: relative;
+  z-index: 5;
+}
+
+.slide-section {
+  position: relative;
+  z-index: 5;
+}
+
+.full-app {
+  position: relative;
+  height: 100vh;
+}
+
+.back-img {
+  position: absolute;
+  top: 60px;
+
+  right: 115px;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .back-img {
+    position: absolute;
+    top: 70%;
+
+    right: 0px;
+
+  }
+}

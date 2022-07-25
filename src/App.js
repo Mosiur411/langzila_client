@@ -1,8 +1,10 @@
 import DevSixer from "./Components/DevSixer";
 import AnimatedCursor from "react-animated-cursor"
 import { useEffect, useState } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
 import './App.css'
 function App() {
   const [show, setShow] = useState(false);
@@ -13,7 +15,7 @@ function App() {
     setTheme(theme);
     const root = window.document.documentElement;
     const isDark = theme === "dark";
-    
+
     root.classList.remove(isDark ? "light" : "dark");
     root.classList.add(theme);
     document.documentElement.setAttribute('data-theme', theme);
@@ -28,26 +30,17 @@ function App() {
 
 
 
-      
+
       <AnimatedCursor
-        innerSize={15}
-        outerSize={8}
         color='254, 74, 85'
-        outerAlpha={0.2}
-        innerScale={0.7}
-        outerScale={5}
+     
         clickables={[
-          'a',
           'input[type="text"]',
           'input[type="email"]',
           'input[type="number"]',
           'input[type="submit"]',
           'input[type="image"]',
           'label[for]',
-          'select',
-          'textarea',
-          'button',
-          '.link'
         ]}
       />
     </div>
