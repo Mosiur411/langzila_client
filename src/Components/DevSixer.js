@@ -1,11 +1,14 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './Home/Home';
+import NotFound from './NotFound/NotFound';
 
 const DevSixer = ({ show, setShow, theme, setTheme }) => {
     return (
         <div>
             <Routes>
-                <Route index element={<Home show={show} setShow={setShow} them={theme} setTheme={setTheme} />} />
+                <Route path='/' element={<Home show={show} setShow={setShow} them={theme} setTheme={setTheme} />} />
+                <Route path='*' element={<NotFound show={show} setShow={setShow} them={theme} setTheme={setTheme} />} />
+                
             </Routes>
         </div>
     );
