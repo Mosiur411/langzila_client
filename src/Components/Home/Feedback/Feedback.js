@@ -8,31 +8,31 @@ const Feedback = () => {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
             items: 3,
-            slidesToSlide: 3 // optional, default to 1.
+            slidesToSlide: 3 
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
             items: 2,
-            slidesToSlide: 2 // optional, default to 1.
+            slidesToSlide: 2 
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
             items: 1,
-            slidesToSlide: 1 // optional, default to 1.
+            slidesToSlide: 1
         }
     }
 
     return (
         <section>
-            <div className='bg-[#6dbbbd] w-100 h-100 py-20'>
+            <div  className='bg-[#6dbbbd] w-100 h-100 py-20'>
                 <div className='text-center relative text-white mb-10'>
-                    <div>
+                    <div data-aos="fade-down" >
                         <p className='font-medium'>TESTIMONIALS</p>
                         <h1 className='font-bold py-2 text-3xl '>Our Guardian Feedback</h1>
                         <p>We always give extra care to our student's skills improvements and feel excited to</p>
                         <p>share our latest research and learnings!</p>
                     </div>
-                    <div className='absolute top-0 right-14 hidden md:block'>
+                    <div className='absolute top-0 right-14 hidden md:block covid9'>
                         <img src={require('../../assets/vairas.png')} alt="assets"  />
                     </div>
                 </div>
@@ -85,7 +85,7 @@ const Feedback = () => {
 
                 </div>
             </div>
-            <img src={require('../../assets/Pakhi.png')} alt="assets" className='w-40  mt-[-20%] md:mt-[-5%] ml-[10%] ' />
+            <img src={require('../../assets/Pakhi.png')} alt="assets" className='w-40  mt-[-20%] md:mt-[-5%] ml-[10%] animate-bounce' />
         </section>
     );
 };

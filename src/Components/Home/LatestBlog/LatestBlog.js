@@ -3,13 +3,13 @@ import React from 'react';
 const LatestBlog = () => {
     return (
         <div>
-            <div className='text-center mb-16'>
+            <div data-aos="zoom-out-up" className='text-center mb-16'>
                 <p className='text-red-500 font-medium'>OUR NEWS</p>
                 <h1 className='font-bold py-2 text-3xl '>Check Out Our Latest Blog</h1>
                 <p className='mt-2 text-slate-400'>We always give extra care to our student's skills improvements and feel excited to</p>
                 <p className='mt-2 text-slate-400'>share our latest research and leanings!</p>
             </div>
-            <div className='md:px-2 lg:px-16 grid grid-cols-1 md:grid-cols-3 gap-5'>
+            <div data-aos="fade-up" data-aos-duration="3000" className='md:px-2 lg:px-16 grid grid-cols-1 md:grid-cols-3 gap-5'>
                 {/*  ================= 1 ===========================  */}
                 <div className='w-[300px] h-[250px] mx-auto'>
                     <div className='relative'>

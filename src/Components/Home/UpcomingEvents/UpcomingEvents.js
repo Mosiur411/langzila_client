@@ -6,7 +6,7 @@ const UpcomingEvents = () => {
         <div>
             <div className='bg-[#EEE8DF] mb-24'>
                 <img className='w-full' src="https://i.ibb.co/4J5w3Jp/events-rectangle1.png" alt="" />
-                <img className='float-right pr-12 mt-5 lg:block hidden' src="https://themes.envytheme.com/ecademy/wp-content/uploads/2020/07/k-shape17.png" alt="" />
+                <img  className='float-right pr-12 mt-5 lg:block hidden covid9' src="https://themes.envytheme.com/ecademy/wp-content/uploads/2020/07/k-shape17.png" alt="" />
                 <div class="text-gray-600 body-font">
                     <div class="container px-5 py-20 mx-auto">
                         <div className='text-center lg:w-[760px] mx-auto'>
@@ -14,10 +14,10 @@ const UpcomingEvents = () => {
                             <h1 className='py-2 text-3xl font-bold text-black'>Our Upcoming Events</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
-                        <div class="flex flex-wrap px-5 lg:px-24 pt-16">
-                            <div class="p-4 md:w-1/2 w-full">
+                        <div class="flex flex-wrap px-5 lg:px-12 pt-16">
+                            <div data-aos="fade-up-right" class="p-4 md:w-1/2 w-full">
                                 <div class="card lg:card-side bg-base-100 shadow-md ">
-                                    <figure><img className='h-full w-full' src="https://i.ibb.co/yWVMKF4/image.jpg" alt="Movie" /></figure>
+                                    <figure><img className='h-full sm:w-full' src="https://i.ibb.co/yWVMKF4/image.jpg" alt="Movie" /></figure>
                                     <div class="card-body">
                                         <img className='w-48 relative' src="https://i.ibb.co/Rj634cZ/rectangle1.png" alt="" />
                                         <span className='absolute mt-5 px-9 text-white font-bold'>January 25, 2023</span>
@@ -30,9 +30,9 @@ const UpcomingEvents = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-4 md:w-1/2 w-full">
+                            <div data-aos="fade-up-left" class="p-4 md:w-1/2 w-full">
                                 <div class="card lg:card-side bg-base-100 shadow-md">
-                                    <figure><img className='h-full w-full' src="https://i.ibb.co/G3mg71H/image4.jpg" alt="Movie" /></figure>
+                                    <figure><img className='h-full sm:w-full' src="https://i.ibb.co/G3mg71H/image4.jpg" alt="Movie" /></figure>
                                     <div class="card-body">
                                         <img className='w-48 relative' src="https://i.ibb.co/0cFPTM5/rectangle2.png" alt="" />
                                         <span className='absolute mt-5 px-10 text-white font-bold'>January 1, 2023</span>
@@ -45,7 +45,7 @@ const UpcomingEvents = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-4 md:w-1/2 w-full">
+                            <div data-aos="fade-up-right" class="p-4 md:w-1/2 w-full">
                                 <div class="card lg:card-side bg-base-100 shadow-md">
                                     <figure><img className='h-full w-full' src="https://i.ibb.co/wW1GXkc/image2.jpg" alt="Movie" /></figure>
                                     <div class="card-body">
@@ -60,7 +60,7 @@ const UpcomingEvents = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-4 md:w-1/2 w-full">
+                            <div data-aos="fade-up-left" class="p-4 md:w-1/2 w-full">
                                 <div class="card lg:card-side bg-base-100 shadow-md">
                                     <figure><img className='h-full w-full' src="https://i.ibb.co/c1WkBPC/image3.jpg" alt="Movie" /></figure>
                                     <div class="card-body">

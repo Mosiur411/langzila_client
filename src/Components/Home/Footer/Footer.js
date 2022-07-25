@@ -10,7 +10,7 @@ const Footer = () => {
     const year = date.getFullYear();
     return (
         <section className='px-2 md:px-20 pt-20 bg-[#212529] text-white'>
-            <div className='grid grid-cols-1 md:grid-cols-4 gap-10  '>
+            <div  data-aos="fade-up" data-aos-anchor-placement="top-bottom" className='grid grid-cols-1 md:grid-cols-4 gap-10  '>
                 {/* ================== 1======================  */}
 
                 <div>

@@ -7,15 +7,15 @@ const AboutUs = () => {
             <div className='grid  grid-cols-1 md:grid-cols-2 gap-5'>
                 {/* ================== left bar ================= */}
                 <div className='flex-1 relative'>
-                    <img className='w-[350px] mx-auto z-40' src={require('../../assets/AboutUs/kindergarten-aboutpng.png')} alt="kindergarten" />
-                    <img className='w-[300px] md:absolute top-40 right-0 mx-auto  mt-10 md:mt-0' src={require('../../assets/AboutUs/kindergarten22222.png')} alt="kindergarten" />
+                    <img data-aos="fade-right" className='w-[350px] mx-auto z-40' src={require('../../assets/AboutUs/kindergarten-aboutpng.png')} alt="kindergarten" />
+                    <img data-aos="fade-left" className='w-[300px] md:absolute top-40 right-0 mx-auto  mt-10 md:mt-0' src={require('../../assets/AboutUs/kindergarten22222.png')} alt="kindergarten" />
                     {/* =================  */}
                     <img className='w-[150px] absolute top-0 right-0 z-30 hidden md:block' src={require('../../assets/AboutUs/kite1.png')} alt="kindergarten" />
                     <img className='w-[120px] absolute left-0 bottom-0 hidden md:block' src={require('../../assets/AboutUs/k-shape8.png')} alt="kindergarten" />
 
                 </div>
                 {/* ================== Right bar ================= */}
-                <div className='flex-1 px-5'>
+                <div data-aos="fade-left" className='flex-1 px-5'>
                     <div>
                         <div className='flex justify-between items-center'>
                             <div>
@@ -50,9 +50,9 @@ const AboutUs = () => {
                                 </p>
                             </div>
                         </div>
-                        <button  className='flex items-center gap-4 px-8 py-2 bg-red-500 rounded-full '>
+                        <button  className='flex items-center gap-4 SubmitButton py-2'>
                             <IoIosContact className='text-white'/>
-                            <span className='text-white text-bold '>More About Us</span>
+                            <span>More About Us</span>
                         </button>
                     </div>
                 </div>
