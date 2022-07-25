@@ -1,8 +1,10 @@
 import DevSixer from "./Components/DevSixer";
 import AnimatedCursor from "react-animated-cursor"
 import { useEffect, useState } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
 import './App.css'
 function App() {
   const [show, setShow] = useState(false);
@@ -13,7 +15,7 @@ function App() {
     setTheme(theme);
     const root = window.document.documentElement;
     const isDark = theme === "dark";
-    
+
     root.classList.remove(isDark ? "light" : "dark");
     root.classList.add(theme);
     document.documentElement.setAttribute('data-theme', theme);
@@ -28,7 +30,7 @@ function App() {
 
 
 
-      
+
       <AnimatedCursor
         color='254, 74, 85'
      

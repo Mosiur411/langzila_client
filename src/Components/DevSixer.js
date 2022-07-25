@@ -1,4 +1,4 @@
-import {Routes,Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './Home/Home';
 
 const DevSixer = ({ show, setShow, theme, setTheme }) => {
