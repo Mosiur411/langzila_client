@@ -32,19 +32,19 @@ export default class CenterMode extends Component {
               <p className="slider-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
             </div>
           </div>
-          <div className="slide">
+          <div className="slide-1">
             <div className="inner-slide">  <img src={require('../../assets/Servicsimg/img2.png')} alt="" />
               <h2 className="slider-h">Infants</h2>
               <p className="slider-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
             </div>
 
           </div>
-          <div className="slide">
+          <div className="slide-2">
             <div className="inner-slide"> <img src={require('../../assets/Servicsimg/img3.png')} alt="" />
               <h2 className="slider-h">Infants</h2><p className="slider-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></div>
 
           </div>
-          <div className="slide">
+          <div className="slide-2">
             <div className="inner-slide">  <img src={require('../../assets/Servicsimg/img4.png')} alt="" />
               <h2 className="slider-h">Infants</h2><p className="slider-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></div>
 

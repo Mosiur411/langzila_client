@@ -9,6 +9,28 @@
 
 }
 
+.slide-1 {
+  cursor: pointer;
+  background-image: url(../../assets/./Servicsimg/shape2.png);
+  background-position: 'center';
+  background-size: cover;
+  width: 50%;
+  height: auto;
+  text-align: center;
+
+}
+
+.slide-2 {
+  cursor: pointer;
+  background-image: url(../../assets/./Servicsimg/shape3.png);
+  background-position: 'center';
+  background-size: cover;
+  width: 50%;
+  height: auto;
+  text-align: center;
+
+}
+
 .inner-slide {
   display: grid;
   place-items: center;
