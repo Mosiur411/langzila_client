@@ -6,18 +6,18 @@ import { AiFillSmile } from "react-icons/ai";
 
 const Guideline = () => {
     return (
-        <div className='bg-[#EEE8DF] font-nunito pt-10 pb-10'>
+        <div className='bg-[#EEE8DF]  py-10 '>
             <div className='text-center'>
                 <h3 className='text-4xl font-bold text-[#221638]'>Join With us</h3>
                 <h2 className='text-2xl text-[#FE4A55]'>Guideline</h2>
             </div>
-            <div className='md:flex lg:flex justify-center items-center'>
-                <div>
+            <div  className='md:flex lg:flex justify-center items-center'>
+                <div data-aos="fade-up" >
                     <img src={kid} alt="" />
                 </div>
                 <div>
                     <h2 className='font-black text-3xl text-[#221638] py-4'>Find Out Why You Should <br /> Learn With Verbalizer</h2>
-                    <div className='grid grid-cols-2 gap-4'>
+                    <div data-aos="fade-right" className='grid grid-cols-2 gap-4'>
                         <div className='bg-white md:w-80 lg:w:80 p-4 rounded-md'>
                             <div className='flex items-center'>
                                 < BsCheckCircleFill className='text-[#FE4A55] mr-2' />

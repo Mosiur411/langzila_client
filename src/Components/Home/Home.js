@@ -9,10 +9,10 @@ import Navbar from './Navbar/Navbar';
 import Subscribe from './Subscribe/Subscribe';
 import UpcomingEvents from './UpcomingEvents/UpcomingEvents';
 
-const Home = () => {
+const Home = ({show,setShow,theme,setTheme}) => {
     return (
         <div className='overflow-hidden'>
-            <Navbar></Navbar>
+            <Navbar show={show} setShow={setShow} them={theme} setTheme={setTheme}></Navbar>
             <Hero></Hero>
             <Guideline></Guideline>
             <Feedback></Feedback>
