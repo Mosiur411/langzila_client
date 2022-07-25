@@ -5,7 +5,6 @@ const DevSixer = () => {
     return (
         <div>
             <Home></Home>
-            
         </div>
     );
 };
