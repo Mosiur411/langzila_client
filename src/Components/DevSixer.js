@@ -1,7 +1,6 @@
 import {Routes,Route } from 'react-router-dom';
 import SignIn from './Auth/SignIn';
 import SignUp from './Auth/SignUp';
-import { Routes, Route } from 'react-router-dom';
 import Contact from './Contact/Contact';
 import Home from './Home/Home';
 
