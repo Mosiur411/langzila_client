@@ -20,8 +20,8 @@ const Footer = () => {
                         <FaFacebook />
                         <AiFillTwitterCircle />
                         <SiInstagram />
-                        <FaLinkedin />
                     </div>
+                        <FaLinkedin />
                 </div>
                 {/* ================== 1======================  */}
 
