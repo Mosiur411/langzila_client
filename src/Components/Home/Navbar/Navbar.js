@@ -2,7 +2,12 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { HiOutlineChevronDown } from "react-icons/hi";
 import { CgToggleOff, CgToggleOn } from "react-icons/cg";
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../Firebase/firebase.init';
+import { signOut } from 'firebase/auth';
+
 const Navbar = ({ show, setShow, theme, setTheme }) => {
+    const [user] = useAuthState(auth);
     return (
         <div className="navbar md:px-[68px]">
             <div className="flex-1">
@@ -71,7 +76,11 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
                             <li><Link to='/'>Submenu 2</Link></li>
                         </ul>
                     </li>
-                    <button className="SubmitButton">Login</button>
+                    {
+                        user?.uid ? <button onClick={() => signOut(auth)} className="SubmitButton"><Link to=''>Logout</Link></button>
+                            :
+                            <button className="SubmitButton"><Link to='/signIn'>Login</Link></button>
+                     }
                 </ul>
             </div>
         </div>
