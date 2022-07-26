@@ -4,6 +4,7 @@ import { FaMapMarkerAlt } from "react-icons/fa"
 import { SiMinutemailer } from "react-icons/si"
 import { BsTelephoneForwardFill } from "react-icons/bs"
 import { BiTimeFive } from "react-icons/bi"
+import { ToastContainer, toast } from 'react-toastify';
 
 const Contact = () => {
 
@@ -12,6 +13,9 @@ const Contact = () => {
         emailjs.sendForm('service_1z09stg', 'template_836mtsq', event.target, 'Fy8aOCqsiSskbK1yY').then(res => {
             console.log(res)
         }).catch(err => console.log(err));
+        toast.success("Your submission has been received. I'll get back to you very soon.", {
+            position: toast.POSITION.BOTTOM_RIGHT
+        });
         event.target.reset();
     }
 
@@ -69,6 +73,7 @@ const Contact = () => {
                         <textarea name="message" className="bg-[#C22B34] w-full my-4 textarea textarea-ghost" placeholder="Write Your Message"></textarea>
                         <br />
                         <input type="submit" value="Send Message" className='bg-[#221638] py-4 px-8 rounded-md' />
+                        <ToastContainer />
                     </form>
                 </div>
             </div>
