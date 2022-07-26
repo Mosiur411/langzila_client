@@ -31,10 +31,10 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
             <div className="flex-none">
                 <ul className="menu menu-horizontal p-0 ">
                     <li className='hover:text-white hover:bg-[#FE4A55] rounded-lg'><Link to='/'>Home</Link></li>
-                    <li  className='hover:text-white hover:bg-[#FE4A55] rounded-lg' tabIndex="0">
+                    <li className='hover:text-white hover:bg-[#FE4A55] rounded-lg' tabIndex="0">
                         <Link to='/'>
                             Pages
-                           <HiOutlineChevronDown/>
+                            <HiOutlineChevronDown />
                         </Link>
                         <ul className="p-2 bg-base-100 text-black">
                             <li><Link to='/'>Submenu 1</Link></li>
@@ -44,7 +44,7 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
                     <li className='hover:text-white hover:bg-[#FE4A55] rounded-lg' tabIndex="0">
                         <Link to='/'>
                             Coures
-                            <HiOutlineChevronDown/>
+                            <HiOutlineChevronDown />
                         </Link>
                         <ul className="p-2 bg-base-100 text-black">
                             <li><Link to='/'>Submenu 1</Link></li>
@@ -54,7 +54,7 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
                     <li className='hover:text-white hover:bg-[#FE4A55] rounded-lg' tabIndex="0">
                         <Link to='/'>
                             Event
-                            <HiOutlineChevronDown/>
+                            <HiOutlineChevronDown />
                         </Link>
                         <ul className="p-2 bg-base-100 text-black">
                             <li><Link to='/'>Submenu 1</Link></li>
@@ -64,7 +64,7 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
                     <li className='hover:text-white hover:bg-[#FE4A55] rounded-lg' tabIndex="0">
                         <Link to='/'>
                             Shop
-                            <HiOutlineChevronDown/>
+                            <HiOutlineChevronDown />
                         </Link>
                         <ul className="p-2 bg-base-100 text-black">
                             <li><Link to='/'>Submenu 1</Link></li>
