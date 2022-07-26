@@ -1,7 +1,9 @@
-import React from 'react';
-import { BsChevronDoubleLeft } from "react-icons/bs";
+import React, { } from 'react';
+import {BsChevronDoubleLeft } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 const NotFound = () => {
+   
+
     return (
         <>
             <div >
