@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <div class="navbar bg-base-100">
             <div class="flex-1">
-                <a class="btn btn-ghost normal-case text-2xl font-bold">eCademy</a>
+                <a class="btn btn-ghost normal-case text-2xl font-bold">LangZila</a>
             </div>
             <div class="form-control">
                 <input type="text" placeholder="Search" class="input input-bordered" />
