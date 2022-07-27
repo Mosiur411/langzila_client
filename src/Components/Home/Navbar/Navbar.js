@@ -37,14 +37,9 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
                 <ul className="menu menu-horizontal p-0 ">
                     <li className='hover:text-white hover:bg-[#FE4A55] rounded-lg'><Link to='/'>Home</Link></li>
                     <li className='hover:text-white hover:bg-[#FE4A55] rounded-lg' tabIndex="0">
-                        <Link to='/'>
-                            Pages
+                        <Link to='/Contact'> Pages
                             <HiOutlineChevronDown />
                         </Link>
-                        <ul className="p-2 bg-base-100 text-black">
-                            <li><Link to='/'>Submenu 1</Link></li>
-                            <li><Link to='/'>Submenu 2</Link></li>
-                        </ul>
                     </li>
                     <li className='hover:text-white hover:bg-[#FE4A55] rounded-lg' tabIndex="0">
                         <Link to='/'>
