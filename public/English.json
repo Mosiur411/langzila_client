@@ -1,106 +1,133 @@
 [
     {
         "id":1,
-        "Latter":"a"
+        "Latter":"a",
+        "audio":"https://voca.ro/1gcjMZ9KrYMf"
     },
     {
         "id":2,
-        "Latter":"b"
+        "Latter":"b",
+        "audio":"https://voca.ro/19zh5V8PfIwP"
     },
     {
         "id":3,
-        "Latter":"c"
+        "Latter":"c",
+        "audio":"https://voca.ro/1n8mZayJCKjj"
     },
     {
         "id":4,
-        "Latter":"d"
+        "Latter":"d",
+        "audio":"https://voca.ro/1eGdRk8yGRIl"
+
     },
     {
         "id":5,
-        "Latter":"e"
+        "Latter":"e",
+        "audio":"https://voca.ro/11AFUx2ryLUK"
     },
     {
         "id":6,
-        "Latter":"f"
+        "Latter":"f",
+        "audio":"https://voca.ro/1hcndwZGkgAH"
     },
     {
-        "id":5,
-        "Latter":"g"
+        "id":7,
+        "Latter":"g",
+        "audio":"https://voca.ro/1dZ1wk5SJqjd"
     },
     {
-        "id":5,
-        "Latter":"h"
+        "id":8,
+        "Latter":"h",
+        "audio":"https://voca.ro/13kuCXpR4YDO"
     },
     {
-        "id":5,
-        "Latter":"i"
+        "id":9,
+        "Latter":"i",
+        "audio":"https://voca.ro/1a7cgH67oL7C"
     },
     {
-        "id":5,
-        "Latter":"j"
+        "id":10,
+        "Latter":"j",
+        "audio":"https://voca.ro/1b2FDbgjIX4c"
     },
     {
-        "id":5,
-        "Latter":"k"
+        "id":11,
+        "Latter":"k",
+        "audio":"https://voca.ro/1gosr0pfnp9f"
     },
     {
-        "id":5,
-        "Latter":"l"
+        "id":12,
+        "Latter":"l",
+        "audio":"https://voca.ro/1hByJIFgHPgy"
     },
     {
-        "id":5,
-        "Latter":"m"
+        "id":13,
+        "Latter":"m",
+        "audio":"https://voca.ro/15y6v3p0iGeD"
     },
     {
-        "id":5,
-        "Latter":"n"
+        "id":14,
+        "Latter":"n",
+        "audio":"https://voca.ro/17EWVMhbiR2f"
     },
     {
-        "id":5,
-        "Latter":"o"
+        "id":15,
+        "Latter":"o",
+        "audio":"https://voca.ro/1cFIWecoRy0u"
     },
     {
-        "id":5,
-        "Latter":"p"
+        "id":16,
+        "Latter":"p",
+        "audio":"https://voca.ro/1iAtScdK0btm"
     },
     {
-        "id":5,
-        "Latter":"q"
+        "id":17,
+        "Latter":"q",
+        "audio":"https://voca.ro/1jIrMdtcHUEI"
     },
     {
-        "id":5,
-        "Latter":"r"
+        "id":18,
+        "Latter":"r",
+        "audio":"https://voca.ro/11Ol9WCxKsyX"
     },
     {
-        "id":5,
-        "Latter":"s"
+        "id":19,
+        "Latter":"s",
+        "audio":"https://voca.ro/15dRjtaOj6so"
     },
     {
-        "id":5,
-        "Latter":"t"
+        "id":20,
+        "Latter":"t",
+        "audio":"https://voca.ro/1esVEyXA50NU"
     },
     {
-        "id":5,
-        "Latter":"u"
+        "id":21,
+        "Latter":"u",
+        "audio":"https://voca.ro/1je1N0okOEBt"
     },
     {
-        "id":5,
-        "Latter":"v"
+        "id":22,
+        "Latter":"v",
+        "audio":"https://voca.ro/1osFEEwHskSS"
     },
     {
-        "id":5,
-        "Latter":"w"
+        "id":23,
+        "Latter":"w",
+        "audio":"https://voca.ro/1ihcKmVxQUVF"
     },
     {
-        "id":5,
-        "Latter":"x"
+        "id":24,
+        "Latter":"x",
+        "audio":"https://voca.ro/175FjiTbQGGZ"
     },
     {
-        "id":5,
-        "Latter":"y"
+        "id":25,
+        "Latter":"y",
+        "audio":"https://voca.ro/191ms0TWPLd6"
     },
     {
-        "id":5,
-        "Latter":"z"
+        "id":26,
+        "Latter":"z",
+        "audio":"https://voca.ro/17wCeRsfguuG"
     }
 ]
