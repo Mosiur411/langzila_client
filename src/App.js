@@ -26,14 +26,8 @@ function App() {
   return (
     <div className="text-[#606060]">
       <DevSixer show={show} setShow={setShow} theme={theme} setTheme={setTheme}></DevSixer>
-
-
-
-
-
       <AnimatedCursor
         color='254, 74, 85'
-     
         clickables={[
           'input[type="text"]',
           'input[type="email"]',
