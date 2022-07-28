@@ -35,11 +35,11 @@ const SignUp = () => {
         }
     }, [user, googleUser, from, navigate]);
 
-    if (loading || googleloading || updating) {
+    if (loading || googleloading || updating || sending) {
         return <Spinner></Spinner>
     }
 
-    if (error || googleError || updatError) {
+    if (error || googleError || updatError || passwordResetError) {
         signUpError = <p className='text-[#FE4A55] mb-2'><small>{error?.message || googleError?.message}</small></p>
     }
 
@@ -100,7 +100,8 @@ const SignUp = () => {
                     {signUpError}
                     <div className="text-center mb-3 pb-1 justify-between">
                         <label htmlFor="remember" className="text-sm font-bold text-[#FE4A55] mb-2">Already Have an account? <Link to='/signIn' className='hover:underline'>Sign In</Link></label>
-                        <br /> <button className=" hover:underline text-gray-400 mt-3">Forgot password?</button>
+                        <br />
+                        <label for="my-modal-6" className=" hover:underline text-gray-400 mt-3">Forget password?</label>
                     </div>
                     <input
                         className="border border-gray-300 bg-[#FE4A55] text-white text-sm uppercase font-bold rounded-lg block w-full p-2.5"
@@ -114,6 +115,29 @@ const SignUp = () => {
                 </div>
                 <button onClick={() => signInWithGoogle()} className="flex items-center justify-center bg-gray-50 border font-bold border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-900 focus:border-blue-900 w-full p-2.5"> <img className='w-6 pr-2' src={GoogleLogo} alt='' /> Continue with Google</button>
                 <ToastContainer></ToastContainer>
+            </div>
+            <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+            <div class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                    <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-2 bottom-5">✕</label>
+                    
+                    <input
+                        type="email"
+                        placeholder='Please put your email'
+                        className="mt-12 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <button
+                         className="mt-3 border border-gray-300 bg-[#FE4A55] text-white text-sm uppercase font-bold rounded-lg block w-full p-2.5"
+                        onClick={async () => {
+                            await sendPasswordResetEmail(email);
+                            toast('Sent email');
+                        }}
+                    >
+                        Reset password
+                    </button>
+                </div>
             </div>
         </div>
 
