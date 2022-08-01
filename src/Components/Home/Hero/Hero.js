@@ -46,7 +46,6 @@ const Hero = () => {
                                 <p className=' text-gray-500 text-left'>Expert Teachers</p>
                             </div>
                         </div>
-
                         <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" className='hidden absolute lg:bottom-[20%] md:bottom-[15%] bottom-[5%] right-[10%] z-40 bg-white shadow-xl  p-4 rounded md:flex items-center '>
                             <FaThumbsUp className='  bg-[#E8FAD7] text-lime-600 h-10 w-10 p-2 rounded-full' />
                             <div className='ml-5'>
