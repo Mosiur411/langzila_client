@@ -11,7 +11,7 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
     return (
         <div className="navbar md:px-[68px]">
             <div className="flex-1">
-                <Link to='/' className="btn btn-ghost normal-case text-2xl font-bold">eCademy</Link>
+                <Link to='/' className="btn btn-ghost normal-case text-2xl font-bold">LangZila</Link>
                 {/* =================== Night Mode Start ===================== */}
                 {/* <div>
                     {!show && (
@@ -80,7 +80,7 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
                         user?.uid ? <button onClick={() => signOut(auth)} className="SubmitButton"><Link to=''>Logout</Link></button>
                             :
                             <button className="SubmitButton"><Link to='/signIn'>Login</Link></button>
-                     }
+                    }
                 </ul>
             </div>
         </div>
