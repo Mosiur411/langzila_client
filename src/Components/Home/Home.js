@@ -1,4 +1,5 @@
 import React from 'react';
+import Messnger from '../Messenger/Messnger';
 import RouteHelmet from '../RouteHelmet/RouteHelmet';
 import AboutUs from './AboutUs/AboutUs';
 import Feedback from './Feedback/Feedback';
@@ -29,6 +30,7 @@ const Home = ({ show, setShow }) => {
                     <LatestBlog></LatestBlog>
                 </div>
                 <Subscribe></Subscribe>
+                <Messnger></Messnger>
                 <Footer></Footer>
             </div>
         </>
