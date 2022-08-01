@@ -7,25 +7,24 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css'
 function App() {
-  const [show, setShow] = useState(false);
-  const [theme, setTheme] = useState("light");
-  console.log(show)
+  const [show, setShow] = useState(localStorage.getItem('theme') === 'dark' ? true : false);
+
   useEffect(() => {
-    const theme = localStorage.getItem("theme");
-    setTheme(theme);
-    const root = window.document.documentElement;
-    const isDark = theme === "dark";
-
-    root.classList.remove(isDark ? "light" : "dark");
-    root.classList.add(theme);
-    document.documentElement.setAttribute('data-theme', theme);
-
+    if (show) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
     AOS.init();
+  }, [show]);
 
-  }, [theme]);
+
+
+
+
   return (
-    <div className="text-[#606060]">
-      <DevSixer show={show} setShow={setShow} theme={theme} setTheme={setTheme}></DevSixer>
+    <div className={`${show?'bg-black text-white':'text-[#606060]'}`}>
+      <DevSixer show={show} setShow={setShow} ></DevSixer>
       <AnimatedCursor
         color='254, 74, 85'
         clickables={[
