@@ -5,6 +5,7 @@ import Feedback from './Feedback/Feedback';
 import Footer from './Footer/Footer';
 import Guideline from './Guideline/Guideline';
 import Hero from './Hero/Hero';
+import Language from './Language/Language';
 import LatestBlog from './LatestBlog/LatestBlog';
 import Navbar from './Navbar/Navbar';
 import Services from './Services/Services';
@@ -19,6 +20,7 @@ const Home = ({ show, setShow }) => {
                 <Navbar show={show} setShow={setShow} ></Navbar>
                 <Hero></Hero>
                 <Guideline></Guideline>
+                <Language />
                 <Services></Services>
                 <Feedback></Feedback>
                 <AboutUs></AboutUs>
