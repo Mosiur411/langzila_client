@@ -34,9 +34,7 @@ const CapitalGames = () => {
     useEffect(() => {
         fetch('English.json')
             .then(res => res.json())
-            .then(data => {
-                setCapitalLetter(data)
-            })
+            .then(data =>setCapitalLetter(data))
     })
 
     const AudioPlay = (latter) => {

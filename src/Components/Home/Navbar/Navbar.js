@@ -9,10 +9,10 @@ import { signOut } from 'firebase/auth';
 const Navbar = ({ show, setShow, theme, setTheme }) => {
     const [user] = useAuthState(auth);
     return (
-        <div className={`navbar md:px-[68px]  ${show?'bg-orange-300':''}`}>
+        <div className={`navbar md:px-[68px]  ${show ? 'bg-orange-300' : ''}`}>
             <div className="flex-1">
-                <Link to='/' className="btn btn-ghost normal-case text-2xl font-bold">eCademy</Link>
-                <button onClick={()=>setShow(!show)}>{show?<CgToggleOn />:<CgToggleOff />} </button>
+                <Link to='/' className="btn btn-ghost normal-case text-2xl font-bold">LangZila</Link>
+                <button onClick={() => setShow(!show)}>{show ? <CgToggleOn /> : <CgToggleOff />} </button>
             </div>
             <div className="flex-none">
                 <ul className="menu menu-horizontal p-0 ">
@@ -56,7 +56,7 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
                         user?.uid ? <button onClick={() => signOut(auth)} className="SubmitButton"><Link to=''>Logout</Link></button>
                             :
                             <button className="SubmitButton"><Link to='/signIn'>Login</Link></button>
-                     }
+                    }
                 </ul>
             </div>
         </div>
