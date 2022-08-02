@@ -28,7 +28,6 @@ import Z from '../assets/Audio/Z.mp3'
 const CapitalGames = () => {
     const [CapitalLetter, setCapitalLetter] = useState([])
     const setTypeTest = (event) => {
-        // const result = event.target.value
         AudioPlay(event.target.value.toLowerCase());
         event.preventDefault()
     }
