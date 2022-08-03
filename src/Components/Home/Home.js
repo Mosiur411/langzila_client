@@ -18,7 +18,7 @@ const Home = ({ show, setShow }) => {
         <>
             <RouteHelmet pages={'Home'}></RouteHelmet>
             <div className='overflow-hidden'>
-                <Navbar show={show} setShow={setShow} ></Navbar>
+
                 <Hero></Hero>
                 <Guideline></Guideline>
                 <Language />
@@ -31,7 +31,7 @@ const Home = ({ show, setShow }) => {
                 </div>
                 <Subscribe></Subscribe>
                 <Messnger></Messnger>
-                <Footer></Footer>
+
             </div>
         </>
     );
