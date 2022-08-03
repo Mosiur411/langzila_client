@@ -34,7 +34,7 @@ const CapitalGames = () => {
     useEffect(() => {
         fetch('English.json')
             .then(res => res.json())
-            .then(data =>setCapitalLetter(data))
+            .then(data => setCapitalLetter(data))
     })
 
     const AudioPlay = (latter) => {
@@ -153,7 +153,7 @@ const CapitalGames = () => {
         <div className='px-2 md:px-10 font-bold uppercase'>
             <h1 className="text-4xl text-center py-10">CapitalGames</h1>
             <div className='w-[300px] text-center mx-auto mb-10'>
-                <input onChange={setTypeTest}  maxlength="1" type="text" className='w-full p  rounded-lg px-2  bg-white border-[#FE4A55] border-2 outline-none lowercase'  />
+                <input onChange={setTypeTest} maxlength="1" type="text" className='w-full p  rounded-lg px-2  bg-white border-[#FE4A55] border-2 outline-none lowercase' />
             </div>
 
             <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-24'>

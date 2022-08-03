@@ -23,7 +23,6 @@ const Home = ({ show, setShow }) => {
                 <Hero></Hero>
                 <Guideline></Guideline>
                 <Language />
-                <Services></Services>
                 <Feedback></Feedback>
                 <AboutUs></AboutUs>
                 <UpcomingEvents></UpcomingEvents>
