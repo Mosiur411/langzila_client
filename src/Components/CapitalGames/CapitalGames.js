@@ -28,17 +28,14 @@ import Z from '../assets/Audio/Z.mp3'
 const CapitalGames = () => {
     const [CapitalLetter, setCapitalLetter] = useState([])
     const setTypeTest = (event) => {
-        // const result = event.target.value
         AudioPlay(event.target.value.toLowerCase());
         event.preventDefault()
     }
     useEffect(() => {
         fetch('English.json')
             .then(res => res.json())
-            .then(data => {
-                setCapitalLetter(data)
-            })
-    }, [])
+            .then(data => setCapitalLetter(data))
+    })
 
     const AudioPlay = (latter) => {
         /* ============== switch =================  */
