@@ -3,7 +3,7 @@ import React from 'react';
 const Subscribe = () => {
     return (
         <section>
-            <div className='bg-[#eee8df] py-16 relative'>
+            <div className='bg-secondary py-16 relative'>
                 <div className='md:flex justify-around items-center px-5 md:px-20'>
                     <div data-aos="fade-right"
                         data-aos-offset="300"
@@ -11,7 +11,7 @@ const Subscribe = () => {
                         <img src={require('../../assets/Subscribe/subscribe-img3.png')} alt="" className='w-80 mx-auto md:mx-0' />
                     </div>
                     <div data-aos="fade-left" className='flex-1 text-center md:text-left'>
-                        <h1 className='text-3xl font-bold py-2'>Subscribe to Our Newsletter</h1>
+                        <h1 className='text-3xl font-bold py-2 text-accent'>Subscribe to Our Newsletter</h1>
                         <p className='py-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <form className='flex'>
                             <input type="text" className='w-full rounded-l-lg px-2 text-gray-800 border-gray-200 bg-white' placeholder="your@mail.com" />
