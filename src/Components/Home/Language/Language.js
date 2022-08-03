@@ -19,43 +19,15 @@ const Language = () => {
 
 
     return (
-<<<<<<< HEAD
-        <div className='xl:px-10 py-20 bg-secondary text-center'>
-            <div>
-                <h2 className=' uppercase text-primary font-semibold'>OUR SERVICES</h2>
-                <h1 style={{ fontFamily: "Nunito" }} className="py-2 text-3xl font-bold text-black">Best Services for Kids</h1>
-=======
         <div className='xl:px-10 py-10 bg-white text-center '>
             <div>
                 <h2 style={{ fontFamily: "Nunito" }} className=' text-red-600 font-semibold text-xl'>Our Services</h2>
                 <h1 style={{ fontFamily: "Nunito" }} className="text-4xl font-bold text-black">Best Services for Kids</h1>
->>>>>>> 03063817c6848b7ef3f104c0ac84e8319d8977cf
                 <p className=' xl:w-1/3 w-3/4 mx-auto text-gray-600'>Explore all of our courses and pick your suitable ones to enroll and start learning with us! We ensure that you will never regret it!</p>
             </div>
             <div className='max-w-7xl mx-auto  mt-20 xl:px-20'>
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center items-center '>
 
-<<<<<<< HEAD
-                    <div className=' bg-white xl:w-96 xl:mx-10 mx-5 shadow-xl rounded-md mb-20 lg:mb-0'>
-                        <img className=' w-full lg:h-[300px] ' src={BookImg1} alt="Book Image" />
-                        <h1 style={{ fontFamily: "Nunito" }} className="text-2xl font-bold my-3 text-accent">Bangla</h1>
-                        <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmod tempor.</p>
-                        <button onClick={() => navigate('/bangla/easy')} style={{ fontFamily: "Nunito" }} className=' px-10 py-1 bg-primary rounded font-semibold text-lg mt-5 mb-7 text-white'>Start Now</button>
-                    </div>
-
-                    <div className=' bg-white xl:w-96 xl:mx-10 mx-5 shadow-xl rounded-md mb-20 lg:mb-0'>
-                        <img className=' w-full lg:h-[300px]' src={BookImg2} alt="Book Image" />
-                        <h1 style={{ fontFamily: "Nunito" }} className="text-2xl font-bold my-3 text-accent">English</h1>
-                        <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmod tempor.</p>
-                        <button style={{ fontFamily: "Nunito" }} className=' px-10 py-1 bg-primary rounded font-semibold text-lg mt-5 mb-7 text-white'>Start Now</button>
-                    </div>
-
-                    <div className=' bg-white xl:w-96 xl:mx-10 mx-5 shadow-xl rounded-md mb-20 lg:mb-0'>
-                        <img className=' w-full lg:h-[300px]' src={BookImg3} alt="Book Image" />
-                        <h1 style={{ fontFamily: "Nunito" }} className="text-2xl font-bold my-3 text-accent">Hindi</h1>
-                        <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmod tempor.</p>
-                        <button style={{ fontFamily: "Nunito" }} className=' px-10 py-1 bg-primary rounded font-semibold text-lg mt-5 mb-7 text-white'>Start Now</button>
-=======
 
                     <div className=' bg-cyan-200 p-3 relative rounded-lg mx-8 shadow-lg w-[280px] mb-20'>
                         <h1 className=' text-sm font-semibold text-gray-500 font-mono absolute left-3 top-3'>L A N G A G E</h1>
@@ -96,7 +68,6 @@ const Language = () => {
                         </div>
                         <h1 className=' text-xl font-mono text-blue-700 font-medium'>English Language</h1>
                         <button onClick={() => navigate('/bangla/easy')} style={{ fontFamily: "Nunito" }} className=' px-4 py-1  bg-red-500 rounded font-medium text-white text-md mt-2 mb-1'>Start Now</button>
->>>>>>> 03063817c6848b7ef3f104c0ac84e8319d8977cf
                     </div>
 
 
