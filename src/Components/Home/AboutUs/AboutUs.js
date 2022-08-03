@@ -3,8 +3,8 @@ import { BsArrowUpRight } from "react-icons/bs";
 import { IoIosContact } from "react-icons/io";
 const AboutUs = () => {
     return (
-        <section className='md:px-10 mb-40 mt-10'>
-            <div className='grid  grid-cols-1 md:grid-cols-2 gap-5'>
+        <section className='md:px-10 mb-20 mt-20'>
+            <div className='grid  grid-cols-1 md:grid-cols-2 gap-16'>
                 {/* ================== left bar ================= */}
                 <div className='flex-1 relative'>
                     <img data-aos="fade-right" className='w-[350px] mx-auto z-40' src={require('../../assets/AboutUs/kindergarten-aboutpng.png')} alt="kindergarten" />
@@ -19,8 +19,8 @@ const AboutUs = () => {
                     <div>
                         <div className='flex justify-between items-center'>
                             <div>
-                                <p className='text-xl font-medium text-red-500'>about us </p>
-                                <h1 className='font-bold py-2 text-3xl '>We Are Kindergarten & <br />Childhood is Our Passion</h1>
+                                <p className='text-xl font-medium text-primary'>about us </p>
+                                <h1 className='font-bold py-2 text-3xl text-accent '>We Are Kindergarten & <br />Childhood is Our Passion</h1>
                             </div>
                             <img src={require('../../assets/AboutUs/k-shape7.png')} alt="kindergarten" />
                         </div>
@@ -31,21 +31,21 @@ const AboutUs = () => {
                         <div className='flex items-center gap-3 md:gap-16 mb-10'>
                             <div>
                                 <p className='flex items-center gap-2 py-4'>
-                                    <BsArrowUpRight className='bg-red-500 text-white font-bold text-2xl p-1 rounded-full' />
+                                    <BsArrowUpRight className='bg-primary text-white font-bold text-2xl p-1 rounded-full' />
                                     <span> Transportation</span>
                                 </p>
                                 <p className='flex items-center gap-2'>
-                                    <BsArrowUpRight className='bg-red-500 text-white font-bold text-2xl p-1 rounded-full' />
+                                    <BsArrowUpRight className='bg-primary text-white font-bold text-2xl p-1 rounded-full' />
                                     <span> Transportation</span>
                                 </p>
                             </div>
                             <div>
                                 <p className='flex items-center gap-2 py-4'>
-                                    <BsArrowUpRight className='bg-red-500 text-white font-bold text-2xl p-1 rounded-full' />
+                                    <BsArrowUpRight className='bg-primary text-white font-bold text-2xl p-1 rounded-full' />
                                     <span> Transportation</span>
                                 </p>
                                 <p className='flex items-center gap-2'>
-                                    <BsArrowUpRight className='bg-red-500 text-white font-bold text-2xl p-1 rounded-full' />
+                                    <BsArrowUpRight className='bg-primary text-white font-bold text-2xl p-1 rounded-full' />
                                     <span> Transportation</span>
                                 </p>
                             </div>
