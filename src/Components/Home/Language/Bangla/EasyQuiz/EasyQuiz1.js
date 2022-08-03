@@ -232,7 +232,7 @@ const EasyQuiz1 = () => {
                                     }
                                 </div>
                                 <div>
-                                    <div class="radial-progress bg-yellow-300 text-blue-900 border-4 border-yellow-400" style={{ '--value': "70" }}>{finalValue}%</div>
+                                    <div className="radial-progress bg-yellow-300 text-blue-900 border-4 border-yellow-400" style={{ '--value': "70" }}>{finalValue}%</div>
                                 </div>
                             </div>
 
