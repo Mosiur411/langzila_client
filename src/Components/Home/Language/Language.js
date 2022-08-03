@@ -18,8 +18,6 @@ const Language = () => {
     const navigate = useNavigate();
 
 
-
-
     return (
         <div className='xl:px-10 py-10 bg-white text-center '>
             <div>
