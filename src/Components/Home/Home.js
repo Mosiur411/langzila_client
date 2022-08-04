@@ -1,5 +1,5 @@
 import React from 'react';
-import Messnger from '../Messenger/Messnger';
+// import Messnger from '../Messenger/Messnger';
 import RouteHelmet from '../RouteHelmet/RouteHelmet';
 import AboutUs from './AboutUs/AboutUs';
 import Feedback from './Feedback/Feedback';
@@ -12,6 +12,7 @@ import LatestBlog from './LatestBlog/LatestBlog';
 import Services from './Services/Services';
 import Subscribe from './Subscribe/Subscribe';
 import UpcomingEvents from './UpcomingEvents/UpcomingEvents';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 const Home = ({ show, setShow }) => {
     return (
@@ -22,7 +23,6 @@ const Home = ({ show, setShow }) => {
                 <Hero></Hero>
                 <Guideline></Guideline>
                 <Language />
-                <Services></Services>
                 <Feedback></Feedback>
                 <AboutUs></AboutUs>
                 <UpcomingEvents></UpcomingEvents>
@@ -30,8 +30,17 @@ const Home = ({ show, setShow }) => {
                     <LatestBlog></LatestBlog>
                 </div>
                 <Subscribe></Subscribe>
+<<<<<<< HEAD
                 <Messnger></Messnger>
 
+=======
+                <MessengerCustomerChat
+                    pageId="103900041968134"
+                    appId="752337902642851"
+                />
+                {/* <Messnger></Messnger> */}
+                <Footer></Footer>
+>>>>>>> 03063817c6848b7ef3f104c0ac84e8319d8977cf
             </div>
         </>
     );
