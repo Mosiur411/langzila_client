@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;1,400&display=swap');
-body{
+
+body {
   font-family: 'Nunito';
 }
-.SubmitButton{
+
+.SubmitButton {
   background-color: #FE4A55;
   color: white;
   font-size: larger;
@@ -16,17 +18,24 @@ body{
   transition: background-color 2s ease-out;
 
 }
-.SubmitButton:hover{
+
+.leaflet-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.SubmitButton:hover {
   background-color: #b5710a;
 }
 
 /* ============= Animation =====================  */
 
-.covid9{
+.covid9 {
   animation: mymove 5s infinite;
 }
 
 @keyframes mymove {
-  50% {transform: rotate(180deg);}
+  50% {
+    transform: rotate(180deg);
+  }
 }
-

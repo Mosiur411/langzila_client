@@ -5,6 +5,8 @@ import { SiMinutemailer } from "react-icons/si"
 import { BsTelephoneForwardFill } from "react-icons/bs"
 import { BiTimeFive } from "react-icons/bi"
 import { ToastContainer, toast } from 'react-toastify';
+import Mapcon from './Mapcon';
+
 
 const Contact = () => {
 
@@ -76,6 +78,9 @@ const Contact = () => {
                         <ToastContainer />
                     </form>
                 </div>
+            </div>
+            <div>
+                <Mapcon></Mapcon>
             </div>
         </div>
     );
