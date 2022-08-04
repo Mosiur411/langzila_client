@@ -3,12 +3,12 @@ import Messnger from '../Messenger/Messnger';
 import RouteHelmet from '../RouteHelmet/RouteHelmet';
 import AboutUs from './AboutUs/AboutUs';
 import Feedback from './Feedback/Feedback';
-import Footer from './Footer/Footer';
+
 import Guideline from './Guideline/Guideline';
 import Hero from './Hero/Hero';
 import Language from './Language/Language';
 import LatestBlog from './LatestBlog/LatestBlog';
-import Navbar from './Navbar/Navbar';
+
 import Services from './Services/Services';
 import Subscribe from './Subscribe/Subscribe';
 import UpcomingEvents from './UpcomingEvents/UpcomingEvents';
