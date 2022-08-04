@@ -3,14 +3,14 @@ import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FiInbox } from "react-icons/fi";
 import { SiInstagram } from "react-icons/si";
-import { HiOutlineLocationMarker,HiOutlineMail } from "react-icons/hi";
+import { HiOutlineLocationMarker, HiOutlineMail } from "react-icons/hi";
 import { MdAddIcCall } from "react-icons/md";
 const Footer = () => {
     const date = new Date();
     const year = date.getFullYear();
     return (
-        <section className='px-2 md:px-20 pt-20 bg-[#212529] text-white'>
-            <div  data-aos="fade-up" data-aos-anchor-placement="top-bottom" className='grid grid-cols-1 md:grid-cols-4 gap-10  '>
+        <section className='px-2 md:px-20 pt-20 bg-[#212529] text-white mt-9'>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" className='grid grid-cols-1 md:grid-cols-4 gap-10  '>
                 {/* ================== 1======================  */}
 
                 <div>
@@ -21,7 +21,7 @@ const Footer = () => {
                         <AiFillTwitterCircle />
                         <SiInstagram />
                     </div>
-                        <FaLinkedin />
+                    <FaLinkedin />
                 </div>
                 {/* ================== 1======================  */}
 
