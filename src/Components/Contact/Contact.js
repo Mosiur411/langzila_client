@@ -17,8 +17,6 @@ const Contact = () => {
         });
         event.target.reset();
     }
-
-
     return (
         <>
             <div className='w-5/6 mx-auto mb-12'>
