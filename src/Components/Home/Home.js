@@ -3,16 +3,13 @@ import Messnger from '../Messenger/Messnger';
 import RouteHelmet from '../RouteHelmet/RouteHelmet';
 import AboutUs from './AboutUs/AboutUs';
 import Feedback from './Feedback/Feedback';
-
 import Guideline from './Guideline/Guideline';
 import Hero from './Hero/Hero';
 import Language from './Language/Language';
 import LatestBlog from './LatestBlog/LatestBlog';
-
-import Services from './Services/Services';
 import Subscribe from './Subscribe/Subscribe';
 import UpcomingEvents from './UpcomingEvents/UpcomingEvents';
-import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 
 const Home = ({ show, setShow }) => {
     return (
