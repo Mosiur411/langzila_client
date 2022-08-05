@@ -25,8 +25,8 @@ const Language = () => {
                 <h1 style={{ fontFamily: "Nunito" }} className="text-4xl font-bold text-black">Best Services for Kids</h1>
                 <p className=' xl:w-1/3 w-3/4 mx-auto text-gray-600'>Explore all of our courses and pick your suitable ones to enroll and start learning with us! We ensure that you will never regret it!</p>
             </div>
-            <div className='max-w-7xl mx-auto  mt-20 xl:px-20'>
-                <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center items-center '>
+            <div className='max-w-7xl mx-auto  mt-20 xl:px-20 md:px-10  '>
+                <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  '>
 
 
                     <div className=' bg-cyan-200 p-3 relative rounded-lg mx-8 shadow-lg w-[280px] mb-20'>
