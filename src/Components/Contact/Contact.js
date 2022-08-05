@@ -20,69 +20,69 @@ const Contact = () => {
         });
         event.target.reset();
     }
-
-
     return (
-        <div className='w-5/6 mx-auto'>
-            <h2 className='text-4xl font-bold text-[#221638] text-center py-16'>Contact</h2>
-            <div className='md:flex lg:flex justify-center items-center'>
-                <div className='md:w-3/5 lg:w-3/5'>
-                    <p className='text-[#FE4A55] uppercase py-2'>Contact Detail</p>
-                    <h2 className='text-4xl font-bold text-[#221638] py-2'>Get in Touch</h2>
-                    <p className='pr-16'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra.</p>
-                    <div className='flex items-center py-4'>
-                        <FaMapMarkerAlt className='text-[#FE4A55] text-4xl mr-2' />
-                        <div>
-                            <p className='text-2xl font-bold text-[#221638]'>Our Address</p>
-                            <p>Dhaka, Bangladesh</p>
+        <>
+            <div className='w-5/6 mx-auto mb-12'>
+                <h2 className='text-4xl font-bold text-accent text-center py-8'>Contact Us</h2>
+                <p className='text-center lg:w-[800px] mb-5 mx-auto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra.</p>
+                <div className='md:flex lg:flex justify-center items-center'>
+                    <div className='md:w-3/5 lg:w-3/5'>
+                        <p className='text-primary uppercase py-2'>Contact Detail</p>
+                        <h2 className='text-4xl font-bold text-accent py-2'>Get in Touch</h2>
+                        <div className='flex items-center py-4 shadow-lg border-l-4 border-l-primary px-4 rounded-lg lg:mr-72 mt-5'>
+                            <FaMapMarkerAlt className='text-primary text-4xl mr-2' />
+                            <div shadow-lg border-l-4 border-l-primary px-4 py-6 rounded-lg>
+                                <p className='text-2xl font-bold text-accent'>Our Address</p>
+                                <p>Dhaka, Bangladesh</p>
+                            </div>
+                        </div>
+                        <div className='flex items-center py-4 shadow-lg border-l-4 border-l-primary px-4 rounded-lg lg:mr-72 mt-5'>
+                            <SiMinutemailer className='text-primary text-4xl mr-2' />
+                            <div>
+                                <p className='text-2xl font-bold text-accent'>Email</p>
+                                <p>khanmohammadimran.i31@gmail.com</p>
+                            </div>
+                        </div>
+                        <div className='flex items-center py-4 shadow-lg border-l-4 border-l-primary px-4 rounded-lg lg:mr-72 mt-5'>
+                            <BsTelephoneForwardFill className='text-primary text-4xl mr-2' />
+                            <div>
+                                <p className='text-2xl font-bold text-accent'>Contact</p>
+                                <p>+8801644399363</p>
+                            </div>
+                        </div>
+                        <div className='flex items-center py-4 shadow-lg border-l-4 border-l-primary px-4 rounded-lg lg:mr-72 my-5'>
+                            <BiTimeFive className='text-primary text-4xl mr-2' />
+                            <div>
+                                <p className='text-2xl font-bold text-accent'>Hours of Operation</p>
+                                <p>24/7 Available</p>
+                            </div>
                         </div>
                     </div>
-                    <div className='flex items-center py-4'>
-                        <SiMinutemailer className='text-[#FE4A55] text-4xl mr-2' />
-                        <div>
-                            <p className='text-2xl font-bold text-[#221638]'>Email</p>
-                            <p>khanmohammadimran.i31@gmail.com</p>
-                        </div>
+                    <div className="md:w-2/5 lg:w-2/5 rounded-md shadow-lg border-l-4 border-l-primary p-8">
+                        <h2 className='text-3xl py-2 font-bold text-accent'>Ready to Get Started?</h2>
+                        <p className='mb-5'>Your email address will not be published. Required fields are marked</p>
+                        <form onSubmit={sendEmail}>
+                            <input type="text" placeholder="Your Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" />
+                            <br />
+                            <input type="email" name="user_email" placeholder="Your Email Address" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" />
+                            <br />
+                            <input type="text" placeholder="Your Subject" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" />
+                            <br />
+                            <textarea name="message" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Write Your Message"></textarea>
+                            <br />
+                            <input type="submit" value="Send Message" className='border border-gray-300 bg-primary text-white text-sm uppercase font-bold rounded-lg block w-full p-2.5' />
+                            <ToastContainer />
+                        </form>
                     </div>
-                    <div className='flex items-center py-4'>
-                        <BsTelephoneForwardFill className='text-[#FE4A55] text-4xl mr-2' />
-                        <div>
-                            <p className='text-2xl font-bold text-[#221638]'>Contact</p>
-                            <p>+8801644399363</p>
-                        </div>
-                    </div>
-                    <div className='flex items-center py-4'>
-                        <BiTimeFive className='text-[#FE4A55] text-4xl mr-2' />
-                        <div>
-                            <p className='text-2xl font-bold text-[#221638]'>Hours of Operation</p>
-                            <p>24/7 Available</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="md:w-2/5 lg:w-2/5 rounded-md bg-[url('https://i.ibb.co/yy1cGZC/contact-background-image.jpg')] p-8 text-white">
-                    <h2 className='text-3xl py-2 font-bold'>Ready to Get Started?</h2>
-                    <p>Your email address will not be published. Required fields are marked</p>
-                    <form onSubmit={sendEmail}>
-                        <input type="text" placeholder="Your Name" className="bg-[#C22B34] my-4 input input-ghost w-full 
-                        max-w-xs" />
-                        <br />
-                        <input type="email" name="user_email" placeholder="Your Email Address" className="bg-[#C22B34] my-4 input input-ghost w-full 
-                        max-w-xs" />
-                        <br />
-                        <input type="text" placeholder="Your Subject" className="bg-[#C22B34] my-4 input input-ghost w-full 
-                        max-w-xs" />
-                        <br />
-                        <textarea name="message" className="bg-[#C22B34] w-full my-4 textarea textarea-ghost" placeholder="Write Your Message"></textarea>
-                        <br />
-                        <input type="submit" value="Send Message" className='bg-[#221638] py-4 px-8 rounded-md' />
-                        <ToastContainer />
-                    </form>
                 </div>
             </div>
+
             <div>
                 <Mapcon></Mapcon>
             </div>
-        </div>
+
+        </>
+
     );
 };
 
