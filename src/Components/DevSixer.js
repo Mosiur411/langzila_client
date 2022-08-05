@@ -11,6 +11,7 @@ import Medium from './Home/Language/Bangla/Medium';
 import Hard from './Home/Language/Bangla/Hard';
 import EasyQuiz1 from './Home/Language/Bangla/EasyQuiz/EasyQuiz1';
 import Certificate from './Certificate/Certificate';
+import EasyQuiz2 from './Home/Language/Bangla/EasyQuiz/EasyQuiz2';
 
 const DevSixer = ({ show, setShow }) => {
     return (
@@ -35,6 +36,7 @@ const DevSixer = ({ show, setShow }) => {
                 </Route>
 
                 <Route path='quiz/easyquiz1' element={<EasyQuiz1 />}></Route>
+                <Route path='quiz/easyquiz2' element={<EasyQuiz2 />}></Route>
                 {/* joy */}
 
 

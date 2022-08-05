@@ -14,37 +14,37 @@ const Footer = () => {
                 {/* ================== 1======================  */}
 
                 <div>
-                    <h1 className='text-2xl font-bold pb-5'>eCandemy</h1>
+                    <h1 className='text-2xl font-bold pb-5'>LangZila</h1>
                     <p>Working to bring significant changes in online-based learning by doing extensive research for course curriculum preparation, student engagements, and looking forward to the flexible education!</p>
                     <div className='flex gap-2 mt-6'>
-                        <FaFacebook />
-                        <AiFillTwitterCircle />
-                        <SiInstagram />
+                        <FaFacebook className='text-primary text-2xl'/>
+                        <AiFillTwitterCircle className='text-primary text-2xl'/>
+                        <SiInstagram className='text-primary text-2xl'/>
+                        <FaLinkedin className='text-primary text-2xl'/>
                     </div>
-                    <FaLinkedin />
                 </div>
                 {/* ================== 1======================  */}
 
                 <div>
                     <h1 className='text-2xl font-bold pb-5'>Resources</h1>
                     <div className='flex  items-center gap-4'>
-                        <div className='w-2 h-2 bg-red-600'></div>
+                        <div className='w-2 h-2 bg-primary'></div>
                         <h1>Become A Teacher</h1>
                     </div>
                     <div className='flex  items-center gap-4'>
-                        <div className='w-2 h-2 bg-red-600'></div>
+                        <div className='w-2 h-2 bg-primary'></div>
                         <h1>Instructor/Student Profile</h1>
                     </div>
                     <div className='flex  items-center gap-4'>
-                        <div className='w-2 h-2 bg-red-600'></div>
+                        <div className='w-2 h-2 bg-primary'></div>
                         <h1>Courses</h1>
                     </div>
                     <div className='flex  items-center gap-4'>
-                        <div className='w-2 h-2 bg-red-600'></div>
+                        <div className='w-2 h-2 bg-primary'></div>
                         <h1>LP Checkout</h1>
                     </div>
                     <div className='flex  items-center gap-4'>
-                        <div className='w-2 h-2 bg-red-600'></div>
+                        <div className='w-2 h-2 bg-primary'></div>
                         <h1>Terms & Conditions</h1>
                     </div>
                 </div>
@@ -52,23 +52,23 @@ const Footer = () => {
                 <div>
                     <h1 className='text-2xl font-bold pb-5'>Explore</h1>
                     <div className='flex  items-center gap-4'>
-                        <div className='w-2 h-2 bg-red-600'></div>
+                        <div className='w-2 h-2 bg-primary'></div>
                         <h1>Home</h1>
                     </div>
                     <div className='flex  items-center gap-4'>
-                        <div className='w-2 h-2 bg-red-600'></div>
+                        <div className='w-2 h-2 bg-primary'></div>
                         <h1>Blog</h1>
                     </div>
                     <div className='flex  items-center gap-4'>
-                        <div className='w-2 h-2 bg-red-600'></div>
+                        <div className='w-2 h-2 bg-primary'></div>
                         <h1>Privacy Policy</h1>
                     </div>
                     <div className='flex  items-center gap-4'>
-                        <div className='w-2 h-2 bg-red-600'></div>
+                        <div className='w-2 h-2 bg-primary'></div>
                         <h1>Become A Teacher</h1>
                     </div>
                     <div className='flex  items-center gap-4'>
-                        <div className='w-2 h-2 bg-red-600'></div>
+                        <div className='w-2 h-2 bg-primary'></div>
                         <h1>Courses</h1>
                     </div>
                 </div>
@@ -76,19 +76,19 @@ const Footer = () => {
                 <div>
                     <h1 className='text-2xl font-bold pb-5'>Address</h1>
                     <div className='flex  items-center gap-4'>
-                        <HiOutlineLocationMarker />
+                        <HiOutlineLocationMarker className='text-primary text-xl'/>
                         <h1>Dhaka,Bangladesh</h1>
                     </div>
                     <div className='flex  items-center gap-4'>
-                        <MdAddIcCall />
+                        <MdAddIcCall className='text-primary text-xl'/>
                         <h1>+8801901830272</h1>
                     </div>
                     <div className='flex  items-center gap-4'>
-                        <HiOutlineMail />
+                        <HiOutlineMail className='text-primary text-xl'/>
                         <h1>hello@ecademy.com</h1>
                     </div>
                     <div className='flex  items-center gap-4'>
-                        <FiInbox />
+                        <FiInbox className='text-primary text-xl'/>
                         <h1>+8801318140516</h1>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ const Footer = () => {
             <div className='mt-10 py-2'>
                 <hr />
                 <div className='flex flex-col-reverse md:flex-row justify-between items-center mt-10 '>
-                    <h1>© {year} eCademy is Proudly Crafted by <span className='text-red-500'>EnvyTheme</span></h1>
+                    <h1>© {year} LangZila is Proudly Crafted by <span className='text-primary'>TeamDevSixer</span></h1>
                     <h1>Privacy Policy | Terms & Conditions</h1>
                 </div>
             </div>

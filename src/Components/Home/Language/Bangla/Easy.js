@@ -15,7 +15,7 @@ const Easy = () => {
 
     return (
         <div className=' max-w-7xl mx-auto my-10'>
-            <div className=' pt-10 grid xl:grid-cols-3 grid-cols-2 gap-10 justify-center'>
+            <div className=' pt-10 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 justify-center'>
 
                 <div className=' h-40 w-[80] bg-green-300 shadow rounded-md flex items-center overflow-hidden relative'>
 
@@ -29,7 +29,7 @@ const Easy = () => {
                 <div className=' h-40 w-[80] bg-green-300 shadow rounded-md flex items-center overflow-hidden'>
                     <div className=' w-full'>
                         <h1 className='w-full uppercase  font-semibold text-3xl text-gray-700'>Quiz <span className=' text-5xl text-blue-600'>2</span></h1>
-                        <button className=' py-[5px] px-4 rounded-3xl text-black border bg-white border-white hover:border-black hover:bg-transparent hover:text-black text-md font-semibold mt-3 '>Start Now</button>
+                        <button onClick={() => navigate('/quiz/easyquiz2')} className=' py-[5px] px-4 rounded-3xl text-black border bg-white border-white hover:border-black hover:bg-transparent hover:text-black text-md font-semibold mt-3 '>Start Now</button>
                     </div>
                     <img className=' w-[180px] h-full mt-7' src={Quizimg} alt="Quizimg" />
                 </div>

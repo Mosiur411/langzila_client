@@ -149,20 +149,22 @@ const CapitalGames = () => {
             // code block
         }
     }
+
+
     return (
         <div className='px-2 md:px-10 font-bold uppercase'>
-            <h1 className="text-4xl text-center py-10">CapitalGames</h1>
-            <div className='w-[300px] text-center mx-auto mb-10'>
-                <input onChange={setTypeTest} maxlength="1" type="text" className='w-full p  rounded-lg px-2  bg-white border-[#FE4A55] border-2 outline-none lowercase' />
+            <h1 className="text-4xl text-sky-900 text-center py-10">CapitalGames</h1>
+            <div className='w-1/2 mx-auto text-center mb-10'>
+                <input onChange={setTypeTest} maxlength="1" type="text" className='w-full py-2  rounded px-2  bg-white border-sky-900 border-2 outline-none ' placeholder='Enter Any Word' />
             </div>
 
-            <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-24'>
+            <div className=' max-w-5xl  mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-24 py-10'>
                 {
                     CapitalLetter.map(word =>
                         <div
                             onMouseEnter={() => AudioPlay(word.Latter)}
-                            className='w-full h-[170px] text-5xl flex justify-center items-center bg-[#FE4A55]
-                            hover:shadow-amber-500 hover:shadow-2xl text-white rounded'
+                            className='w-full h-[170px] text-8xl flex justify-center items-center bg-sky-900 hover:bg-purple-800
+                            shadow-gray-400 shadow-lg cursor-pointer text-white rounded-2xl'
                         >{word.Latter}</div>
                     )
                 }

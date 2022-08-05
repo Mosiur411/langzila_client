@@ -2,6 +2,7 @@ import React from 'react';
 import Messnger from '../Messenger/Messnger';
 import RouteHelmet from '../RouteHelmet/RouteHelmet';
 import AboutUs from './AboutUs/AboutUs';
+import CountsUp from './CountsUp/CountsUp';
 import Feedback from './Feedback/Feedback';
 import Guideline from './Guideline/Guideline';
 import Hero from './Hero/Hero';
@@ -20,9 +21,10 @@ const Home = ({ show, setShow }) => {
                 <Hero></Hero>
                 <Guideline></Guideline>
                 <Language />
-                <Feedback></Feedback>
                 <AboutUs></AboutUs>
                 <UpcomingEvents></UpcomingEvents>
+                <CountsUp></CountsUp>
+                <Feedback></Feedback>
                 <div className='mb-24'>
                     <LatestBlog></LatestBlog>
                 </div>
