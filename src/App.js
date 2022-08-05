@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 import './App.css'
 import Navbar from "./Components/Home/Navbar/Navbar";
 import Footer from "./Components/Home/Footer/Footer";
