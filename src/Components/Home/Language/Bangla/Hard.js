@@ -4,7 +4,7 @@ import Quizimg from '../../../assets/QuizImg/Quiz2.png'
 const Hard = () => {
     return (
         <div className=' max-w-7xl mx-auto my-10'>
-            <div className=' pt-10 grid xl:grid-cols-3 grid-cols-2 gap-10 justify-center'>
+            <div className=' pt-10 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 justify-center'>
 
                 <div className=' h-40 w-[80] bg-sky-400 shadow rounded-md flex items-center overflow-hidden'>
                     <div className=' w-full'>

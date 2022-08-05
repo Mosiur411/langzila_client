@@ -1,11 +1,15 @@
 import React from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, useNavigate } from 'react-router-dom';
+import { BiCaretLeft } from "react-icons/bi";
+
 
 const Bangla = () => {
+
+    const navigate = useNavigate()
     return (
         <div>
             <div className=' h-screen text-center '>
-
+                <button onClick={() => navigate('/')} className=' absolute left-10 top-5 border border-red-500 flex items-center justify-center  px-2 pr-3 rounded-full text-red-500 hover:bg-red-500 hover:text-white font-medium'><BiCaretLeft className=' text-xl' /></button>
 
                 <div className='  py-16 '>
                     <div data-aos="fade-down" className=' bg-gray-100 rounded-lg xl:w-1/3 w-1/2 mx-auto  px-2'>
