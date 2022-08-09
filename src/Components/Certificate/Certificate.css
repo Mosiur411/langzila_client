@@ -1,17 +1,14 @@
-/* For Large Device  */
-@media only screen and (min-width: 768px) {
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+
+/* For extra large device  */
+@media only screen and (min-width: 1024px) {
     .placeName {
-        top: 564px;
-        left: 500px
-    }
-}
-
-
-/* For Small device */
-@media only screen and (max-width: 600px) {
-    .placeName {
-        top: 370px;
-        left: 228px;
-
+        top: 467px;
+        left: 529px;
+        font-family: 'Chewy';
+        font-size: 38px;
+        text-align: left;
+        color: #1760B1;
     }
 }

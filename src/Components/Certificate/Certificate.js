@@ -1,65 +1,45 @@
-// import React, { useRef, useState } from 'react';
-// import { saveAsPng, saveAsJpeg } from 'save-html-as-image';
-// import './Certificate.css'
-
-// const Certificate = () => {
-
-//     const [myname, setName] = useState("");
-//     const ref = useRef()
-//     const handaleName = event => {
-//         setName(event.target.value)
-//     }
-
-//     const downloadCertificate = (event) => {
-//         saveAsPng(ref)
-//     }
-
-
-//     return (
-//         <div>
-//             <h2>LangZila Certificate</h2>
-
-//             <div className='relative' ref={ref}>
-//                 <input onChange={handaleName} type="text" name="myname" placeholder='Please enter your name...' />
-//                 <img src="https://i.postimg.cc/9fvPFKqS/Lang-Zila-Certificate.png" alt="" />
-//                 <button onClick={downloadCertificate}>Download</button>
-//             </div>
-//             <p className='absolute placeName'>{myname}</p>
-//         </div>
-//     );
-// };
-
-// export default Certificate;
-
-
-import { exportComponentAsPNG } from 'react-component-export-image';
+import { exportComponentAsPNG, exportComponentAsPDF } from 'react-component-export-image';
 import React, { useRef, useState } from 'react';
 import './Certificate.css'
+import Langzila from './LangZila Certificate.png'
 
-const ComponentToPrint = React.forwardRef((props, ref) => (
-    <div ref={ref}>Hello World</div>
-));
 
 const Certificate = () => {
     const componentRef = useRef();
     const [myName, setName] = useState("");
 
+    const ComponentToPrint = React.forwardRef((props, ref) => (
+        <div ref={ref}>Hello World</div>
+    ));
 
     const handaleName = event => {
         setName(event.target.value)
     }
 
+
     return (
         <>
-            <div>
-                <input onChange={handaleName} type="text" name="myName" placeholder='Please enter your name...' />
-                <div ComponentToPrint ref={componentRef} className='relative'>
-                    <img src="https://i.postimg.cc/9fvPFKqS/Lang-Zila-Certificate.png" alt="" />
+            <div className=''>
+                <div className='text-center'>
+                    <h2 className='text-4xl font-bold text-accent py-4'>Certification of Completion</h2>
+                    <p className='text-2xl text-primary py-2'>You have succesfully complete the course</p>
+                    <input onChange={handaleName} type="text" name="myName" placeholder='Please enter your name...' className='w-1/2 py-2 my-4  rounded px-2  bg-white border-sky-900 border-2 outline-none ' />
+                </div>
+                <div ComponentToPrint ref={componentRef} className='w-1/2 mx-auto'>
+                    <img className='relative' src={Langzila} alt="" />
+
                     <p className='placeName absolute'>{myName}</p>
                 </div>
-                <button onClick={() => exportComponentAsPNG(componentRef)}>
-                    Export As PNG
-                </button>
+                <div className='text-center py-8'>
+                    <button className='SubmitButton p-3' onClick={() => exportComponentAsPDF(componentRef, {
+                        pdfOptions: {
+                            unit: 'px',
+                            pdfFormat: [905, 635]
+                        }
+                    })}>
+                        Export As PDF
+                    </button>
+                </div>
             </div>
         </>
     );
