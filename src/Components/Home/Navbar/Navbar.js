@@ -32,6 +32,11 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
 
             </Link>
         </li>
+        <li className='hover:text-white hover:bg-[#FE4A55] rounded-lg' tabIndex="0">
+            <Link to='/dashboard'> Dashboard
+
+            </Link>
+        </li>
     </>
     return (
         <div className={`navbar md:px-[68px] mx-auto ${show ? 'bg-orange-300' : ''}`}>
@@ -99,14 +104,14 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
                     <a class="btn btn-ghost normal-case text-xl font-bold">Langzila</a>
                     {/* <button onClick={() => setShow(!show)}>{show ? <CgToggleOn /> : <CgToggleOff />} </button> */}
                 </div>
-                <div class="navbar-center hidden lg:flex">
+
+                <div class="navbar-end">
                     <ul class="menu menu-horizontal p-0 gap-3 ">
                         {
                             menuItem
                         }
                     </ul>
-                </div>
-                <div class="navbar-end">
+
                     {
                         user?.uid ? <button onClick={() => signOut(auth)} className="SubmitButton p-3"><Link to=''>Logout</Link></button>
                             :
