@@ -6,9 +6,10 @@ import { BsTelephoneForwardFill } from "react-icons/bs"
 import { BiTimeFive } from "react-icons/bi"
 import { ToastContainer, toast } from 'react-toastify';
 import Mapcon from './Mapcon';
+import Navbar from '../Home/Navbar/Navbar';
 
 
-const Contact = () => {
+const Contact = ({ show, setShow }) => {
 
     const sendEmail = event => {
         event.preventDefault()
@@ -22,6 +23,7 @@ const Contact = () => {
     }
     return (
         <>
+            <Navbar show={show} setShow={setShow} />
             <div className='w-5/6 mx-auto mb-12'>
                 <h2 className='text-4xl font-bold text-accent text-center py-8'>Contact Us</h2>
                 <p className='text-center lg:w-[800px] mb-5 mx-auto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra.</p>

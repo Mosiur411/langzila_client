@@ -61,7 +61,7 @@ const EasyQuiz2 = () => {
             .then(data => setQuizs(data.data))
     }, [reload])
 
-    console.log(quizs)
+    // console.log(quizs)
     // Get Quiz Ans Data
     useEffect(() => {
         fetch(`https://polar-peak-58919.herokuapp.com/getQuizAns2/${email}`, {
@@ -90,6 +90,10 @@ const EasyQuiz2 = () => {
             setFinalValue(finalValue + 10)
         }
 
+
+        // console.log(point, finalValue);
+
+
         // Check Post Data
         if (!isData) {
 
@@ -110,7 +114,7 @@ const EasyQuiz2 = () => {
                     if (!data.success) {
                         return toast.error(data.error)
                     }
-                    console.log(data);
+                    // console.log(data);
                     toast.success(data.message);
 
                 } catch (error) {
@@ -136,6 +140,7 @@ const EasyQuiz2 = () => {
         setReload(true)
     }
 
+
     // Check Ans
     useEffect(() => {
         if (quizData?.length > 0) {
@@ -147,7 +152,7 @@ const EasyQuiz2 = () => {
     }, [quizData])
 
 
-
+    console.log(point, finalValue);
     // Check Case of Voice
     const AudioPlay = (latter) => {
 
@@ -250,6 +255,7 @@ const EasyQuiz2 = () => {
                     :
                     showScore ?
                         <div className='h-screen  w-full bg-white flex flex-col items-center justify-center'>
+                            <button onClick={() => navigate(-1)} className='border absolute left-7 top-7 border-red-500 flex items-center justify-center py-1 px-2 pr-3 rounded text-red-500 hover:bg-red-500 hover:text-white font-medium'><BiCaretLeft className=' text-xl' />Go Back</button>
 
                             <div className=' overflow-hidden h-64 w-64 rounded-lg flex justify-center items-center'>
                                 <img src={`${point >= 7 ? happyImg : sadImg}`} alt="sadImg" />
@@ -266,7 +272,7 @@ const EasyQuiz2 = () => {
                                     }
                                 </div>
                                 <div>
-                                    <div className="radial-progress bg-yellow-300 text-blue-900 border-4 border-yellow-400" style={{ '--value': "70" }}>{finalValue}%</div>
+                                    <div className="radial-progress bg-yellow-300 text-blue-900 border-4 border-yellow-400" style={{ '--value': `${finalValue}` }}>{finalValue}%</div>
                                 </div>
                             </div>
 

@@ -7,7 +7,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import './App.css'
-import Navbar from "./Components/Home/Navbar/Navbar";
 import Footer from "./Components/Home/Footer/Footer";
 function App() {
   const [show, setShow] = useState(localStorage.getItem('theme') === 'dark' ? true : false);
@@ -27,7 +26,7 @@ function App() {
 
   return (
     <div className={`${show ? 'bg-black text-white' : 'text-[#606060]'}`}>
-      <Navbar show={show} setShow={setShow} ></Navbar>
+
       <DevSixer show={show} setShow={setShow} ></DevSixer>
       <AnimatedCursor
         color='254, 74, 85'
