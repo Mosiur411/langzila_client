@@ -46,15 +46,14 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
 
 
         <NavLink
-            to={'/support'}
+            to={'/dashboard'}
             className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
         >
             <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
             >Dashboard</p>
         </NavLink>
-
-
     </>
+
     return (
         <>
             {
@@ -83,13 +82,14 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
                         </div>
                         <div className="navbar-end">
                             {
-                                user?.uid ? <button style={{ fontFamily: "Nunito" }} onClick={() => signOut(auth)} className=""><Link to=''>Logout</Link></button>
+                                user?.uid ? <button style={{ fontFamily: "Nunito" }} onClick={() => signOut(auth)} className=" bg-red-500 text-white font-medium rounded py-[6px] px-5"><Link to=''>Logout</Link></button>
                                     :
                                     <button style={{ fontFamily: "Nunito" }} className=" bg-red-500 text-white font-medium rounded py-[6px] px-5"><Link to='/signIn'>Login</Link></button>
                             }
                         </div>
                     </div>
-                </div>
+
+                </div >
 
             }
         </>
