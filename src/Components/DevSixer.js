@@ -13,6 +13,14 @@ import EasyQuiz1 from './Home/Language/Bangla/EasyQuiz/EasyQuiz1';
 import Certificate from './Certificate/Certificate';
 import EasyQuiz2 from './Home/Language/Bangla/EasyQuiz/EasyQuiz2';
 import Support from './Support/Support';
+import RequiredAuth from './Auth/RequiredAuth';
+import Dashboard from './Dashboard/Dashboard';
+import Profile from './Dashboard/Profile';
+import AddReview from './Dashboard/AddReview';
+import Achievements from './Dashboard/Achievements';
+import Certificates from './Dashboard/Certificates';
+import LeaderBoard from './Dashboard/LeaderBoard';
+import DashboardInfo from './Dashboard/DashboardInfo';
 
 const DevSixer = ({ show, setShow }) => {
     return (
@@ -41,6 +49,16 @@ const DevSixer = ({ show, setShow }) => {
                 <Route path='quiz/easyquiz2' element={<EasyQuiz2 />}></Route>
                 {/* joy */}
 
+                {/* Arfat */}
+                <Route path="/dashboard" element={<RequiredAuth><Dashboard /></RequiredAuth>} >
+                    {/* <Route index element={<DashboardInfo></DashboardInfo>}></Route> */}
+                    <Route index element={<Profile></Profile>}></Route>
+                    <Route path="review" element={<AddReview></AddReview>}></Route>
+                    <Route path="achievements" element={<Achievements></Achievements>}></Route>
+                    <Route path="certificates" element={<Certificates></Certificates>}></Route>
+                    <Route path="leaderboard" element={<LeaderBoard></LeaderBoard>}></Route>
+                </Route>
+                {/* Arfat */}
 
             </Routes>
         </div>
