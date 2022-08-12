@@ -37,6 +37,12 @@ const Support = () => {
             // Call Next Function
             changeButton()
         }
+
+        const data = {
+            subject: subject,
+            question: question
+        }
+        console.log(data)
     }
 
     // Got the Value
@@ -45,7 +51,7 @@ const Support = () => {
     return (
         <div className='lg:flex lg:flex-row-reverse items-center lg:w-11/12 mx-auto'>
             <div>
-                <img src={support} alt="" />
+                <img src={support} alt="img" />
             </div>
             <div>
                 <h2 className='text-4xl font-bold text-accent py-4'>Help Desk Support</h2>
@@ -68,7 +74,7 @@ const Support = () => {
                             {/* Submit Button */}
 
                         </form> : <div>
-                            <a onClick={changeButton} href='https://meet.google.com/ypa-bdyu-doc' target="_blank" class="SubmitButton py-2 my-2 flex lg:w-1/2 items-center justify-center">Join Now <BiSupport className='ml-2' /></a>
+                            <a onClick={changeButton} rel="noreferrer" href='https://meet.google.com/ypa-bdyu-doc' target="_blank" class="SubmitButton py-2 my-2 flex lg:w-1/2 items-center justify-center">Join Now <BiSupport className='ml-2' /></a>
                         </div>}
 
 
