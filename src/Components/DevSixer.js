@@ -15,7 +15,6 @@ import EasyQuiz2 from './Home/Language/Bangla/EasyQuiz/EasyQuiz2';
 import EasyQuiz3 from './Home/Language/Bangla/EasyQuiz/EasyQuiz3';
 import EasyQuiz4 from './Home/Language/Bangla/EasyQuiz/EasyQuiz4';
 import EasyQuiz5 from './Home/Language/Bangla/EasyQuiz/EasyQuiz5';
-import Support from './Support/Support';
 import ClasssRoom from './ClasssRoom/ClasssRoom';
 import Audio from './ClasssRoom/Audio/Audio';
 import Search from './ClasssRoom/Audio/Search/Search';
@@ -30,6 +29,7 @@ import Achievements from './Dashboard/Achievements';
 import Certificates from './Dashboard/Certificates';
 import LeaderBoard from './Dashboard/LeaderBoard';
 import DashboardInfo from './Dashboard/DashboardInfo';
+import Support from './ClasssRoom/Support/Support';
 
 const DevSixer = ({ show, setShow }) => {
     return (
@@ -44,7 +44,6 @@ const DevSixer = ({ show, setShow }) => {
                 <Route index path="/contact" element={<Contact show={show} setShow={setShow} />} />
                 <Route index path="/certificate" element={<Certificate show={show} setShow={setShow} />} />
                 <Route index path="/support" element={<Support show={show} setShow={setShow} />} />
-
                 <Route path='/support' element={<Support></Support>} />
                 <Route path='/classroom' element={<ClasssRoom />} />
 
@@ -57,7 +56,6 @@ const DevSixer = ({ show, setShow }) => {
                     <Route path="englishaudio" element={<EnglishAudio />} ></Route>
                     <Route path="hindiaudio" element={<HindiAudio />} ></Route>
                 </Route>
-
 
 
 
