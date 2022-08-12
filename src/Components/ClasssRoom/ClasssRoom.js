@@ -55,7 +55,7 @@ const ClasssRoom = ({ show, setShow }) => {
                                 <h1 className=' text-center text-xl my-1 text-yellow-300 font-bold'>SUPPORT</h1>
                                 <p className=' text-sm text-justify px-2 text-gray-300'>You can learn any language by Google Meet. This will help to listining, Specking and learning.</p>
                                 <div className=' w-full text-center mt-3'>
-                                    <button className=' text-center mx-auto bg-yellow-300 text-sm font-semibold py-1 px-3 rounded text-purple-900'>Learn Now</button>
+                                    <button onClick={() => navigate('/support')} className=' text-center mx-auto bg-yellow-300 text-sm font-semibold py-1 px-3 rounded text-purple-900'>Learn Now</button>
                                 </div>
                             </div>
                         </div>
