@@ -45,7 +45,7 @@ const Support = () => {
     return (
         <div className='lg:flex lg:flex-row-reverse items-center lg:w-11/12 mx-auto'>
             <div>
-                <img src={support} alt="" />
+                <img src={support} alt="img" />
             </div>
             <div>
                 <h2 className='text-4xl font-bold text-accent py-4'>Help Desk Support</h2>
