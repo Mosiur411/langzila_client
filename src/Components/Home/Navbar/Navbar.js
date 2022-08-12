@@ -1,120 +1,98 @@
-import React from 'react';
-import { Link, NavLink } from "react-router-dom";
-import { HiOutlineChevronDown } from "react-icons/hi";
-import { CgToggleOff, CgToggleOn } from "react-icons/cg";
+import React, { useState } from 'react';
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../Firebase/firebase.init';
 import { signOut } from 'firebase/auth';
+import "@fontsource/nunito";
+// icons
+import { BiCaretLeft } from "react-icons/bi";
+import { HiOutlineChevronDown } from "react-icons/hi";
+import { CgToggleOff, CgToggleOn } from "react-icons/cg";
+
+
 
 const Navbar = ({ show, setShow, theme, setTheme }) => {
+
+    // Declaration
+    const navigate = useNavigate()
+
+
     const [user] = useAuthState(auth);
     const menuItem = <>
-        <li className=' rounded-lg className={"hover:text-white hover:bg-[#FE4A55]"}'>   <NavLink
-            to="/"
-            style={({ isActive }) => ({
-                color: isActive ? 'white' : '#606060',
-                background: isActive ? '#FE4A55' : 'white',
+        <NavLink
+            to={'/'}
+            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0  mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+        >
+            <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
+            >Home</p>
+        </NavLink>
 
-            })}
-        >Home</NavLink></li>
-        <li tabindex="0">
-            <a className='hover:text-white hover:bg-[#FE4A55] rounded-lg'>
-                Start Quiz
-                <HiOutlineChevronDown />
-            </a>
-            <ul class="p-2 bg-base-100 text-black">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-            </ul>
-        </li>
-        <li className='hover:text-white hover:bg-[#FE4A55] rounded-lg' tabIndex="0">
-            <Link to='/Contact'> Contact Us
+        <NavLink
+            to={'/classroom'}
+            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+        >
+            <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
+            >Classroom</p>
+        </NavLink>
 
-            </Link>
-        </li>
+
+        <NavLink
+            to={'/contact'}
+            className={({ isActive }) => (` text-md font-medium  my-4 lg:my-0  mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+        >
+            <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
+            >Contact</p>
+        </NavLink>
+
+
+        <NavLink
+            to={'/support'}
+            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+        >
+            <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
+            >Dashboard</p>
+        </NavLink>
+
+
     </>
     return (
-        <div className={`navbar md:px-[68px] mx-auto ${show ? 'bg-orange-300' : ''}`}>
-            {/* <div className="flex-1">
-                <Link to='/' className="btn btn-ghost normal-case text-2xl font-bold">LangZila</Link>
-                <button onClick={() => setShow(!show)}>{show ? <CgToggleOn /> : <CgToggleOff />} </button>
-            </div>
-            <div className="flex-none">
-                <ul className="menu menu-horizontal p-0 ">
-                    <li className='hover:text-white hover:bg-[#FE4A55] rounded-lg'><Link to='/'>Home</Link></li>
-                    <li className='hover:text-white hover:bg-[#FE4A55] rounded-lg' tabIndex="0">
-                        <Link to='/Contact'> Pages
-                            <HiOutlineChevronDown />
-                        </Link>
-                    </li>
-                    <li className='hover:text-white hover:bg-[#FE4A55] rounded-lg' tabIndex="0">
-                        <Link to='/'>
-                            Coures
-                            <HiOutlineChevronDown />
-                        </Link>
-                        <ul className="p-2 bg-base-100 text-black">
-                            <li><Link to='/'>Submenu 1</Link></li>
-                            <li><Link to='/'>Submenu 2</Link></li>
-                        </ul>
-                    </li>
-                    <li className='hover:text-white hover:bg-[#FE4A55] rounded-lg' tabIndex="0">
-                        <Link to='/'>
-                            Event
-                            <HiOutlineChevronDown />
-                        </Link>
-                        <ul className="p-2 bg-base-100 text-black">
-                            <li><Link to='/'>Submenu 1</Link></li>
-                            <li><Link to='/'>Submenu 2</Link></li>
-                        </ul>
-                    </li>
-                    <li className='hover:text-white hover:bg-[#FE4A55] rounded-lg' tabIndex="0">
-                        <Link to='/'>
-                            Shop
-                            <HiOutlineChevronDown />
-                        </Link>
-                        <ul className="p-2 bg-base-100 text-black">
-                            <li><Link to='/'>Submenu 1</Link></li>
-                            <li><Link to='/'>Submenu 2</Link></li>
-                        </ul>
-                    </li>
-                    {
-                        user?.uid ? <button onClick={() => signOut(auth)} className="SubmitButton"><Link to=''>Logout</Link></button>
-                            :
-                            <button className="SubmitButton"><Link to='/signIn'>Login</Link></button>
-                    }
-                </ul>
-            </div> */}
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <label tabindex="0" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                        </label>
-                        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+        <>
+            {
+                <div className={`navbar md:px-[64px]  mx-auto  py-0 my-0  ${show ? 'bg-orange-300' : ''}`}>
+                    <div class="navbar  bg-base-100 py-0 my-0 ">
+                        <div class="navbar-start  ">
+                            <div class="dropdown ">
+                                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                                </label>
+                                <ul tabindex="0" class="bg-white  menu menu-compact dropdown-content mt-3 px-2 py-0 shadow rounded-box w-52">
+                                    {
+                                        menuItem
+                                    }
+                                </ul>
+                            </div>
+                            <NavLink to={'/'} style={{ fontFamily: "Nunito" }} className=" font-bold text-xl text-black"><span className=' text-red-500'>L</span>ang<span className=' text-red-500'>Zil</span>a</NavLink>
+                            {/* <button onClick={() => setShow(!show)}>{show ? <CgToggleOn /> : <CgToggleOff />} </button> */}
+                        </div>
+                        <div class="navbar-center hidden lg:flex">
+                            <ul class="menu menu-horizontal p-0 gap-3 ">
+                                {
+                                    menuItem
+                                }
+                            </ul>
+                        </div>
+                        <div className="navbar-end">
                             {
-                                menuItem
+                                user?.uid ? <button style={{ fontFamily: "Nunito" }} onClick={() => signOut(auth)} className=""><Link to=''>Logout</Link></button>
+                                    :
+                                    <button style={{ fontFamily: "Nunito" }} className=" bg-red-500 text-white font-medium rounded py-[6px] px-5"><Link to='/signIn'>Login</Link></button>
                             }
-                        </ul>
+                        </div>
                     </div>
-                    <a class="btn btn-ghost normal-case text-xl font-bold">Langzila</a>
-                    {/* <button onClick={() => setShow(!show)}>{show ? <CgToggleOn /> : <CgToggleOff />} </button> */}
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal p-0 gap-3 ">
-                        {
-                            menuItem
-                        }
-                    </ul>
-                </div>
-                <div class="navbar-end">
-                    {
-                        user?.uid ? <button onClick={() => signOut(auth)} className="SubmitButton p-3"><Link to=''>Logout</Link></button>
-                            :
-                            <button className="SubmitButton p-3"><Link to='/signIn'>Login</Link></button>
-                    }
-                </div>
-            </div>
-        </div>
+
+            }
+        </>
     );
 };
 

@@ -29,8 +29,8 @@ const Language = () => {
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  '>
 
 
-                    <div className=' bg-cyan-200 p-3 relative rounded-lg mx-8 shadow-lg w-[280px] mb-20'>
-                        <h1 className=' text-sm font-semibold text-gray-500 font-mono absolute left-3 top-3'>L A N G A G E</h1>
+                    <div data-aos="fade-right" className=' bg-cyan-200 p-3 relative rounded-lg mx-8 shadow-lg w-[280px] mb-20'>
+                        <h1 className=' text-sm font-semibold text-gray-500 font-mono absolute left-3 top-3'>L A N G U A G E</h1>
                         <div className=' relative '>
                             <img className=' w-64 h-64' src={Image1} alt="Image1" />
                             <div className=' w-12 h-8 rounded overflow-hidden bg-stone-700 absolute right-[-8%] top-[-8%] flex items-center justify-center'>
@@ -38,13 +38,12 @@ const Language = () => {
                             </div>
                         </div>
                         <h1 className=' text-xl font-mono text-blue-700 font-medium'>Bangla Language</h1>
-                        <button onClick={() => navigate('/bangla/easy')} style={{ fontFamily: "Nunito" }} className=' px-4 py-1  bg-red-500 rounded font-medium text-white text-md mt-2 mb-1'>Start Now</button>
+                        <button onClick={() => navigate('/bangla/easy')} id='#start' style={{ fontFamily: "Nunito" }} className=' px-4 py-1  bg-red-500 rounded font-medium text-white text-md mt-2 mb-1'>Start Now</button>
                     </div>
 
 
-
-                    <div className=' bg-green-200 p-3 relative rounded-lg mx-8 shadow-lg w-[280px] mb-20'>
-                        <h1 className=' text-sm font-semibold text-gray-500 font-mono absolute left-3 top-3'>L A N G A G E</h1>
+                    <div data-aos="zoom-in-up" className=' bg-green-200 p-3 relative rounded-lg mx-8 shadow-lg w-[280px] mb-20'>
+                        <h1 className=' text-sm font-semibold text-gray-500 font-mono absolute left-3 top-3'>L A N G U A G E</h1>
                         <div className=' relative '>
                             <img className=' w-64 h-64' src={Image3} alt="Image1" />
                             <div className=' w-12 h-8 rounded overflow-hidden bg-stone-700 absolute right-[-8%] top-[-8%] flex items-center justify-center'>
@@ -58,8 +57,8 @@ const Language = () => {
 
 
 
-                    <div className=' bg-blue-200 p-3 relative rounded-lg mx-8 shadow-lg w-[280px] mb-20'>
-                        <h1 className=' text-sm font-semibold text-gray-500 font-mono absolute left-3 top-3'>L A N G A G E</h1>
+                    <div data-aos="fade-left" className=' bg-blue-200 p-3 relative rounded-lg mx-8 shadow-lg w-[280px] mb-20'>
+                        <h1 className=' text-sm font-semibold text-gray-500 font-mono absolute left-3 top-3'>L A N G U A G E</h1>
                         <div className=' relative '>
                             <img className=' w-64 h-64' src={Image2} alt="Image1" />
                             <div className=' w-12 h-8 rounded overflow-hidden bg-stone-700 absolute right-[-8%] top-[-8%] flex items-center justify-center'>
@@ -69,9 +68,6 @@ const Language = () => {
                         <h1 className=' text-xl font-mono text-blue-700 font-medium'>English Language</h1>
                         <button onClick={() => navigate('/bangla/easy')} style={{ fontFamily: "Nunito" }} className=' px-4 py-1  bg-red-500 rounded font-medium text-white text-md mt-2 mb-1'>Start Now</button>
                     </div>
-
-
-
 
 
                 </div>
