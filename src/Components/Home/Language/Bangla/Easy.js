@@ -7,10 +7,7 @@ import Quiz1bg from '../../../assets/QuizImg/Quiz1bg.png'
 const Easy = () => {
 
 
-
     const navigate = useNavigate();
-
-
 
 
     return (
@@ -38,7 +35,7 @@ const Easy = () => {
                 <div className=' h-40 w-[80] bg-green-300 shadow rounded-md flex items-center overflow-hidden'>
                     <div className=' w-full'>
                         <h1 className='w-full uppercase  font-semibold text-3xl text-gray-700'>Quiz <span className=' text-5xl text-blue-600'>3</span></h1>
-                        <button className=' py-[5px] px-4 rounded-3xl text-black border bg-white border-white hover:border-black hover:bg-transparent hover:text-black text-md font-semibold mt-3 '>Start Now</button>
+                        <button onClick={() => navigate('/quiz/easyquiz3')} className=' py-[5px] px-4 rounded-3xl text-black border bg-white border-white hover:border-black hover:bg-transparent hover:text-black text-md font-semibold mt-3 '>Start Now</button>
                     </div>
                     <img className=' w-[180px] h-full mt-7' src={Quizimg} alt="Quizimg" />
                 </div>
@@ -47,7 +44,7 @@ const Easy = () => {
                 <div className=' h-40 w-[80] bg-green-300 shadow rounded-md flex items-center overflow-hidden'>
                     <div className=' w-full'>
                         <h1 className='w-full uppercase  font-semibold text-3xl text-gray-700'>Quiz <span className=' text-5xl text-blue-600'>4</span></h1>
-                        <button className=' py-[5px] px-4 rounded-3xl text-black border bg-white border-white hover:border-black hover:bg-transparent hover:text-black text-md font-semibold mt-3 '>Start Now</button>
+                        <button onClick={() => navigate('/quiz/easyquiz4')} className=' py-[5px] px-4 rounded-3xl text-black border bg-white border-white hover:border-black hover:bg-transparent hover:text-black text-md font-semibold mt-3 '>Start Now</button>
                     </div>
                     <img className=' w-[180px] h-full mt-7' src={Quizimg} alt="Quizimg" />
                 </div>
@@ -56,7 +53,7 @@ const Easy = () => {
                 <div className=' h-40 w-[80] bg-green-300 shadow rounded-md flex items-center overflow-hidden'>
                     <div className=' w-full'>
                         <h1 className='w-full uppercase  font-semibold text-3xl text-gray-700'>Quiz <span className=' text-5xl text-blue-600'>5</span></h1>
-                        <button className=' py-[5px] px-4 rounded-3xl text-black border bg-white border-white hover:border-black hover:bg-transparent hover:text-black text-md font-semibold mt-3 '>Start Now</button>
+                        <button onClick={() => navigate('/quiz/easyquiz5')} className=' py-[5px] px-4 rounded-3xl text-black border bg-white border-white hover:border-black hover:bg-transparent hover:text-black text-md font-semibold mt-3 '>Start Now</button>
                     </div>
                     <img className=' w-[180px] h-full mt-7' src={Quizimg} alt="Quizimg" />
                 </div>

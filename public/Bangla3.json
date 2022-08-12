@@ -1,0 +1,123 @@
+[
+    {
+        "id":1,
+        "Latter":"ট",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Tya", "isCorrect": false, "isSelect" : false},
+            {"answere": "Tha ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Da ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ta", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":2,
+        "Latter":"ঠ",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "kha", "isCorrect": false, "isSelect" : false},
+            {"answere": "Tha", "isCorrect": true, "isSelect" : false},
+            {"answere": "Gya", "isCorrect": false, "isSelect" : false},
+            {"answere": "Rha", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":3,
+        "Latter":"ড",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Da", "isCorrect": true, "isSelect" : false},
+            {"answere": "Ee", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ga", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ha", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":4,
+        "Latter":"ঢ",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Gha", "isCorrect": false, "isSelect" : false},
+            {"answere": "Rha", "isCorrect": false, "isSelect" : false},
+            {"answere": "Dha", "isCorrect": true, "isSelect" : false},
+            {"answere": "Fha", "isCorrect": false, "isSelect" : false}
+        ]
+
+    },
+    {
+        "id":5,
+        "Latter":"ণ",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Na", "isCorrect": true, "isSelect" : false},
+            {"answere": "Qi ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ty ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ra", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":6,
+        "Latter":"ত",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Ca", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ci ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ra", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ta", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":7,
+        "Latter":"থ",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Cha", "isCorrect": false, "isSelect" : false},
+            {"answere": "Tha", "isCorrect": true, "isSelect" : false},
+            {"answere": "Gha", "isCorrect": false, "isSelect" : false},
+            {"answere": "Hha", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":8,
+        "Latter":"দ",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Ja", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ta", "isCorrect": false, "isSelect" : false},
+            {"answere": "La", "isCorrect": false, "isSelect" : false},
+            {"answere": "Da", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":9,
+        "Latter":"ধ",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Pha", "isCorrect": false, "isSelect" : false},
+            {"answere": "Jya", "isCorrect": false, "isSelect" : false},
+            {"answere": "Dha", "isCorrect": true, "isSelect" : false},
+            {"answere": "Jpa", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":10,
+        "Latter":"ন",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Na", "isCorrect": true, "isSelect" : false},
+            {"answere": "Pa", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ca", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ja", "isCorrect": false, "isSelect" : false}
+        ]
+    }
+]

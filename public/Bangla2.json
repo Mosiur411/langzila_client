@@ -90,10 +90,10 @@
         "category": "Bangla",
         "difficulty": "easy",
         "quiz_answers": [
-            {"answere": "Ja", "isCorrect": false, "isSelect" : false},
-            {"answere": "Fa", "isCorrect": false, "isSelect" : false},
-            {"answere": "Ja", "isCorrect": true, "isSelect" : false},
-            {"answere": "Ta", "isCorrect": false, "isSelect" : false}
+            {"answere": "Jha", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ta", "isCorrect": false, "isSelect" : false},
+            {"answere": "La", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ja", "isCorrect": true, "isSelect" : false}
         ]
     },
     {

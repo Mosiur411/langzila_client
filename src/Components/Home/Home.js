@@ -8,6 +8,7 @@ import Guideline from './Guideline/Guideline';
 import Hero from './Hero/Hero';
 import Language from './Language/Language';
 import LatestBlog from './LatestBlog/LatestBlog';
+import Navbar from './Navbar/Navbar';
 import Subscribe from './Subscribe/Subscribe';
 import UpcomingEvents from './UpcomingEvents/UpcomingEvents';
 
@@ -17,7 +18,7 @@ const Home = ({ show, setShow }) => {
         <>
             <RouteHelmet pages={'Home'}></RouteHelmet>
             <div className='overflow-hidden'>
-
+                <Navbar show={show} setShow={setShow} />
                 <Hero></Hero>
                 <Guideline></Guideline>
                 <Language />

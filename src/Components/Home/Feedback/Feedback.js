@@ -1,9 +1,42 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Feedback.css'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { AiFillStar } from 'react-icons/ai'
+import StarRatings from 'react-star-ratings';
 
 const Feedback = () => {
+    const [rev, setRev] = useState([])
+    const [revmap, setRevmap] = useState([])
+    useEffect(() => {
+        fetch('http://localhost:5000/review')
+            .then(res => res.json())
+            .then(data => {
+                console.log(data.data);
+
+                setRev(data.data)
+            }
+            )
+
+    }, [])
+
+
+    const ReviewMap = (maprev) => {
+        switch (maprev.value) {
+            case 1:
+                return setRevmap([1]);
+            case 2:
+                return setRevmap([1, 1]);
+            case 3:
+                return setRevmap([1, 1, 1]);
+            case 4:
+                return setRevmap([1, 1, 1, 1]);
+            default:
+                return setRevmap([1, 1, 1, 1, 1]);
+        }
+    }
+
+
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
@@ -44,44 +77,35 @@ const Feedback = () => {
                             infinite={true}
                             className='text-center'>
                             {/* ================== user 1  */}
-                            <div>
-                                <div className='comment text-center px-[80px] py-16'>
-                                    <p>Lorem ipsum dolor sit aadamet45, consectetur adipiscing elit elit3, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                </div>
-                                <div className='w-[400px]'>
-                                    <img src={require('../../assets/user1.jpg')} alt="assets" className='w-16 rounded-full mx-auto border-orange-500 border-2' />
-                                    <h1 className='text-xl font-medium text-white'>Mosiur Islam</h1>
-                                </div>
-                            </div>
+                            {
+                                rev.map(data => <>
+                                    <div>
+                                        <div className='comment text-center px-[80px] py-16'>
+                                            <p>{data.comment.slice(0, 40)}</p>
+                                        </div>
+                                        <div className='w-[400px]'>
+                                            <img src={require('../../assets/user1.jpg')} alt="assets" className='w-16 rounded-full mx-auto border-orange-500 border-2' />
+                                            <h1 className='text-xl font-medium text-white'>{data.name}</h1>
+
+
+
+                                            <StarRatings
+                                                rating={data.review}
+                                                starDimension="15px"
+                                                starSpacing="2px"
+                                                starRatedColor="yellow"
+                                            />
+
+                                        </div>
+                                    </div>
+
+                                </>)
+                            }
                             {/* ================== user 2  */}
-                            <div>
-                                <div className='comment text-center px-[80px] py-16'>
-                                    <p>Lorem ipsum dolor sit aadamet45, consectetur adipiscing elit elit3, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                </div>
-                                <div className='w-[400px]'>
-                                    <img src={require('../../assets/user1.jpg')} alt="assets" className='w-16 rounded-full mx-auto border-orange-500 border-2' />
-                                    <h1 className='text-xl font-medium text-white'>Mosiur Islam</h1>
-                                </div>
-                            </div>
+
                             {/* ================== user 3  */}
-                            <div>
-                                <div className='comment text-center px-[80px] py-16'>
-                                    <p>Lorem ipsum dolor sit aadamet45, consectetur adipiscing elit elit3, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                </div>
-                                <div className='w-[400px]'>
-                                    <img src={require('../../assets/user1.jpg')} alt="assets" className='w-16 rounded-full mx-auto border-orange-500 border-2' />
-                                    <h1 className='text-xl font-medium text-white'>Mosiur Islam</h1>
-                                </div>
-                            </div>
-                            <div>
-                                <div className='comment text-center px-[80px] py-16'>
-                                    <p>Lorem ipsum dolor sit aadamet45, consectetur adipiscing elit elit3, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                </div>
-                                <div className='w-[400px]'>
-                                    <img src={require('../../assets/user1.jpg')} alt="assets" className='w-16 rounded-full mx-auto border-orange-500 border-2' />
-                                    <h1 className='text-xl font-medium text-white'>Mosiur Islam</h1>
-                                </div>
-                            </div>
+
+
                         </Carousel>
 
                     </div>
