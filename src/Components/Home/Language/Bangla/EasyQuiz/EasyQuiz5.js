@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 // image
 import ctimg from '../../../../assets/QuizImg/catoon.gif'
 import happyimg from '../../../../assets/QuizImg/happy.gif'
-import findVoice from '../../../../assets/QuizImg/findVoice.png'
+import findVoice from '../../../../assets/QuizImg/findVoice5.png'
 import sadImg from '../../../../assets/QuizImg/sad.png'
 import happyImg from '../../../../assets/QuizImg/happy.png'
 
@@ -20,20 +20,20 @@ import { ImHappy, ImSad } from "react-icons/im";
 import { GiSkullCrossedBones, GiChessKing, GiSpeaker } from "react-icons/gi";
 
 // Audio
-import Audio1 from '../../../../assets/QuizImg/Quiz2Audio/ক.mp3'
-import Audio2 from '../../../../assets/QuizImg/Quiz2Audio/খ.mp3'
-import Audio3 from '../../../../assets/QuizImg/Quiz2Audio/গ.mp3'
-import Audio4 from '../../../../assets/QuizImg/Quiz2Audio/ঘ.mp3'
-import Audio5 from '../../../../assets/QuizImg/Quiz2Audio/ঙ.mp3'
-import Audio6 from '../../../../assets/QuizImg/Quiz2Audio/চ.mp3'
-import Audio7 from '../../../../assets/QuizImg/Quiz2Audio/ছ.mp3'
-import Audio8 from '../../../../assets/QuizImg/Quiz2Audio/জ.mp3'
-import Audio9 from '../../../../assets/QuizImg/Quiz2Audio/ঝ.mp3'
-import Audio10 from '../../../../assets/QuizImg/Quiz2Audio/ঞ.mp3'
+import Audio1 from '../../../../assets/QuizImg/Quiz5Audio/গ.mp3'
+import Audio2 from '../../../../assets/QuizImg/Quiz5Audio/চ.mp3'
+import Audio3 from '../../../../assets/QuizImg/Quiz5Audio/ঝ.mp3'
+import Audio4 from '../../../../assets/QuizImg/Quiz5Audio/ট.mp3'
+import Audio5 from '../../../../assets/QuizImg/Quiz5Audio/ড়.mp3'
+import Audio6 from '../../../../assets/QuizImg/Quiz5Audio/ঢ়.mp3'
+import Audio7 from '../../../../assets/QuizImg/Quiz5Audio/ধ.mp3'
+import Audio8 from '../../../../assets/QuizImg/Quiz5Audio/য়.mp3'
+import Audio9 from '../../../../assets/QuizImg/Quiz5Audio/স.mp3'
+import Audio10 from '../../../../assets/QuizImg/Quiz5Audio/হ.mp3'
 
 
 
-const EasyQuiz2 = () => {
+const EasyQuiz5 = () => {
 
 
     // All state
@@ -56,7 +56,7 @@ const EasyQuiz2 = () => {
     // Get The Quiz Questions
     useEffect(() => {
 
-        fetch('https://polar-peak-58919.herokuapp.com/GetBgQuizQs2')
+        fetch('http://localhost:5000/GetBgQuizQs5')
             .then(res => res.json())
             .then(data => setQuizs(data.data))
     }, [reload])
@@ -64,7 +64,7 @@ const EasyQuiz2 = () => {
     // console.log(quizs)
     // Get Quiz Ans Data
     useEffect(() => {
-        fetch(`https://polar-peak-58919.herokuapp.com/getQuizAns2/${email}`, {
+        fetch(`http://localhost:5000/getQuizAns5/${email}`, {
             method: 'GET'
         })
             .then(res => res.json())
@@ -91,8 +91,6 @@ const EasyQuiz2 = () => {
         }
 
 
-        // console.log(point, finalValue);
-
 
         // Check Post Data
         if (!isData) {
@@ -107,14 +105,13 @@ const EasyQuiz2 = () => {
 
             if (QuizData) {
                 try {
-                    const { data } = await axios.post(`https://polar-peak-58919.herokuapp.com/BngQuiz2`, QuizData, {
+                    const { data } = await axios.post(`http://localhost:5000/BngQuiz5`, QuizData, {
                         method: 'POST'
                     });
 
                     if (!data.success) {
                         return toast.error(data.error)
                     }
-                    // console.log(data);
                     toast.success(data.message);
 
                 } catch (error) {
@@ -157,43 +154,43 @@ const EasyQuiz2 = () => {
     const AudioPlay = (latter) => {
 
         switch (latter) {
-            case "ক":
+            case "গ":
                 var audio = new Audio(Audio1);
                 audio.play();
                 break;
-            case "খ":
+            case "চ":
                 var audioB = new Audio(Audio2);
                 audioB.play();
                 break;
-            case "গ":
+            case "ঝ":
                 var audioC = new Audio(Audio3);
                 audioC.play();
                 break;
-            case "ঘ":
+            case "ট":
                 var audioD = new Audio(Audio4);
                 audioD.play();
                 break;
-            case "ঙ":
+            case "ড়":
                 var audioE = new Audio(Audio5);
                 audioE.play();
                 break;
-            case "চ":
+            case "ঢ়":
                 var audioF = new Audio(Audio6);
                 audioF.play();
                 break;
-            case "ছ":
+            case "ধ":
                 var audioG = new Audio(Audio7);
                 audioG.play();
                 break;
-            case "জ":
+            case "য়":
                 var audioH = new Audio(Audio8);
                 audioH.play();
                 break;
-            case "ঝ":
+            case "স":
                 var audioI = new Audio(Audio9);
                 audioI.play();
                 break;
-            case "ঞ":
+            case "হ":
                 var audioJ = new Audio(Audio10);
                 audioJ.play();
                 break;
@@ -325,8 +322,8 @@ const EasyQuiz2 = () => {
                             </div>
                             <hr className=' h-[1px] bg-gray-400  mt-5 mb-7 w-3/4 mx-auto' />
                             <div className='xl:w-1/2 w-2/3'>
-                                <div className=' text-left text-orange-400 text-xl font-bold'>{count + 1} <span className=' text-black'>/</span> {quizs.length}</div>
-                                <div className=' w-40 h-40 mx-auto p-5 bg-white border border-gray-300 mt-7 text-gray-700 shadow-md shadow-orange-200 rounded text-8xl text-bold font-mono flex items-center justify-center relative z-20'>
+                                <div className=' text-left text-red-900 text-xl font-bold'>{count + 1} <span className=' text-black'>/</span> {quizs.length}</div>
+                                <div className=' w-40 h-40 mx-auto p-5 bg-white border border-gray-300 mt-7 text-gray-700 shadow-md shadow-red-200 rounded text-8xl text-bold font-mono flex items-center justify-center relative z-20'>
                                     {quizs[count]?.Latter}
                                     <GiSpeaker onClick={() => AudioPlay(quizs[count]?.Latter)} className='text-3xl absolute right-1 bottom-2' />
                                     <h1 className=' absolute text-lg top-0 left-2 uppercase text-gray-300 z-[-10]'>A u d i o</h1>
@@ -335,12 +332,12 @@ const EasyQuiz2 = () => {
 
                                     {
                                         quizs[count]?.quiz_answers?.map((quizAns, idx) => <button onClick={() => { selectAnswer(quizAns, { quz: quizs[count]?.Latter }, { AllAns: (quizs[count]?.quiz_answers) }, isData) }} key={idx}
-                                            className={` p-4 bg-orange-400 text-white hover:bg-black hover:text-white rounded shadow-md text-lg font-semibold transition duration-200`}>{quizAns?.answere}</button>)
+                                            className={` p-4 bg-red-900 text-white hover:bg-black hover:text-white rounded shadow-md text-lg font-semibold transition duration-200`}>{quizAns?.answere}</button>)
                                     }
                                 </div>
                             </div>
                             <div className=' mt-5'>
-                                <progress className="progress progress-warning  xl:w-[870px] w-[550px] " value={progressValue} max="100"></progress>
+                                <progress className="progress progress-primary xl:w-[870px] w-[550px] " value={progressValue} max="100"></progress>
                             </div>
                         </div>
             }
@@ -348,4 +345,4 @@ const EasyQuiz2 = () => {
     );
 };
 
-export default EasyQuiz2;
+export default EasyQuiz5;

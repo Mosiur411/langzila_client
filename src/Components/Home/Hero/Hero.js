@@ -17,11 +17,11 @@ const Hero = () => {
                     <div data-aos="fade-right" className=' lg:w-[50%] w-full pl-10 pr-16'>
                         <h1 className='xl:text-7xl md:text-6xl text-4xl font-extrabold mb-10 text-[#221638]'>Learning made<br /> easy and Fun</h1>
                         <p className=' text-lg text-justify'>It's time to start your kids learning together with fun. share your gratitude and exprience by sending. It's time to start your kids learning together with fun. share your gratitude and exprience by sendingIt's time to start your kids learning together with fun. share your gratitude and exprience by sending</p>
-                        <button onClick={()=>navigate('/CapitalGames')} className=' shadow-lg lg:shadow-none mt-10 px-8 pt-[10px] pb-[8px] SubmitButton flex items-center hover:HoverSubmitButton'>Get Start <BiRightArrowAlt className=' animate-pulse  text-2xl ml-4' /></button>
+                        <button onClick={() => navigate('/CapitalGames')} className=' shadow-lg lg:shadow-none mt-10 px-8 pt-[10px] pb-[8px] SubmitButton flex items-center hover:HoverSubmitButton'>Get Started<BiRightArrowAlt className=' animate-pulse  text-2xl ml-4' /></button>
                     </div>
                     <div className='lg:w-[50%] lg:mt-0 mt-28  w-full flex items-center '>
-                        <img data-aos="flip-left" className=' absolute z-[-1] top-0 right-0' src={BoyBg} alt="Boy Bg" />
-                        <img className=' z-30 xl:px-28' src={boyImage} alt="Boy Images" />
+                        <img data-aos="fade-left" className=' absolute z-[-1] top-0 right-0' src={BoyBg} alt="Boy Bg" />
+                        <img data-aos="zoom-in" className=' z-30 xl:px-28' src={boyImage} alt="Boy Images" />
 
                         <div data-aos="fade-right" className=' hidden  absolute md:bottom-[30%] lg:right-[35%]  z-40 bg-white shadow-xl  p-4 rounded md:flex items-center '>
                             <FaUsers className='  bg-[#E8FAD7] text-lime-600 h-10 w-10 p-2 rounded-full' />
