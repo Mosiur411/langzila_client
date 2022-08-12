@@ -29,7 +29,12 @@ import Achievements from './Dashboard/Achievements';
 import Certificates from './Dashboard/Certificates';
 import LeaderBoard from './Dashboard/LeaderBoard';
 import DashboardInfo from './Dashboard/DashboardInfo';
+
+import AskQuestion from './Dashboard/AskQuestion';
+
+
 import Support from './ClasssRoom/Support/Support';
+
 
 const DevSixer = ({ show, setShow }) => {
     return (
@@ -80,6 +85,7 @@ const DevSixer = ({ show, setShow }) => {
                     <Route path="achievements" element={<Achievements></Achievements>}></Route>
                     <Route path="certificates" element={<Certificates></Certificates>}></Route>
                     <Route path="leaderboard" element={<LeaderBoard></LeaderBoard>}></Route>
+                    <Route path="ask" element={<AskQuestion></AskQuestion>}></Route>
                 </Route>
                 {/* Arfat */}
 

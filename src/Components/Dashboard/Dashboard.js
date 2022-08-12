@@ -4,6 +4,7 @@ import { Link, Outlet } from 'react-router-dom';
 import auth from '../Firebase/firebase.init';
 import { AiOutlineMenuUnfold, AiOutlineHome } from 'react-icons/ai';
 import { MdOutlineRateReview, MdOutlineLeaderboard } from 'react-icons/md';
+import { RiQuestionAnswerFill } from 'react-icons/ri';
 import { TbCertificate } from 'react-icons/tb';
 import { GiAchievement } from 'react-icons/gi';
 import { BiUserCircle } from 'react-icons/bi';
@@ -31,7 +32,9 @@ const Dashboard = ({ show, setShow }) => {
                             <li className='font-bold text-2xl py-4 text-primary'>Dashboard</li>
                             {user && <>
                                 {/* <li><Link to="/dashboard"><AiOutlineHome className='text-2xl text-primary'/>Dashboard</Link></li> */}
+
                                 <li><Link to="/dashboard"><BiUserCircle className='text-2xl text-primary' />Profile</Link></li>
+                                <li><Link to="/dashboard/ask"><RiQuestionAnswerFill className='text-2xl text-primary' />Ask Question</Link></li>
                                 <li><Link to="/dashboard/review"><MdOutlineRateReview className='text-2xl text-primary' />Add Reviews</Link></li>
                                 <li><Link to="/dashboard/achievements"><GiAchievement className='text-2xl text-primary' />Achievements</Link></li>
                                 <li><Link to="/dashboard/certificates"><TbCertificate className='text-2xl text-primary' />Certificates</Link></li>
