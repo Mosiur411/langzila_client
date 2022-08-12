@@ -12,6 +12,7 @@ import Hard from './Home/Language/Bangla/Hard';
 import EasyQuiz1 from './Home/Language/Bangla/EasyQuiz/EasyQuiz1';
 import Certificate from './Certificate/Certificate';
 import EasyQuiz2 from './Home/Language/Bangla/EasyQuiz/EasyQuiz2';
+import Support from './Support/Support';
 import RequiredAuth from './Auth/RequiredAuth';
 import Dashboard from './Dashboard/Dashboard';
 import Profile from './Dashboard/Profile';
@@ -20,7 +21,6 @@ import Achievements from './Dashboard/Achievements';
 import Certificates from './Dashboard/Certificates';
 import LeaderBoard from './Dashboard/LeaderBoard';
 import DashboardInfo from './Dashboard/DashboardInfo';
-
 
 const DevSixer = ({ show, setShow }) => {
     return (
@@ -34,6 +34,7 @@ const DevSixer = ({ show, setShow }) => {
                 <Route path="/signUp" element={<SignUp></SignUp>} />
                 <Route index path="/contact" element={<Contact show={show} setShow={setShow} />} />
                 <Route index path="/certificate" element={<Certificate show={show} setShow={setShow} />} />
+                <Route index path="/support" element={<Support show={show} setShow={setShow} />} />
 
 
 
