@@ -1,0 +1,39 @@
+[
+    {
+        "title" : "English Learning 1",
+        "color" : "bg-red-900",
+        "text" : "This video help you to increage your English knowledge.",
+        "image" : "https://i.ibb.co/VtQRQjs/1.png",
+        "videoURL" : "https://www.youtube.com/watch?v=p-kAI-qOeJA"
+
+    },
+    {
+        "title" : "English Learning 2",
+        "color" : "bg-red-900",
+        "text" : "This video help you to increage your English knowledge.",
+        "image" : "https://i.ibb.co/P9vbLNf/2.png",
+        "videoURL" : "https://www.youtube.com/watch?v=W7EDs4_BXsE"
+    },
+    {
+        "title" : "English Learning 3",
+        "color" : "bg-red-900",
+        "text" : "This video help you to increage your English knowledge.",
+        "image" : "https://i.ibb.co/bJhRBzM/3.png",
+        "videoURL" : "https://www.youtube.com/watch?v=vnSAV2uWHPw"
+    },
+    {
+        "title" : "English Learning 4",
+        "color" : "bg-red-900",
+        "text" : "This video help you to increage your English knowledge.",
+        "image" : "https://i.ibb.co/4JngXKN/4.png",
+        "videoURL" : "https://www.youtube.com/watch?v=2n4enj6YMnw"
+    },
+    {
+        "title" : "English Learning 5",
+        "color" : "bg-red-900",
+        "text" : "This video help you to increage your English knowledge.",
+        "image" : "https://i.ibb.co/fNB5BR0/5.png",
+        "videoURL" : "https://www.youtube.com/watch?v=h4eueDYPTIg"
+    }
+    
+]
