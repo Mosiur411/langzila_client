@@ -31,8 +31,26 @@ import HindiAudio from './ClasssRoom/Audio/HindiAudio/HindiAudio';
 import BanglaAudio from './ClasssRoom/Audio/BanglaAudio/BanglaAudio';
 import BanglaVideo from './ClasssRoom/Video/BanglaVideo/BanglaVideo';
 import EnglishAudio from './ClasssRoom/Audio/EnglishAudio/EnglishAudio';
+<<<<<<< HEAD
 import HindiVideo from './ClasssRoom/Video/HindiVideo/HindiVideo';
 import EnglishVideo from './ClasssRoom/Video/EnglishVideo/EnglishVideo';
+=======
+import HindiAudio from './ClasssRoom/Audio/HindiAudio/HindiAudio';
+import RequiredAuth from './Auth/RequiredAuth';
+import Dashboard from './Dashboard/Dashboard';
+import Profile from './Dashboard/Profile';
+import AddReview from './Dashboard/AddReview';
+import Achievements from './Dashboard/Achievements';
+import Certificates from './Dashboard/Certificates';
+import LeaderBoard from './Dashboard/LeaderBoard';
+import DashboardInfo from './Dashboard/DashboardInfo';
+
+import AskQuestion from './Dashboard/AskQuestion';
+
+
+import Support from './ClasssRoom/Support/Support';
+>>>>>>> f7b360c3c949a4150dc32a3b154b00e4295e97db
+
 
 const DevSixer = ({ show, setShow }) => {
     return (
@@ -90,6 +108,7 @@ const DevSixer = ({ show, setShow }) => {
                     <Route path="achievements" element={<Achievements></Achievements>}></Route>
                     <Route path="certificates" element={<Certificates></Certificates>}></Route>
                     <Route path="leaderboard" element={<LeaderBoard></LeaderBoard>}></Route>
+                    <Route path="ask" element={<AskQuestion></AskQuestion>}></Route>
                 </Route>
                 {/* Arfat */}
 
