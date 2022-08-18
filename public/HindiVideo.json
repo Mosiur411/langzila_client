@@ -1,0 +1,39 @@
+[
+    {
+        "title" : "Hindi Learning 1",
+        "color" : "bg-red-900",
+        "text" : "This video help you to increage your Hindi knowledge.",
+        "image" : "https://i.ibb.co/c14tkr7/1.png",
+        "videoURL" : "https://www.youtube.com/watch?v=HUoj5s5AnZg"
+
+    },
+    {
+        "title" : "Hindi Learning 2",
+        "color" : "bg-red-900",
+        "text" : "This video help you to increage your Hindi knowledge.",
+        "image" : "https://i.ibb.co/hXyCk25/2.png",
+        "videoURL" : "https://www.youtube.com/watch?v=sumDMGYnrFE"
+    },
+    {
+        "title" : "Hindi Learning 3",
+        "color" : "bg-red-900",
+        "text" : "This video help you to increage your Hindi knowledge.",
+        "image" : "https://i.ibb.co/545LWby/3.png",
+        "videoURL" : "https://www.youtube.com/watch?v=Xt_Jo_Z4Twk"
+    },
+    {
+        "title" : "Hindi Learning 4",
+        "color" : "bg-red-900",
+        "text" : "This video help you to increage your Hindi knowledge.",
+        "image" : "https://i.ibb.co/52kKLR7/4.png",
+        "videoURL" : "https://www.youtube.com/watch?v=oqS_Ldm_lh4"
+    },
+    {
+        "title" : "Hindi Learning 5",
+        "color" : "bg-red-900",
+        "text" : "This video help you to increage your Hindi knowledge.",
+        "image" : "https://i.ibb.co/swywBpg/5.png",
+        "videoURL" : "https://www.youtube.com/watch?v=toV4-l0vS9c"
+    }
+    
+]

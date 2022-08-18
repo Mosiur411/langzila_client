@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
-import { useQuery } from 'react-query'
+// import { useQuery } from 'react-query'
 import { toast, ToastContainer } from 'react-toastify';
 import auth from '../Firebase/firebase.init';
-import Spinner from '../Spinner/Spinner';
+// import Spinner from '../Spinner/Spinner';
 import Answer from './Answer';
 const AskQuestion = () => {
   const [user] = useAuthState(auth);
@@ -82,7 +82,7 @@ const AskQuestion = () => {
             })} />
           <textarea
             placeholder="Your Question Here"
-            className="input  input-bordered input-primary textarea textarea-primary max-w-xs "
+            className="input  input-bordered  textarea textarea-primary max-w-xs "
             {...register("question", {
               required: {
                 value: true,

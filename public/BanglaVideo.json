@@ -1,0 +1,39 @@
+[
+    {
+        "title" : "Bangla Learning 1",
+        "color" : "bg-red-900",
+        "text" : "This video help you to increage your bangla knowledge.",
+        "image" : "https://i.ibb.co/jfbwMpm/1.png",
+        "videoURL" : "https://www.youtube.com/watch?v=gFbD2AAYDaM?modestbranding=1"
+
+    },
+    {
+        "title" : "Bangla Learning 2",
+        "color" : "bg-red-900",
+        "text" : "This video help you to increage your bangla knowledge.",
+        "image" : "https://i.ibb.co/ZhxH9SP/2.png",
+        "videoURL" : "https://www.youtube.com/watch?v=SztogogeAYE?modestbranding=1"
+    },
+    {
+        "title" : "Bangla Learning 3",
+        "color" : "bg-red-900",
+        "text" : "This video help you to increage your bangla knowledge.",
+        "image" : "https://i.ibb.co/mvPctwT/3.png",
+        "videoURL" : "https://www.youtube.com/watch?v=-6r4fVTTHuw?modestbranding=1"
+    },
+    {
+        "title" : "Bangla Learning 4",
+        "color" : "bg-red-900",
+        "text" : "This video help you to increage your bangla knowledge.",
+        "image" : "https://i.ibb.co/RcV8hnn/4.png",
+        "videoURL" : "https://www.youtube.com/watch?v=oOQ8eCq70-E?modestbranding=1"
+    },
+    {
+        "title" : "Bangla Learning 5",
+        "color" : "bg-red-900",
+        "text" : "This video help you to increage your bangla knowledge.",
+        "image" : "https://i.ibb.co/qJLRVtY/5.png",
+        "videoURL" : "https://www.youtube.com/watch?v=5_w3HfesFj0?modestbranding=1"
+    }
+    
+]
