@@ -65,12 +65,12 @@ const AskQuestion = () => {
 
   }
   return (
-    <div className='mx-12  lg:w-[900px] rounded-lg flex justify-center items-center'>
+    <div className='mx-12 py-24 shadow-md border border-gray-100 lg:w-[900px] flex justify-center items-center'>
       <div className=''> <form onSubmit={handleSubmit(onSubmit)}>
 
         <div className="form-control text-center">
           <label className="label">
-            <span className="label-text">Ask Your Question </span>
+            <span className="mb-2 font-bold text-2xl text-accent">Ask Your Question </span>
 
           </label>
           <input type="text" placeholder="Question tittle" name='tittle' className="input input-bordered input-primary input-lg max-w-xs mb-5"
@@ -104,9 +104,10 @@ const AskQuestion = () => {
             },
 
           })} />
-
+        <br />
         <input type="submit" className='btn btn-primary  mt-5 text-white max-w-xs ' value={"Add Question"} />
-      </form></div>
+      </form>
+      </div>
       <div>
         {
 

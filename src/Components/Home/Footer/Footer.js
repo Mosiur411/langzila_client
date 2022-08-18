@@ -14,7 +14,7 @@ const Footer = () => {
 
     return (
         <>
-            <section className='px-2 md:px-20 pt-20 bg-[#212529] text-white mt-9' >
+            <section className='px-2 md:px-20 pt-20 bg-[#212529] text-white' >
                 {/* <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" className='grid grid-cols-1 md:grid-cols-4 gap-10  '> */}
                 <div className='grid grid-cols-1 md:grid-cols-4 gap-10  '>
                     {/* ================== 1======================  */}
@@ -22,7 +22,7 @@ const Footer = () => {
                     <div>
                         <h1 className='text-2xl font-bold pb-5'>LangZila</h1>
                         <p>Working to bring significant changes in online-based learning by doing extensive research for course curriculum preparation, student engagements, and looking forward to the flexible education!</p>
-                        <div className='flex gap-2 mt-6'>
+                        <div className='flex gap-2'>
                             <FaFacebook className='text-primary text-2xl' />
                             <AiFillTwitterCircle className='text-primary text-2xl' />
                             <SiInstagram className='text-primary text-2xl' />
