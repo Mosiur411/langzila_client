@@ -61,7 +61,7 @@ const AddReview = () => {
 
     };
     return (
-        <div className='container text-center'>
+        <div className='text-center py-24 shadow-md border border-gray-100 mx-12 rounded-lg'>
             <h1 className='text-3xl text-primary'>Add Review</h1>
 
             <form onSubmit={handlereview} action="">

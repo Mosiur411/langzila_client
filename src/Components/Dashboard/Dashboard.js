@@ -5,7 +5,6 @@ import auth from '../Firebase/firebase.init';
 import { AiOutlineMenuUnfold, AiOutlineHome } from 'react-icons/ai';
 import { MdOutlineRateReview, MdOutlineLeaderboard } from 'react-icons/md';
 import { RiQuestionAnswerFill } from 'react-icons/ri';
-import { TbCertificate } from 'react-icons/tb';
 import { GiAchievement } from 'react-icons/gi';
 import { BiUserCircle } from 'react-icons/bi';
 import Navbar from '../Home/Navbar/Navbar';
@@ -14,8 +13,8 @@ const Dashboard = ({ show, setShow }) => {
     return (
         <div>
             <Navbar show={show} setShow={setShow} />
-            <div className='  max-w-7xl mx-auto py-20'>
-                <div className="drawer drawer-mobile w-full z-50 p-8 h-[500px] ">
+            <div className='px-12 mx-auto pt-10'>
+                <div className="drawer drawer-mobile w-full z-50 p-8 ">
                     <input id="dashboard-sidebar" type="checkbox" className="bg-green-300 drawer-toggle" />
                     <div className="drawer-content">
                         <div className="lg:hidden flex items-center">
@@ -37,7 +36,6 @@ const Dashboard = ({ show, setShow }) => {
                                 <li><Link to="/dashboard/ask"><RiQuestionAnswerFill className='text-2xl text-primary' />Ask Question</Link></li>
                                 <li><Link to="/dashboard/review"><MdOutlineRateReview className='text-2xl text-primary' />Add Reviews</Link></li>
                                 <li><Link to="/dashboard/achievements"><GiAchievement className='text-2xl text-primary' />Achievements</Link></li>
-                                <li><Link to="/dashboard/certificates"><TbCertificate className='text-2xl text-primary' />Certificates</Link></li>
                                 <li><Link to="/dashboard/leaderboard"><MdOutlineLeaderboard className='text-2xl text-primary' />Leaderboard</Link></li>
                             </>}
                         </ul>
