@@ -33,17 +33,18 @@ import BanglaVideo from './ClasssRoom/Video/BanglaVideo/BanglaVideo';
 import EnglishAudio from './ClasssRoom/Audio/EnglishAudio/EnglishAudio';
 import HindiVideo from './ClasssRoom/Video/HindiVideo/HindiVideo';
 import EnglishVideo from './ClasssRoom/Video/EnglishVideo/EnglishVideo';
-// import RequiredAuth from './Auth/RequiredAuth';
-// import Dashboard from './Dashboard/Dashboard';
-// import Profile from './Dashboard/Profile';
-// import AddReview from './Dashboard/AddReview';
-// import Achievements from './Dashboard/Achievements';
-// import Certificates from './Dashboard/Certificates';
-// import LeaderBoard from './Dashboard/LeaderBoard';
-// import DashboardInfo from './Dashboard/DashboardInfo';
-// import AskQuestion from './Dashboard/AskQuestion';
-// import Support from './ClasssRoom/Support/Support';
 import AskQuestion from './Dashboard/AskQuestion';
+import MediumQuiz1 from './Home/Language/Bangla/MediumQuiz/MediumQuiz1';
+import MediumQuiz2 from './Home/Language/Bangla/MediumQuiz/MediumQuiz2';
+import MediumQuiz3 from './Home/Language/Bangla/MediumQuiz/MediumQuiz3';
+import MediumQuiz5 from './Home/Language/Bangla/MediumQuiz/MediumQuiz5';
+import MediumQuiz4 from './Home/Language/Bangla/MediumQuiz/MediumQuiz4';
+import HardQuiz1 from './Home/Language/Bangla/HardQuiz/HardQuiz1';
+import HardQuiz2 from './Home/Language/Bangla/HardQuiz/HardQuiz2';
+import HardQuiz3 from './Home/Language/Bangla/HardQuiz/HardQuiz3';
+import HardQuiz4 from './Home/Language/Bangla/HardQuiz/HardQuiz4';
+import HardQuiz5 from './Home/Language/Bangla/HardQuiz/HardQuiz5';
+import EventCard from './Home/UpcomingEvents/EventCard';
 
 const DevSixer = ({ show, setShow }) => {
     return (
@@ -60,6 +61,7 @@ const DevSixer = ({ show, setShow }) => {
                 <Route index path="/support" element={<Support show={show} setShow={setShow} />} />
                 <Route path='/support' element={<Support></Support>} />
                 <Route path='/classroom' element={<ClasssRoom />} />
+                <Route path='/eventCrad/:id' element={<EventCard />} />+
 
 
 
@@ -90,6 +92,20 @@ const DevSixer = ({ show, setShow }) => {
                 <Route path='quiz/easyquiz3' element={<EasyQuiz3 />}></Route>
                 <Route path='quiz/easyquiz4' element={<EasyQuiz4 />}></Route>
                 <Route path='quiz/easyquiz5' element={<EasyQuiz5 />}></Route>
+
+
+                <Route path='medium/mediumquiz1' element={<MediumQuiz1 />}></Route>
+                <Route path='medium/mediumquiz2' element={<MediumQuiz2 />}></Route>
+                <Route path='medium/mediumquiz3' element={<MediumQuiz3 />}></Route>
+                <Route path='medium/mediumquiz4' element={<MediumQuiz4 />}></Route>
+                <Route path='medium/mediumquiz5' element={<MediumQuiz5 />}></Route>
+
+
+                <Route path='hard/hardquiz1' element={<HardQuiz1 />}></Route>
+                <Route path='hard/hardquiz2' element={<HardQuiz2 />}></Route>
+                <Route path='hard/hardquiz3' element={<HardQuiz3 />}></Route>
+                <Route path='hard/hardquiz4' element={<HardQuiz4 />}></Route>
+                <Route path='hard/hardquiz5' element={<HardQuiz5 />}></Route>
                 {/* joy */}
 
 

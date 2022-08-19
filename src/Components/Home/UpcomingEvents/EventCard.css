@@ -1,0 +1,11 @@
+abbr[title] {
+    text-decoration: none !important;
+}
+
+abbr:where([title]) {
+    text-decoration: none !important;
+}
+
+.react-calendar{
+    width: 100% !important;
+}

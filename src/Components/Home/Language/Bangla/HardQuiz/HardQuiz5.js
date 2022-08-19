@@ -19,21 +19,10 @@ import { SiSitepoint } from "react-icons/si";
 import { ImHappy, ImSad } from "react-icons/im";
 import { GiSkullCrossedBones, GiChessKing, GiSpeaker } from "react-icons/gi";
 
-// Audio
-import Audio1 from '../../../../assets/QuizImg/Quiz1Audio/audio1.mp3'
-import Audio2 from '../../../../assets/QuizImg/Quiz1Audio/audio2.mp3'
-import Audio3 from '../../../../assets/QuizImg/Quiz1Audio/audio3.mp3'
-import Audio4 from '../../../../assets/QuizImg/Quiz1Audio/audio4.mp3'
-import Audio5 from '../../../../assets/QuizImg/Quiz1Audio/audio5.mp3'
-import Audio6 from '../../../../assets/QuizImg/Quiz1Audio/audio6.mp3'
-import Audio7 from '../../../../assets/QuizImg/Quiz1Audio/audio7.mp3'
-import Audio8 from '../../../../assets/QuizImg/Quiz1Audio/audio8.mp3'
-import Audio9 from '../../../../assets/QuizImg/Quiz1Audio/audio9.mp3'
-import Audio10 from '../../../../assets/QuizImg/Quiz1Audio/audio10.mp3'
 
 
 
-const EasyQuiz1 = () => {
+const HardQuiz5 = () => {
 
 
     // All state
@@ -55,16 +44,15 @@ const EasyQuiz1 = () => {
 
     // Get The Quiz Questions
     useEffect(() => {
-
-        fetch('https://polar-peak-58919.herokuapp.com/GetBgQuizQs1')
+        fetch('/Hard5.json')
             .then(res => res.json())
-            .then(data => setQuizs(data.data))
+            .then(data => setQuizs(data))
     }, [reload])
 
-
+    console.log(quizs);
     // Get Quiz Ans Data
     useEffect(() => {
-        fetch(`https://polar-peak-58919.herokuapp.com/getQuizAns1/${email}`, {
+        fetch(`/getQuizAns1/${email}`, {
             method: 'GET'
         })
             .then(res => res.json())
@@ -103,7 +91,7 @@ const EasyQuiz1 = () => {
 
             if (QuizData) {
                 try {
-                    const { data } = await axios.post(`https://polar-peak-58919.herokuapp.com/BngQuiz1`, QuizData, {
+                    const { data } = await axios.post(`/BngQuiz1`, QuizData, {
                         method: 'POST'
                     });
 
@@ -148,55 +136,6 @@ const EasyQuiz1 = () => {
 
 
 
-    // Check Case of Voice
-    const AudioPlay = (latter) => {
-
-        switch (latter) {
-            case "অ":
-                var audio = new Audio(Audio1);
-                audio.play();
-                break;
-            case "আ":
-                var audioB = new Audio(Audio2);
-                audioB.play();
-                break;
-            case "ই":
-                var audioC = new Audio(Audio3);
-                audioC.play();
-                break;
-            case "ঈ":
-                var audioD = new Audio(Audio4);
-                audioD.play();
-                break;
-            case "উ":
-                var audioE = new Audio(Audio5);
-                audioE.play();
-                break;
-            case "ঊ":
-                var audioF = new Audio(Audio6);
-                audioF.play();
-                break;
-            case "এ":
-                var audioG = new Audio(Audio7);
-                audioG.play();
-                break;
-            case "ঐ":
-                var audioH = new Audio(Audio8);
-                audioH.play();
-                break;
-            case "ও":
-                var audioI = new Audio(Audio9);
-                audioI.play();
-                break;
-            case "ঔ":
-                var audioJ = new Audio(Audio10);
-                audioJ.play();
-                break;
-
-            default:
-            // code block
-        }
-    }
 
 
 
@@ -219,7 +158,7 @@ const EasyQuiz1 = () => {
                             quizData?.map((quiz, idx) => <div key={idx}>
                                 <div className=' bg-white shadow-md xl:w-1/3 w-1/2 mx-auto mt-10 p-5 relative'>
                                     <div>
-                                        <div onClick={() => AudioPlay(quiz?.question)} className='text-left mb-2 flex items-center'>{quiz.ans == quiz.selector ? <GiChessKing className=' text-2xl text-green-600 mr-3' /> : <GiSkullCrossedBones className=' text-2xl text-red-500 mr-3 ' />}
+                                        <div className='text-left mb-2 flex items-center'>{quiz.ans == quiz.selector ? <GiChessKing className=' text-2xl text-green-600 mr-3' /> : <GiSkullCrossedBones className=' text-2xl text-red-500 mr-3 ' />}
 
                                             <div className=' bg-purple-200 flex items-center justify-center w-16 h-16 rounded relative text-black '>
                                                 <h1 className=' text-3xl'>{quiz?.question}</h1>
@@ -326,11 +265,9 @@ const EasyQuiz1 = () => {
                             </div>
                             <hr className=' h-[1px] bg-gray-400  mt-5 mb-7 w-3/4 mx-auto' />
                             <div className='xl:w-1/2 w-2/3'>
-                                <div className=' text-left text-blue-800 text-xl font-bold'>{count + 1} / {quizs.length}</div>
-                                <div className=' w-40 h-40 mx-auto p-5 bg-white border border-gray-300 mt-7 text-gray-700 shadow-md shadow-purple-200 rounded text-8xl text-bold font-mono flex items-center justify-center relative z-20'>
+                                <div className=' text-left text-blue-800 text-xl font-bold'>{count + 1} / {quizs?.length}</div>
+                                <div className=' mx-auto p-5 bg-white border border-gray-300 mt-7 text-gray-700 shadow-md shadow-purple-200 rounded  text-bold font-mono flex items-center justify-center z-20'>
                                     {quizs[count]?.Latter}
-                                    <GiSpeaker onClick={() => AudioPlay(quizs[count]?.Latter)} className='text-3xl absolute right-1 bottom-2' />
-                                    <h1 className=' absolute text-lg top-0 left-2 uppercase text-gray-300 z-[-10]'>A u d i o</h1>
                                 </div>
                                 <div className=' grid grid-cols-2 gap-6 mt-10'>
 
@@ -349,4 +286,4 @@ const EasyQuiz1 = () => {
     );
 };
 
-export default EasyQuiz1;
+export default HardQuiz5;

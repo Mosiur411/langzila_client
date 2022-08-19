@@ -11,7 +11,7 @@ const Medium = () => {
                 <div className=' h-40 w-[80] bg-yellow-300 shadow rounded-md flex items-center overflow-hidden'>
                     <div className=' w-full'>
                         <h1 className='w-full uppercase  font-semibold text-3xl text-gray-700'>Quiz <span className=' text-5xl text-blue-500'>1</span></h1>
-                        <button onClick={() => navigate('/quiz/easyquiz2')} className=' py-[5px] px-4 rounded-3xl text-black border border-white bg-white hover:border hover:border-black hover:bg-transparent  text-md font-semibold mt-3 '>Start Now</button>
+                        <button onClick={() => navigate('/medium/mediumquiz1')} className=' py-[5px] px-4 rounded-3xl text-black border border-white bg-white hover:border hover:border-black hover:bg-transparent  text-md font-semibold mt-3 '>Start Now</button>
                     </div>
                     <img className=' w-[180px] h-full mt-7' src={Quizimg} alt="Quizimg" />
                 </div>
@@ -19,7 +19,7 @@ const Medium = () => {
                 <div className=' h-40 w-[80] bg-yellow-300 shadow rounded-md flex items-center overflow-hidden'>
                     <div className=' w-full'>
                         <h1 className='w-full uppercase  font-semibold text-3xl text-gray-700'>Quiz <span className=' text-5xl text-blue-500'>2</span></h1>
-                        <button className=' py-[5px] px-4 rounded-3xl text-black border border-white bg-white hover:border hover:border-black hover:bg-transparent  text-md font-semibold mt-3 '>Start Now</button>
+                        <button onClick={() => navigate('/medium/mediumquiz2')} className=' py-[5px] px-4 rounded-3xl text-black border border-white bg-white hover:border hover:border-black hover:bg-transparent  text-md font-semibold mt-3 '>Start Now</button>
                     </div>
                     <img className=' w-[180px] h-full mt-7' src={Quizimg} alt="Quizimg" />
                 </div>
@@ -27,7 +27,7 @@ const Medium = () => {
                 <div className=' h-40 w-[80] bg-yellow-300 shadow rounded-md flex items-center overflow-hidden'>
                     <div className=' w-full'>
                         <h1 className='w-full uppercase  font-semibold text-3xl text-gray-700'>Quiz <span className=' text-5xl text-blue-500'>3</span></h1>
-                        <button className=' py-[5px] px-4 rounded-3xl text-black border border-white bg-white hover:border hover:border-black hover:bg-transparent  text-md font-semibold mt-3 '>Start Now</button>
+                        <button onClick={() => navigate('/medium/mediumquiz3')} className=' py-[5px] px-4 rounded-3xl text-black border border-white bg-white hover:border hover:border-black hover:bg-transparent  text-md font-semibold mt-3 '>Start Now</button>
                     </div>
                     <img className=' w-[180px] h-full mt-7' src={Quizimg} alt="Quizimg" />
                 </div>
@@ -36,7 +36,7 @@ const Medium = () => {
                 <div className=' h-40 w-[80] bg-yellow-300 shadow rounded-md flex items-center overflow-hidden'>
                     <div className=' w-full'>
                         <h1 className='w-full uppercase  font-semibold text-3xl text-gray-700'>Quiz <span className=' text-5xl text-blue-500'>4</span></h1>
-                        <button className=' py-[5px] px-4 rounded-3xl text-black border border-white bg-white hover:border hover:border-black hover:bg-transparent  text-md font-semibold mt-3 '>Start Now</button>
+                        <button onClick={() => navigate('/medium/mediumquiz4')} className=' py-[5px] px-4 rounded-3xl text-black border border-white bg-white hover:border hover:border-black hover:bg-transparent  text-md font-semibold mt-3 '>Start Now</button>
                     </div>
                     <img className=' w-[180px] h-full mt-7' src={Quizimg} alt="Quizimg" />
                 </div>
@@ -45,7 +45,7 @@ const Medium = () => {
                 <div className=' h-40 w-[80] bg-yellow-300 shadow rounded-md flex items-center overflow-hidden'>
                     <div className=' w-full'>
                         <h1 className='w-full uppercase  font-semibold text-3xl text-gray-700'>Quiz <span className=' text-5xl text-blue-500'>5</span></h1>
-                        <button className=' py-[5px] px-4 rounded-3xl text-black border border-white bg-white hover:border hover:border-black hover:bg-transparent  text-md font-semibold mt-3 '>Start Now</button>
+                        <button onClick={() => navigate('/medium/mediumquiz5')} className=' py-[5px] px-4 rounded-3xl text-black border border-white bg-white hover:border hover:border-black hover:bg-transparent  text-md font-semibold mt-3 '>Start Now</button>
                     </div>
                     <img className=' w-[180px] h-full mt-7' src={Quizimg} alt="Quizimg" />
                 </div>
