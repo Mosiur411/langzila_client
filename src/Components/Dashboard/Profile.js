@@ -8,18 +8,21 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 const Profile = () => {
     const [user] = useAuthState(auth);
     const [userInfo, setUserInfo] = useState({});
+   
 
     const email = user.email;
     console.log(email)
     useEffect(() => {
-        fetch(`http://localhost:5000/userProfile/${email}`)
+        fetch(`http://localhost:5000/userprofile/${email}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)
-                setUserInfo(data.data)
+                setUserInfo(data)
             })
 
     }, [])
+   
+console.log(userInfo);
 
     const updateMyProfile = event => {
         console.log(event);
@@ -36,7 +39,7 @@ const Profile = () => {
         }
 
         const email = user.email
-        const url = `http://localhost:5000/userProfile/${email}`;
+        const url = `http://localhost:5000/userprofile/${email}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -48,6 +51,7 @@ const Profile = () => {
             .then(data => {
                 console.log('success', data);
                 alert('Update Successfully');
+                
                 event.target.reset();
             })
 
@@ -69,7 +73,7 @@ const Profile = () => {
                             <div class="w-12 h-1 bg-primary rounded mt-2 mb-4"></div>
                             <p class="text-base">
                                 <lebel class='font-bold'>Describe Yourself</lebel>
-                                <p>{user?.desc}</p>
+                                <p>{userInfo?.desc}</p>
                             </p>
                         </div>
                     </div>
@@ -101,7 +105,7 @@ const Profile = () => {
                         </div>
                         <div className="relative z-0 w-full group mb-1">
                             <lebel class='font-bold'>Birth Date</lebel>
-                            <p>{userInfo?.date}</p>
+                            <p>{userInfo?.Birthdate}</p>
                         </div>
                     </div>
 
@@ -119,33 +123,33 @@ const Profile = () => {
                         </div>
                         <div className="relative z-0 w-full mb-6 group">
                             <lebel class='font-bold'>Email</lebel>
-                            <input type="email" name="email" id="floating_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer" value={user?.email} />
+                            <input type="email" name="email" id="floating_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer" value={user?.email} disabled/>
                         </div>
                         <div className="relative z-0 w-full mb-6 group">
                             <lebel class='font-bold'>Description</lebel>
-                            <input type="text" name="desc" id="floating_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+                            <input type="text" name="desc" id="floating_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" defaultValue={userInfo.desc} />
                         </div>
                         <div className="relative z-0 w-full mb-6 group">
-                            <input type="text" name="address" id="floating_repeat_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+                            <input type="text" name="address" id="floating_repeat_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" defaultValue={userInfo?.address} />
                             <label htmlFor="address" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Address</label>
                         </div>
                         <div className="grid xl:grid-cols-2 xl:gap-6">
                             <div className="relative z-0 w-full mb-6 group">
-                                <input type="number" name="phone" id="floating_first_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
-                                <label htmlFor="phone" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone Number</label>
+                                <input type="number" name="phone" id="floating_first_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required=""defaultValue={userInfo?.phone} />
+                                <label htmlFor="phone" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" >Phone Number</label>
                             </div>
                             <div className="relative z-0 w-full mb-6 group">
-                                <input type="text" name="country" id="floating_last_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+                                <input type="text" name="country" id="floating_last_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" defaultValue={userInfo?.country} />
                                 <label htmlFor="country" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">City/Country</label>
                             </div>
                         </div>
                         <div className="grid xl:grid-cols-2 xl:gap-6">
                             <div className="relative z-0 w-full mb-6 group">
-                                <input type="number" name="age" id="age" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
-                                <label htmlFor="age" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Website</label>
+                                <input type="number" name="age" id="age" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" defaultValue={userInfo?.age} />
+                                <label htmlFor="age" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Age</label>
                             </div>
                             <div className="relative z-0 w-full mb-6 group">
-                                <input type="date" name="date" id="date" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+                                <input type="date" name="date" id="date" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required=""defaultValue={userInfo?.Birthdate} />
                                 <label htmlFor="date" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Birth Date</label>
                             </div>
                         </div>

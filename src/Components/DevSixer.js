@@ -34,6 +34,10 @@ import AskQuestion from './Dashboard/AskQuestion';
 
 
 import Support from './ClasssRoom/Support/Support';
+import Community from './Community/Community';
+import Addquestion from './Community/Addquestion';
+import Question from './Community/Question';
+import Questionpage from './Community/Questionpage';
 
 
 const DevSixer = ({ show, setShow }) => {
@@ -48,6 +52,9 @@ const DevSixer = ({ show, setShow }) => {
                 <Route path="/signUp" element={<SignUp></SignUp>} />
                 <Route index path="/contact" element={<Contact show={show} setShow={setShow} />} />
                 <Route index path="/certificate" element={<Certificate show={show} setShow={setShow} />} />
+                <Route path="/forum" element={<Community show={show} setShow={setShow} />} />
+                <Route path="/addquestion" element={<Addquestion show={show} setShow={setShow} />} />
+                <Route path="/question/:id" element={<Questionpage show={show} setShow={setShow} />} />
                 <Route index path="/support" element={<Support show={show} setShow={setShow} />} />
                 <Route path='/support' element={<Support></Support>} />
                 <Route path='/classroom' element={<ClasssRoom />} />
