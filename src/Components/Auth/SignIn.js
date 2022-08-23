@@ -41,7 +41,7 @@ const SignIn = () => {
         signInError = <p className='text-primary mb-2'><small>{error?.message || googleError?.message}</small></p>
     }
     return (
-        <div className='pt-16'>
+        <div className='py-16'>
             < div className="w-[400px] p-8 mx-auto border-2 border-primary bg-gray-50 items-center text-center shadow-xl rounded-xl">
                 <h1 className='w-56 text-center rounded p-2 mx-auto mb-8 mt-[-50px] bg-primary text-white font-medium text-xl'>Sign In</h1>
                 <div className="avatar mb-8 z-0">

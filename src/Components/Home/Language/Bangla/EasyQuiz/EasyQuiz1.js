@@ -219,7 +219,16 @@ const EasyQuiz1 = () => {
                             quizData?.map((quiz, idx) => <div key={idx}>
                                 <div className=' bg-white shadow-md xl:w-1/3 w-1/2 mx-auto mt-10 p-5 relative'>
                                     <div>
-                                        <h1 className='text-left text-xl mb-7 flex items-center'>{quiz.ans == quiz.selector ? <GiChessKing className=' text-2xl text-green-600 mr-3' /> : <GiSkullCrossedBones className=' text-2xl text-red-500 mr-3' />} {quiz?.question}</h1>
+                                        <div onClick={() => AudioPlay(quiz?.question)} className='text-left mb-2 flex items-center'>{quiz.ans == quiz.selector ? <GiChessKing className=' text-2xl text-green-600 mr-3' /> : <GiSkullCrossedBones className=' text-2xl text-red-500 mr-3 ' />}
+
+                                            <div className=' bg-purple-200 flex items-center justify-center w-16 h-16 rounded relative text-black '>
+                                                <h1 className=' text-3xl'>{quiz?.question}</h1>
+                                                <GiSpeaker className='text-md  absolute bottom-1 right-1' />
+                                            </div>
+
+
+
+                                        </div>
                                         <img className=' absolute w-[75px] right-0 top-0 z-20 ' src={`${quiz.ans == quiz.selector ? happyimg : ctimg}`} alt="image" />
                                     </div>
 

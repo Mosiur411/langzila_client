@@ -79,7 +79,7 @@ const BanglaAudio = () => {
 
     return (
         <div data-aos="fade-left" className='px-2 md:px-10 font-bold  h-[84vh] overflow-y-auto scrollbar rounded-md border border-purple-900 border-r-0 shadow-lg'>
-            <h1 data-aos="fade-up" className="text-4xl text-sky-900 text-center pt-7  ">বর্ণমালা</h1>
+            <h1 data-aos="fade-up" className="text-4xl text-pink-900 text-center pt-7  ">বর্ণমালা</h1>
             <p data-aos="fade-up-right" className='xl:w-2/3 mx-auto font-medium text-md'>You can learn Bangla bornomala by nice voice. You  click the card and hear the voice of the word </p>
 
             <div className=' max-w-5xl  mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-24 py-10'>

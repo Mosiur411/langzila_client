@@ -1,0 +1,123 @@
+[
+    {
+        "id":1,
+        "Latter":"What is the correct spelling of 'গ'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Fa", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ga ", "isCorrect": true, "isSelect" : false},
+            {"answere": "Ba ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Da", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":2,
+        "Latter":"What is the correct spelling of 'চ'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Cha", "isCorrect": true, "isSelect" : false},
+            {"answere": "Kua", "isCorrect": false, "isSelect" : false},
+            {"answere": "Gya", "isCorrect": false, "isSelect" : false},
+            {"answere": "Rha", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":3,
+        "Latter":"What is the correct spelling of 'ঝ'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Ghi", "isCorrect": false, "isSelect" : false},
+            {"answere": "Fhe", "isCorrect": false, "isSelect" : false},
+            {"answere": "Jha", "isCorrect": true, "isSelect" : false},
+            {"answere": "Hhu", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":4,
+        "Latter":"What is the correct spelling of 'ট'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Ta", "isCorrect": true, "isSelect" : false},
+            {"answere": "Ga", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ha", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ka", "isCorrect": false, "isSelect" : false}
+        ]
+
+    },
+    {
+        "id":5,
+        "Latter":"What is the correct spelling of 'ড়'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Up", "isCorrect": false, "isSelect" : false},
+            {"answere": "Qi ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ty ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Da", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":6,
+        "Latter":"What is the correct spelling of 'ঢ়'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Da", "isCorrect": true, "isSelect" : false},
+            {"answere": "Ch", "isCorrect": false, "isSelect" : false},
+            {"answere": "Rf", "isCorrect": false, "isSelect" : false},
+            {"answere": "Fh", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":7,
+        "Latter":"What is the correct spelling of 'ধ'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Bha", "isCorrect": false, "isSelect" : false},
+            {"answere": "Dha", "isCorrect": true, "isSelect" : false},
+            {"answere": "Cha", "isCorrect": false, "isSelect" : false},
+            {"answere": "Rha", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":8,
+        "Latter":"What is the correct spelling of 'য়'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Ja", "isCorrect": false, "isSelect" : false},
+            {"answere": "Fi", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ya", "isCorrect": true, "isSelect" : false},
+            {"answere": "Ti", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":9,
+        "Latter":"What is the correct spelling of 'স'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Qha", "isCorrect": false, "isSelect" : false},
+            {"answere": "Sha", "isCorrect": true, "isSelect" : false},
+            {"answere": "Oha", "isCorrect": false, "isSelect" : false},
+            {"answere": "Rha", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":10,
+        "Latter":"What is the correct spelling of 'হ'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Ha", "isCorrect": true, "isSelect" : false},
+            {"answere": "Pa", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ca", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ji", "isCorrect": false, "isSelect" : false}
+        ]
+    }
+]

@@ -2,150 +2,70 @@ import React, { useEffect, useState } from 'react';
 import './HindiAudio.css'
 
 // Audio
-import A from '../../../assets/Audio/a.mp3'
-import B from '../../../assets/Audio/B.mp3'
-import C from '../../../assets/Audio/C.mp3'
-import D from '../../../assets/Audio/d.mp3'
-import E from '../../../assets/Audio/E.mp3'
-import F from '../../../assets/Audio/F.mp3'
-import G from '../../../assets/Audio/G.mp3'
-import H from '../../../assets/Audio/H.mp3'
-import I from '../../../assets/Audio/I.mp3'
-import J from '../../../assets/Audio/J.mp3'
-import K from '../../../assets/Audio/K.mp3'
-import L from '../../../assets/Audio/L.mp3'
-import M from '../../../assets/Audio/M.mp3'
-import N from '../../../assets/Audio/N.mp3'
-import O from '../../../assets/Audio/O.mp3'
-import P from '../../../assets/Audio/P.mp3'
-import Q from '../../../assets/Audio/Q.mp3'
-import R from '../../../assets/Audio/R.mp3'
-import S from '../../../assets/Audio/SS.mp3'
-import T from '../../../assets/Audio/T.mp3'
-import U from '../../../assets/Audio/U.mp3'
-import V from '../../../assets/Audio/V.mp3'
-import W from '../../../assets/Audio/w.mp3'
-import X from '../../../assets/Audio/X.mp3'
-import Y from '../../../assets/Audio/Y.mp3'
-import Z from '../../../assets/Audio/Z.mp3'
+import Audio1 from '../../../assets/QuizImg/HindiAudio/hindiQuiz1/अ1.mp3'
+import Audio2 from '../../../assets/QuizImg/HindiAudio/hindiQuiz1/आ2.mp3'
+import Audio3 from '../../../assets/QuizImg/HindiAudio/hindiQuiz1/इ3.mp3'
+import Audio4 from '../../../assets/QuizImg/HindiAudio/hindiQuiz1/ई4.mp3'
+import Audio5 from '../../../assets/QuizImg/HindiAudio/hindiQuiz1/उ5.mp3'
+import Audio6 from '../../../assets/QuizImg/HindiAudio/hindiQuiz1/ऊ6.mp3'
+import Audio7 from '../../../assets/QuizImg/HindiAudio/hindiQuiz1/ए7.mp3'
+import Audio8 from '../../../assets/QuizImg/HindiAudio/hindiQuiz1/ऐ8.mp3'
+import Audio9 from '../../../assets/QuizImg/HindiAudio/hindiQuiz1/ओ9.mp3'
+import Audio10 from '../../../assets/QuizImg/HindiAudio/hindiQuiz1/औ10.mp3'
 
 
 const HindiAudio = () => {
     const [CapitalLetter, setCapitalLetter] = useState([])
 
     useEffect(() => {
-        fetch('/English.json')
+        fetch('/Hindi1.json')
             .then(res => res.json())
             .then(data => setCapitalLetter(data))
     }, [])
 
-
+    // Check Case of Voice
     const AudioPlay = (latter) => {
-        /* ============== switch =================  */
+
         switch (latter) {
-            case "a":
-                var audio = new Audio(A);
+            case "अ":
+                var audio = new Audio(Audio1);
                 audio.play();
                 break;
-            case "b":
-                var audioB = new Audio(B);
+            case "आ":
+                var audioB = new Audio(Audio2);
                 audioB.play();
                 break;
-            case "c":
-                var audioC = new Audio(C);
+            case "इ":
+                var audioC = new Audio(Audio3);
                 audioC.play();
                 break;
-            case "d":
-                var audioD = new Audio(D);
+            case "ई":
+                var audioD = new Audio(Audio4);
                 audioD.play();
                 break;
-            case "e":
-                var audioE = new Audio(E);
+            case "उ":
+                var audioE = new Audio(Audio5);
                 audioE.play();
                 break;
-            case "f":
-                var audioF = new Audio(F);
+            case "ऊ":
+                var audioF = new Audio(Audio6);
                 audioF.play();
                 break;
-            case "g":
-                var audioG = new Audio(G);
+            case "ए":
+                var audioG = new Audio(Audio7);
                 audioG.play();
                 break;
-            case "h":
-                var audioH = new Audio(H);
+            case "ऐ":
+                var audioH = new Audio(Audio8);
                 audioH.play();
                 break;
-            case "i":
-                var audioI = new Audio(I);
+            case "ओ":
+                var audioI = new Audio(Audio9);
                 audioI.play();
                 break;
-            case "j":
-                var audioJ = new Audio(J);
+            case "औ":
+                var audioJ = new Audio(Audio10);
                 audioJ.play();
-                break;
-            case "k":
-                var audioK = new Audio(K);
-                audioK.play();
-                break;
-            case "l":
-                var audioL = new Audio(L);
-                audioL.play();
-                break;
-            case "m":
-                var audioM = new Audio(M);
-                audioM.play();
-                break;
-            case "n":
-                var audioN = new Audio(N);
-                audioN.play();
-                break;
-            case "o":
-                var audioO = new Audio(O);
-                audioO.play();
-                break;
-            case "p":
-                var audioP = new Audio(P);
-                audioP.play();
-                break;
-            case "q":
-                var audioQ = new Audio(Q);
-                audioQ.play();
-                break;
-            case "r":
-                var audioR = new Audio(R);
-                audioR.play();
-                break;
-            case "s":
-                var audioS = new Audio(S);
-                audioS.play();
-                break;
-            case "t":
-                var audioT = new Audio(T);
-                audioT.play();
-                break;
-            case "u":
-                var audioU = new Audio(U);
-                audioU.play();
-                break;
-            case "v":
-                var audioV = new Audio(V);
-                audioV.play();
-                break;
-            case "w":
-                var audioW = new Audio(W);
-                audioW.play();
-                break;
-            case "x":
-                var audioX = new Audio(X);
-                audioX.play();
-                break;
-            case "y":
-                var audioY = new Audio(Y);
-                audioY.play();
-                break;
-            case "z":
-                var audioZ = new Audio(Z);
-                audioZ.play();
                 break;
 
             default:
@@ -154,18 +74,17 @@ const HindiAudio = () => {
     }
 
 
-
     return (
         <div data-aos="fade-left" className='px-2 md:px-10 font-bold  h-[84vh] overflow-y-auto scrollbar rounded-md border border-purple-900 border-r-0 shadow-lg'>
-            <h1 data-aos="fade-up" className="text-4xl text-sky-900 text-center pt-7  ">Alphabet</h1>
-            <p data-aos="fade-up-right" className='xl:w-2/3 mx-auto font-medium text-md'>You can learn English alphabet by nice voice. You  click the card and hear the voice of the word </p>
+            <h1 data-aos="fade-up" className="text-4xl text-blue-900 text-center pt-7  ">अल्फाबेट</h1>
+            <p data-aos="fade-up-right" className='xl:w-2/3 mx-auto font-medium text-md'>You can learn Hindi alphabet by nice voice. You  click the card and hear the voice of the word </p>
 
             <div className=' max-w-5xl  mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-24 py-10'>
                 {
                     CapitalLetter.map(word =>
                         <div
                             onClick={() => AudioPlay(word.Latter)}
-                            className='w-full h-[170px] text-8xl flex justify-center items-center bg-sky-900 hover:bg-purple-900
+                            className='w-full h-[170px] text-8xl flex justify-center items-center bg-blue-900 hover:bg-purple-900
                             shadow-gray-400 shadow-lg cursor-pointer text-white rounded-2xl'
                         >{word.Latter}</div>
                     )

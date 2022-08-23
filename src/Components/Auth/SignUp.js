@@ -44,7 +44,7 @@ const SignUp = () => {
     }
 
     return (
-        <div className='pt-12'>
+        <div className='py-12'>
             < div className="w-[400px] p-8 mx-auto border-2 border-primary bg-gray-50 items-center text-center shadow-xl rounded-xl">
                 <h1 className='w-56 text-center rounded p-2 mx-auto mb-8 mt-[-50px] bg-primary text-white font-medium text-xl'>Sign Up</h1>
                 <div className="avatar mb-8 z-0">

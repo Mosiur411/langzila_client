@@ -1,0 +1,123 @@
+[
+    {
+        "id":1,
+        "question":"What is the correct voice of 'Pa'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "র", "isCorrect": false, "isSelect" : false},
+            {"answere": "প", "isCorrect": true, "isSelect" : false},
+            {"answere": "ব", "isCorrect": false, "isSelect" : false},
+            {"answere": "ম", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":2,
+        "question":"What is the correct voice of 'Fha'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "র", "isCorrect": false, "isSelect" : false},
+            {"answere": "ল", "isCorrect": false, "isSelect" : false},
+            {"answere": "ব", "isCorrect": false, "isSelect" : false},
+            {"answere": "ফ", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":3,
+        "question":"What is the correct voice of 'Boa'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "র", "isCorrect": false, "isSelect" : false},
+            {"answere": "ল", "isCorrect": false, "isSelect" : false},
+            {"answere": "ব", "isCorrect": true, "isSelect" : false},
+            {"answere": "ফ", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":4,
+        "question":"What is the correct voice of 'Voa'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "ভ", "isCorrect": true, "isSelect" : false},
+            {"answere": "ল", "isCorrect": false, "isSelect" : false},
+            {"answere": "র", "isCorrect": false, "isSelect" : false},
+            {"answere": "ফ", "isCorrect": false, "isSelect" : false}
+        ]
+
+    },
+    {
+        "id":5,
+        "question":"What is the correct voice of 'Moa'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "র", "isCorrect": false, "isSelect" : false},
+            {"answere": "প", "isCorrect": false, "isSelect" : false},
+            {"answere": "ব", "isCorrect": false, "isSelect" : false},
+            {"answere": "ম", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":6,
+        "question":"What is the correct voice of 'Ja'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "র", "isCorrect": false, "isSelect" : false},
+            {"answere": "য", "isCorrect": true, "isSelect" : false},
+            {"answere": "ব", "isCorrect": false, "isSelect" : false},
+            {"answere": "ম", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":7,
+        "question":"What is the correct voice of 'Ra'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "ভ", "isCorrect": false, "isSelect" : false},
+            {"answere": "ল", "isCorrect": false, "isSelect" : false},
+            {"answere": "র", "isCorrect": true, "isSelect" : false},
+            {"answere": "ফ", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":8,
+        "question":"What is the correct voice of 'La'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "ভ", "isCorrect": false, "isSelect" : false},
+            {"answere": "ল", "isCorrect": true, "isSelect" : false},
+            {"answere": "র", "isCorrect": false, "isSelect" : false},
+            {"answere": "ফ", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":9,
+        "question":"What is the correct voice of 'Sha'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "শ", "isCorrect": true, "isSelect" : false},
+            {"answere": "প", "isCorrect": false, "isSelect" : false},
+            {"answere": "ব", "isCorrect": false, "isSelect" : false},
+            {"answere": "ম", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":10,
+        "question":"What is the correct voice of 'Sha'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "র", "isCorrect": false, "isSelect" : false},
+            {"answere": "প", "isCorrect": false, "isSelect" : false},
+            {"answere": "ষ", "isCorrect": true, "isSelect" : false},
+            {"answere": "ম", "isCorrect": false, "isSelect" : false}
+        ]
+    }
+]

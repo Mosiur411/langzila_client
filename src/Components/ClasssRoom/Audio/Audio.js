@@ -33,7 +33,7 @@ const Audio = () => {
 
 
                             <NavLink
-                                to={'englishaudio'}
+                                to={'hindiaudio'}
                                 className={({ isActive }) => (` text-md font-medium flex items-center my-6 mx-4 ${isActive ? 'text-green-400 ' : 'text-white'}`)}
                             ><MdOutlineSwitchLeft className={({ isActive }) => (`text-yellow-400 ${isActive ? 'text-red-400 mr-2  ' : 'text-yellow-400'}`)} />
                                 <p className={({ isActive }) => (` absolute mt-[4px] text-white  text-sm font-semibold  context uppercase ${isActive ? 'text-orange-500' : 'text-white'}`)}
@@ -41,7 +41,7 @@ const Audio = () => {
                             </NavLink>
 
                             <NavLink
-                                to={'hindiaudio'}
+                                to={'englishaudio'}
                                 className={({ isActive }) => (` text-md font-medium flex items-center my-6 mx-4 ${isActive ? 'text-green-400 ' : 'text-white'}`)}
                             ><MdOutlineSwitchLeft className={({ isActive }) => (`text-yellow-400 ${isActive ? 'text-red-400 mr-2  ' : 'text-yellow-400'}`)} />
                                 <p className={({ isActive }) => (` absolute mt-[4px] text-white  text-sm font-semibold  context uppercase ${isActive ? 'text-orange-500' : 'text-white'}`)}
