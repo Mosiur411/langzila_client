@@ -1,7 +1,9 @@
 import React from 'react';
 import { BsArrowUpRight } from "react-icons/bs";
 import { IoIosContact } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 const AboutUs = () => {
+    const navigate = useNavigate();
     return (
         <section className='md:px-10 mb-20 mt-20'>
             <div className='grid  grid-cols-1 md:grid-cols-2 gap-16'>
@@ -50,8 +52,8 @@ const AboutUs = () => {
                                 </p>
                             </div>
                         </div>
-                        <button  className='flex items-center gap-4 SubmitButton py-2'>
-                            <IoIosContact className='text-white'/>
+                        <button onClick={() => navigate('/about')} className='flex items-center gap-4 SubmitButton py-2'>
+                            <IoIosContact className='text-white' />
                             <span>More About Us</span>
                         </button>
                     </div>

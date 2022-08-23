@@ -45,12 +45,14 @@ import HardQuiz5 from './Home/Language/Bangla/HardQuiz/HardQuiz5';
 import EventCard from './Home/UpcomingEvents/EventCard';
 import TypeWord from './LearnType/TypeWord';
 import Certificate from './Certificate/Certificate';
+import AboutUs from './AboutUs/AboutUs';
 
 const DevSixer = ({ show, setShow }) => {
   return (
     <div>
       <Routes>
         <Route path='/' element={<Home show={show} setShow={setShow} />} />
+        <Route path='/about' element={<AboutUs show={show} setShow={setShow} />} />
         <Route path='/CapitalGames' element={<CapitalGames show={show} setShow={setShow} />} />
         <Route path='*' element={<NotFound show={show} setShow={setShow} />} />
         <Route index element={<Home show={show} setShow={setShow} />} />
