@@ -46,7 +46,9 @@ import EventCard from './Home/UpcomingEvents/EventCard';
 import TypeWord from './LearnType/TypeWord';
 import Certificate from './Certificate/Certificate';
 import AboutUs from './AboutUs/AboutUs';
-
+import PlayGames from './PlayGames/PlayGames';
+import TicTacToe from './PlayGames/TicTacToe';
+import ChessBoardUI from './PlayGames/ChessBoardUI';
 const DevSixer = ({ show, setShow }) => {
   return (
     <div>
@@ -63,6 +65,9 @@ const DevSixer = ({ show, setShow }) => {
         <Route index path="/support" element={<Support show={show} setShow={setShow} />} />
         <Route path='/support' element={<Support></Support>} />
         <Route path='/classroom' element={<ClasssRoom />} />
+        <Route path='/playGames' element={<PlayGames show={show} setShow={setShow} />} />
+        <Route path='/playGames/ticTacToe' element={<TicTacToe show={show} setShow={setShow} />} />
+        <Route path='/playGames/chessboardUI' element={<ChessBoardUI show={show} setShow={setShow} />} />
         <Route path='/eventCrad/:id' element={<EventCard />} />+
 
 
