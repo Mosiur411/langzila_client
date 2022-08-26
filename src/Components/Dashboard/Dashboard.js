@@ -7,7 +7,9 @@ import { MdOutlineRateReview, MdOutlineLeaderboard } from 'react-icons/md';
 import { RiQuestionAnswerFill } from 'react-icons/ri';
 import { GiAchievement } from 'react-icons/gi';
 import { BiUserCircle } from 'react-icons/bi';
+import { BsBookmarkCheckFill } from "react-icons/bs";
 import Navbar from '../Home/Navbar/Navbar';
+
 const Dashboard = ({ show, setShow }) => {
     const [user] = useAuthState(auth);
     return (
@@ -37,6 +39,7 @@ const Dashboard = ({ show, setShow }) => {
                                 <li><Link to="/dashboard/review"><MdOutlineRateReview className='text-2xl text-primary' />Add Reviews</Link></li>
                                 <li><Link to="/dashboard/achievements"><GiAchievement className='text-2xl text-primary' />Achievements</Link></li>
                                 <li><Link to="/dashboard/leaderboard"><MdOutlineLeaderboard className='text-2xl text-primary' />Leaderboard</Link></li>
+                                <li><Link to="/dashboard/myboocking"><BsBookmarkCheckFill className='text-2xl text-primary' />My Boocking</Link></li>
                             </>}
                         </ul>
                     </div>

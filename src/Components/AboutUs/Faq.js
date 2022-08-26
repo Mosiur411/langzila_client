@@ -7,7 +7,7 @@ const Faq1 = () => {
     const [show4, setShow4] = useState(false);
 
     return (
-        <div className="container mx-auto lg:py-12 lg:px-20 md:px-6 py-9 px-4">
+        <div className="mx-auto lg:py-12 lg:px-20 md:px-6 py-9 px-4">
            <h3 className='uppercase text-primary font-semibold text-center mb-3 text-xl'>FAQ</h3>
             <h2 className=" font-semibold lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-gray-800 text-center">Frequently Asked Questions</h2>
             <p className=" font-normal text-base leading-6 text-gray-600 text-center mt-4">Here are few of the most frequently asked questions by our valueable customers</p>

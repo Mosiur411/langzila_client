@@ -12,7 +12,7 @@ const AboutUsIntroduction = () => {
     return (
         <section class="mb-12 lg:bg-none bg-secondary">
             <img className='w-full absolute lg:block hidden' src="https://themes.envytheme.com/ecademy/wp-content/themes/ecademy/assets/img/white-bg.jpg" alt="" />
-            <div class="relative container mx-auto flex pt-12 pb-24 lg:flex-row md:flex-col flex-col items-center px-5 lg:px-20">
+            <div class="relative mx-auto flex pt-12 pb-24 lg:flex-row md:flex-col flex-col items-center px-5 lg:px-20">
                 <div class="lg:w-1/2 md:w-full md:mb-4 w-5/6 mb-10">
                     <img class="object-cover object-center rounded lg:pr-12" alt="hero" src="https://i.ibb.co/cJ2kcHk/about.png" />
                 </div>

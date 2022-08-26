@@ -6,7 +6,7 @@ import { MdPublishedWithChanges } from 'react-icons/md';
 const EducationForEveryone = () => {
     return (
         <section class="lg:px-20 mt-96 lg:mt-0">
-            <div class="container px-5 py-24 mx-auto">
+            <div class="px-5 py-24 mx-auto">
                 <div class="text-center mx-auto mb-[60px] max-w-[610px]">
                     <span class="font-semibold text-md uppercase text-primary mb-3 block">
                         EDUCATION FOR EVERYONE
