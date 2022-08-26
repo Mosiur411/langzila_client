@@ -46,6 +46,7 @@ import EventCard from "./Home/UpcomingEvents/EventCard";
 import TypeWord from "./LearnType/TypeWord";
 import Certificate from "./Certificate/Certificate";
 import Translator from "./LanguageTranslator/Translator";
+import Canvas from "./Canvas/Canvas";
 
 const DevSixer = ({ show, setShow }) => {
   return (
@@ -107,6 +108,7 @@ const DevSixer = ({ show, setShow }) => {
         <Route path="/typelearn" element={<TypeWord></TypeWord>} />
         <Route path="/classroom" element={<ClasssRoom />} />
         <Route path="/translator" element={<Translator />} />
+        <Route path="/canvas" element={<Canvas />}></Route>
         {/* joy */}
         <Route path="/audio" element={<Audio />}>
           <Route path="search" element={<Search />}></Route>
