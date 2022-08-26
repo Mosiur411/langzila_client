@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-
+import { getAuth, updateProfile } from "firebase/auth";
+import { getDownloadURL, getStorage, ref, uploadBytes } from "firebase/storage";
 const firebaseConfig = {
   apiKey: "AIzaSyBmXIFRLvhUq8ILvygMJRxuUz3gfaPyL58",
   authDomain: "langzila-52273.firebaseapp.com",
@@ -12,6 +12,20 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
+const auth = getAuth();
+const storage = getStorage();
 
 export default auth;
+export async function upload(file, user, setLoading,displayName) {
+  const fileRef = ref(storage, user.uid);
+
+  setLoading(true);
+  
+  const snapshot = await uploadBytes(fileRef, file);
+  const photoURL = await getDownloadURL(fileRef);
+
+  updateProfile(user, {displayName,photoURL});
+  
+  setLoading(false);
+  alert("Uploaded file!");
+}

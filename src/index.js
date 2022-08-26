@@ -3,7 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
+import {
 
+  QueryClient,
+
+  QueryClientProvider,
+
+} from 'react-query'
 
 import TimeAgo from 'javascript-time-ago'
 
@@ -11,17 +17,17 @@ import en from 'javascript-time-ago/locale/en.json'
 import ru from 'javascript-time-ago/locale/ru.json'
 
 TimeAgo.addDefaultLocale(en)
-// TimeAgo.addLocale(ru)
-// const queryClient = new QueryClient()
+TimeAgo.addLocale(ru)
+const queryClient = new QueryClient()
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    {/* <QueryClientProvider client={queryClient}> */}
+    <QueryClientProvider client={queryClient}>
       
         <App />
   
-    {/* </QueryClientProvider> */}
+    </QueryClientProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

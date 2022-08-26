@@ -9,7 +9,7 @@ import './Addquestion.css'
 import 'react-quill/dist/quill.snow.css';
 import { useNavigate } from 'react-router-dom';
 import { AiOutlineCloseCircle } from 'react-icons/ai'
-import { AiOutlineQuestionCircle } from 'react-icons/ai'
+import EditorToolbar, { modules, formats } from "./EditorToolbar";
 const Addquestion = () => {
   const [user] = useAuthState(auth);
   const { register, formState: { errors }, handleSubmit, reset } = useForm();
@@ -58,6 +58,8 @@ const Addquestion = () => {
     const image = data.image[0]
     const formData = new FormData()
     formData.append('image', image)
+
+    
     const url = `https://api.imgbb.com/1/upload?key=${imageStorageKey}`
     fetch(url, {
       method: "POST",
@@ -126,6 +128,7 @@ const Addquestion = () => {
               <label className="label">
                 <span className="label-text text-xl font-bold"> <span className='text-xs text-red-600  '>REQUIRED</span></span>
               </label>
+              <EditorToolbar toolbarId={'t1'}/>
               <ReactQuill
                 id='editor' style={{
                   border: "1px solid #fe4854", color: "black"
@@ -134,7 +137,8 @@ const Addquestion = () => {
                 theme="snow"
 
                 value={valuequil}
-                onChange={setValuequil} />
+                onChange={setValuequil}   modules={modules('t1')}
+                formats={formats} />
 
 
             </div>

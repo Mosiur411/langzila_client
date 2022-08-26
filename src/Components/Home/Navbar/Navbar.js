@@ -41,6 +41,30 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
             <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
             >Forum</p>
         </NavLink>
+        <NavLink
+            to={'/voicetotext'}
+            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+        >
+            <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
+            >V to T</p>
+            
+        </NavLink>
+        <NavLink
+            to={'/texttovoice'}
+            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+        >
+            <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
+            >T to V</p>
+            
+        </NavLink>
+        <NavLink
+            to={'/canvas'}
+            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+        >
+            <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
+            >Canvas</p>
+            
+        </NavLink>
 
 
         <NavLink

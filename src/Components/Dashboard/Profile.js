@@ -2,14 +2,22 @@ import React, { useEffect, useState } from 'react';
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { BiEdit } from 'react-icons/bi';
-import auth from '../Firebase/firebase.init';
-import { useAuthState } from 'react-firebase-hooks/auth';
+import auth, { upload } from '../Firebase/firebase.init';
+import { useAuthState, useUpdateProfile } from 'react-firebase-hooks/auth';
+import { FiEdit } from 'react-icons/fi';
+import { useForm } from 'react-hook-form';
+import Spinner from '../Spinner/Spinner';
 
 const Profile = () => {
     const [user] = useAuthState(auth);
     const [userInfo, setUserInfo] = useState({});
-   
-
+    const { register, formState: { errors }, handleSubmit, reset } = useForm();
+    const [updateProfile, updating, error] = useUpdateProfile(auth);
+    const [displayName, setDisplayName] = useState('');
+    const [photoURL, setPhotoURL] = useState('https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png');
+    const [photo, setPhoto] = useState(null);
+    const [loading, setLoading] = useState(false);
+ 
     const email = user.email;
     console.log(email)
     useEffect(() => {
@@ -21,9 +29,39 @@ const Profile = () => {
             })
 
     }, [])
-   
+   if (updating) {
+    return <Spinner/>
+   }
 console.log(userInfo);
 
+function handleChange(e) {
+    if (e.target.files[0]) {
+
+      const image = e.target.files[0]
+      const formData = new FormData()
+    formData.append('image', image)
+
+    
+    const url = `https://api.imgbb.com/1/upload?key=${imageStorageKey}`
+    fetch(url, {
+      method: "POST",
+      body: formData,
+    })
+      .then(res => res.json())
+      .then(result => {
+        setPhotoURL(result.data.url)
+        console.log(photoURL);
+        setPhoto(result.data.url)
+      })
+    }
+  }
+
+
+  const handleClick = async e=>{
+  await updateProfile({ displayName, photoURL });
+        alert('Updated profile');
+   
+  }
     const updateMyProfile = event => {
         console.log(event);
         event.preventDefault();
@@ -56,26 +94,60 @@ console.log(userInfo);
             })
 
     };
+    const imageStorageKey = '3a1e59ad1d3a8caba2efe37f45b560e9';
+
+        const onSubmit = async data => {
+            const image = data.image[0]
+            const formData = new FormData()
+            formData.append('image', image)
+        
+            
+            const url = `https://api.imgbb.com/1/upload?key=${imageStorageKey}`
+            fetch(url, {
+              method: "POST",
+              body: formData,
+            })
+              .then(res => res.json())
+              .then( async result => {
+                const photoURL = result.data.url;
+                const displayName=data.target.name.value
+                await updateProfile({ displayName, photoURL })
+                toast("Profile updated")
+              })
+       
+        
+        }
 
     return (
         <div>
-            <div className='mx-12 shadow-md border border-gray-100 lg:w-[900px] rounded-lg'>
-                <div className='lg:flex flex-wrap justify-between'>
-                    <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                        <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
-                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
-                            </svg>
+            <div className='mx-12 shadow-md border  border-gray-100 lg:w-[900px] rounded-lg'>
+                <div className='lg:flex flex-wrap justify-between relative'>
+                    <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8 relative">
+                        <div class="w-20 h-20 rounded-full relative inline-flex items-center justify-center bg-gray-200 text-gray-400 ">
+                          
+                           <div class="avatar">
+  <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+  <img src={user?.photoURL} alt="" />
+  </div>
+</div>
+                     
+
+{/* <input onClick={(data)=>handleSubmit(data)} style={{display:"none"}} id="file-upload" type="file" name='img'/> */}
+
+                            
                         </div>
                         <div class="flex flex-col items-center text-center justify-center">
-                            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">{user?.displayName}</h2>
+                            <h2 class="font-medium title-fonttext-gray-900 text-lg ">{user?.displayName}</h2>
                             <div class="w-12 h-1 bg-primary rounded mt-2 mb-4"></div>
                             <p class="text-base">
                                 <lebel class='font-bold'>Describe Yourself</lebel>
                                 <p>{userInfo?.desc}</p>
                             </p>
                         </div>
+                        <label for="my-modal1" class="">
+                            <BiEdit className='text-center absolute top-1 right-1 text-primary' />
+</label>
+                    
                     </div>
                     <div className='lg:w-2/3  pr-6 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left'>
                         <div className='flex justify-between items-center '>
@@ -108,7 +180,7 @@ console.log(userInfo);
                             <p>{userInfo?.Birthdate}</p>
                         </div>
                     </div>
-
+                 
                 </div>
 
             </div>
@@ -160,6 +232,31 @@ console.log(userInfo);
                     </div>
                 </div>
             </div>
+
+
+
+
+            {/* pic modal */}
+            <input type="checkbox" id="my-modal1" class="modal-toggle" />
+
+<div class="modal">
+    <div class="modal-box">
+    <form >
+    <div className="relative z-0 w-full mb-6 group">
+                <lebel class='font-bold'>Name</lebel>
+                <input    onChange={(e) => setDisplayName(e.target.value)} type="name" name="name" className="block py-2.5 px-0 w-full text-sm text-gray-900 border-0 border-b-2 border-gray-300 appearance-none" defaultValue={user?.displayName} />
+            </div>
+            <p>Update Your Profile Images</p>
+            <input type="file" onChange={handleChange} />
+      <button disabled={loading || !photo}  className="btn btn-primary" onClick={handleClick}> 
+       
+    Update Profile</button>
+        </form>
+        <div class="modal-action">
+            <label for="my-modal1" class="btn">Close</label>
+        </div>
+    </div>
+</div>
         </div>
 
     );
