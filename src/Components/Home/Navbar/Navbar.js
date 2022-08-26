@@ -42,6 +42,13 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
             >Classroom</p>
         </NavLink>
 
+        <NavLink
+            to={'/playGames'}
+            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+        >
+            <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
+            >Play Games</p>
+        </NavLink>
 
         <NavLink
             to={'/contact'}

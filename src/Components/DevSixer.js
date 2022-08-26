@@ -55,7 +55,9 @@ import Assignemnt3Quiz from "./Assignment/Assignemnt3Quiz/Assignemnt3Quiz";
 import Translator from "./LanguageTranslator/Translator";
 import Canvas from "./Canvas/Canvas";
 import AboutUs from './AboutUs/AboutUs';
-
+import PlayGames from './PlayGames/PlayGames';
+import TicTacToe from './PlayGames/TicTacToe';
+import ChessBoardUI from './PlayGames/ChessBoardUI';
 const DevSixer = ({ show, setShow }) => {
   return (
     <div>
@@ -72,6 +74,9 @@ const DevSixer = ({ show, setShow }) => {
         <Route index path="/support" element={<Support show={show} setShow={setShow} />} />
         <Route path='/support' element={<Support></Support>} />
         <Route path='/classroom' element={<ClasssRoom />} />
+        <Route path='/playGames' element={<PlayGames show={show} setShow={setShow} />} />
+        <Route path='/playGames/ticTacToe' element={<TicTacToe show={show} setShow={setShow} />} />
+        <Route path='/playGames/chessboardUI' element={<ChessBoardUI show={show} setShow={setShow} />} />
         <Route path='/eventCrad/:id' element={<EventCard />} />+
 
         <Route path="/" element={<Home show={show} setShow={setShow} />} />
