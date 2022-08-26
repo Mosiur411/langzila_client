@@ -29,7 +29,7 @@ const ClasssRoom = ({ show, setShow }) => {
                             <h1 className=' text-2xl font-bold text-purple-900 '>Hello Learner!</h1>
                             <h3>Select your favorite learning process and learn very effective and interesting way. </h3>
                             <div className=' w-full text-center mt-3'>
-                                <button className=' text-center mx-auto bg-purple-900 text-sm font-medium py-1 px-3 rounded text-white'>Start Quizs</button>
+                                <button onClick={() => navigate('/assignment/assignment1quiz')} className=' text-center mx-auto bg-purple-900 text-sm font-medium py-1 px-3 rounded text-white'>Quick Test</button>
                             </div>
                         </div>
                     </div>
