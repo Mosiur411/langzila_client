@@ -1,0 +1,66 @@
+/* The container */
+.container {
+    display: block;
+    background: rgb(237, 178, 178);
+    position: relative;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 0;
+    border-radius: 3px;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    height: 100%;
+    width: 100%;
+    background-color: #eee;
+    z-index: -1;
+    padding-top: 7px;
+    border-radius: 3px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+    color: #ffffff;
+  }
+.flip-clock:nth-child(1){
+display: none !important;
+}
+.flip-clock ._3cpN7:nth-child(1){
+  display: none;
+}
+.flip-clock ._2hRXr:nth-child(2){
+  display: none;
+}
+
+.flip-clock ._3cpN7:nth-child(3){
+  display: none;
+}
+.flip-clock ._2hRXr:nth-child(4){
+  display: none;
+}
+
+.flip-clock ._3cpN7:nth-child(5){
+  display: none;
+}
+.flip-clock ._2hRXr:nth-child(6){
+  display: none;
+}
+  
