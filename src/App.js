@@ -8,6 +8,10 @@ import "aos/dist/aos.css";
 
 import "./App.css";
 import Footer from "./Components/Home/Footer/Footer";
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
 function App() {
   const [show, setShow] = useState(
     localStorage.getItem("theme") === "dark" ? true : false
@@ -37,6 +41,7 @@ function App() {
         ]}
       />
       <Footer></Footer>
+
     </div>
   );
 }

@@ -1,34 +1,38 @@
 [
     {
         "id": 1,
-        "title" : "Music Conference",
+        "title" : "Language Conference",
         "text": "This event help you to learn better way. It help Listening, Specking and Paticipation.",
-        "data" : "Septembar 02, 2022",
-        "time": "12.00 AM To 12.00 PM",
-        "image" : "https://i.ibb.co/yWVMKF4/image.jpg"
+        "data" : "Septembar 05, 2022",
+        "day" : "Friday",
+        "time": "10.00 AM - 12.00 AM",
+        "image" : "https://i.ibb.co/Q9vBmw6/Event1.png"
     },
     {
         "id": 2,
-        "title" : "Paper Plates Art",
+        "title" : "Quiz Conference",
         "text": "This event help you to learn better way. It help Listening, Specking and Paticipation.",
         "data" : "Septembar 12, 2022",
-        "time": "12.00 AM To 12.00 PM",
-        "image" : "https://i.ibb.co/G3mg71H/image4.jpg"
+        "day" : "Monday",
+        "time": "12.00 AM - 02.00 PM",
+        "image" : "https://i.ibb.co/pd4sT5n/Event4.png"
     },
     {
         "id": 3,
-        "title" : "Imagination Classes",
+        "title" : "Learning Classes",
         "text": "This event help you to learn better way. It help Listening, Specking and Paticipation.",
         "data" : "Septembar 19, 2022",
-        "time": "12.00 AM To 12.00 PM",
-        "image" : "https://i.ibb.co/wW1GXkc/image2.jpg"
+        "day" : "Monday",
+        "time": "04.00 PM - 06.00 PM",
+        "image" : "https://i.ibb.co/mHwfL5F/Event2.png"
     },
     {
         "id": 4,
         "title" : "Number Matching",
         "text": "This event help you to learn better way. It help Listening, Specking and Paticipation.",
         "data" : "Septembar 28, 2022",
-        "time": "12.00 AM To 12.00 PM",
-        "image" : "https://i.ibb.co/c1WkBPC/image3.jpg"
+        "day" : "Wednesday",
+        "time": "10.00 AM - 12.00 AM",
+        "image" : "https://i.ibb.co/12fPnrW/Event3.png"
     }
 ]
