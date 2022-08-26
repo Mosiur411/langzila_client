@@ -22,7 +22,7 @@ const UpcomingEvents = () => {
                 <img className='w-full' src="https://i.ibb.co/4J5w3Jp/events-rectangle1.png" alt="" />
                 <img className='float-right pr-12 mt-5 lg:block hidden covid9' src="https://themes.envytheme.com/ecademy/wp-content/uploads/2020/07/k-shape17.png" alt="" />
                 <div className="text-gray-600 body-font">
-                    <div className="container px-5 py-20 mx-auto max-w-7xl">
+                    <div className=" px-5 py-20 mx-auto max-w-7xl">
                         <div className='text-center lg:w-[760px] mx-auto'>
                             <h3 className='uppercase text-primary font-semibold'>Events</h3>
                             <h1 className='py-2 text-3xl font-bold text-accent'>Our Upcoming Events</h1>
