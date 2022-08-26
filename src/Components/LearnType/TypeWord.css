@@ -15,7 +15,11 @@
     position: absolute;
     width: 1px;
     height: 1px;
+
     color: black;
+
+    color: rgb(155, 41, 41);
+
 }
 
 .caret {

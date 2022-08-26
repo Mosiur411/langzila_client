@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Quizimg from '../../../assets/QuizImg/Quiz2.png'
 
 const Hard = () => {
+    const navigate = useNavigate()
     return (
         <div className=' max-w-7xl mx-auto my-10'>
             <div className=' pt-10 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 justify-center'>
@@ -9,7 +11,7 @@ const Hard = () => {
                 <div className=' h-40 w-[80] bg-sky-400 shadow rounded-md flex items-center overflow-hidden'>
                     <div className=' w-full'>
                         <h1 className='w-full uppercase  font-semibold text-3xl text-gray-700'>Quiz <span className=' text-5xl text-white'>1</span></h1>
-                        <button className=' py-[5px] px-4 rounded-3xl text-black border bg-white hover:border hover:border-black hover:bg-transparent hover:text-black text-md font-semibold mt-3 '>Start Now</button>
+                        <button onClick={() => navigate('/hard/hardquiz1')} className=' py-[5px] px-4 rounded-3xl text-black border bg-white hover:border hover:border-black hover:bg-transparent hover:text-black text-md font-semibold mt-3 '>Start Now</button>
                     </div>
                     <img className=' w-[180px] h-full mt-7' src={Quizimg} alt="Quizimg" />
                 </div>
@@ -17,7 +19,7 @@ const Hard = () => {
                 <div className=' h-40 w-[80] bg-sky-400 shadow rounded-md flex items-center overflow-hidden'>
                     <div className=' w-full'>
                         <h1 className='w-full uppercase  font-semibold text-3xl text-gray-700'>Quiz <span className=' text-5xl text-white'>2</span></h1>
-                        <button className=' py-[5px] px-4 rounded-3xl text-black border bg-white hover:border hover:border-black hover:bg-transparent hover:text-black text-md font-semibold mt-3 '>Start Now</button>
+                        <button onClick={() => navigate('/hard/hardquiz2')} className=' py-[5px] px-4 rounded-3xl text-black border bg-white hover:border hover:border-black hover:bg-transparent hover:text-black text-md font-semibold mt-3 '>Start Now</button>
                     </div>
                     <img className=' w-[180px] h-full mt-7' src={Quizimg} alt="Quizimg" />
                 </div>
@@ -26,7 +28,7 @@ const Hard = () => {
                 <div className=' h-40 w-[80] bg-sky-400 shadow rounded-md flex items-center overflow-hidden'>
                     <div className=' w-full'>
                         <h1 className='w-full uppercase  font-semibold text-3xl text-gray-700'>Quiz <span className=' text-5xl text-white'>3</span></h1>
-                        <button className=' py-[5px] px-4 rounded-3xl text-black border bg-white hover:border hover:border-black hover:bg-transparent hover:text-black text-md font-semibold mt-3 '>Start Now</button>
+                        <button onClick={() => navigate('/hard/hardquiz3')} className=' py-[5px] px-4 rounded-3xl text-black border bg-white hover:border hover:border-black hover:bg-transparent hover:text-black text-md font-semibold mt-3 '>Start Now</button>
                     </div>
                     <img className=' w-[180px] h-full mt-7' src={Quizimg} alt="Quizimg" />
                 </div>
@@ -35,7 +37,7 @@ const Hard = () => {
                 <div className=' h-40 w-[80] bg-sky-400 shadow rounded-md flex items-center overflow-hidden'>
                     <div className=' w-full'>
                         <h1 className='w-full uppercase  font-semibold text-3xl text-gray-700'>Quiz <span className=' text-5xl text-white'>4</span></h1>
-                        <button className=' py-[5px] px-4 rounded-3xl text-black border bg-white hover:border hover:border-black hover:bg-transparent hover:text-black text-md font-semibold mt-3 '>Start Now</button>
+                        <button onClick={() => navigate('/hard/hardquiz4')} className=' py-[5px] px-4 rounded-3xl text-black border bg-white hover:border hover:border-black hover:bg-transparent hover:text-black text-md font-semibold mt-3 '>Start Now</button>
                     </div>
                     <img className=' w-[180px] h-full mt-7' src={Quizimg} alt="Quizimg" />
                 </div>
@@ -44,7 +46,7 @@ const Hard = () => {
                 <div className=' h-40 w-[80] bg-sky-400 shadow rounded-md flex items-center overflow-hidden'>
                     <div className=' w-full'>
                         <h1 className='w-full uppercase  font-semibold text-3xl text-gray-700'>Quiz <span className=' text-5xl text-white'>5</span></h1>
-                        <button className=' py-[5px] px-4 rounded-3xl text-black border bg-white hover:border hover:border-black hover:bg-transparent hover:text-black text-md font-semibold mt-3 '>Start Now</button>
+                        <button onClick={() => navigate('/hard/hardquiz5')} className=' py-[5px] px-4 rounded-3xl text-black border bg-white hover:border hover:border-black hover:bg-transparent hover:text-black text-md font-semibold mt-3 '>Start Now</button>
                     </div>
                     <img className=' w-[180px] h-full mt-7' src={Quizimg} alt="Quizimg" />
                 </div>
