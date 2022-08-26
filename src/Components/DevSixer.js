@@ -45,6 +45,15 @@ import HardQuiz5 from './Home/Language/Bangla/HardQuiz/HardQuiz5';
 import EventCard from './Home/UpcomingEvents/EventCard';
 import TypeWord from './LearnType/TypeWord';
 import Certificate from './Certificate/Certificate';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import MyBoocking from "./Dashboard/MyBoocking";
+import Assignment from "./Assignment/Assignment";
+import Assignemnt1Quiz from "./Assignment/Assignemnt1Quiz/Assignemnt1Quiz";
+import Assignemnt2Quiz from "./Assignment/Assignemnt2Quiz/Assignemnt2Quiz";
+import Assignemnt3Quiz from "./Assignment/Assignemnt3Quiz/Assignemnt3Quiz";
+import Translator from "./LanguageTranslator/Translator";
+import Canvas from "./Canvas/Canvas";
 import AboutUs from './AboutUs/AboutUs';
 
 const DevSixer = ({ show, setShow }) => {
@@ -64,10 +73,6 @@ const DevSixer = ({ show, setShow }) => {
         <Route path='/support' element={<Support></Support>} />
         <Route path='/classroom' element={<ClasssRoom />} />
         <Route path='/eventCrad/:id' element={<EventCard />} />+
-
-
-
-
 
         <Route path="/" element={<Home show={show} setShow={setShow} />} />
         <Route
@@ -95,10 +100,55 @@ const DevSixer = ({ show, setShow }) => {
         />
         <Route path="/support" element={<Support></Support>} />
         <Route path="/classroom" element={<ClasssRoom />} />
-
+        <Route path="/eventCrad/:id" element={<EventCard />} />
+        <Route
+          index
+          path="/contact"
+          element={<Contact show={show} setShow={setShow} />}
+        />
+        <Route
+          index
+          path="/certificate"
+          element={<Certificate show={show} setShow={setShow} />}
+        />
+        <Route
+          index
+          path="/support"
+          element={<Support show={show} setShow={setShow} />}
+        />
+        <Route path="/support" element={<Support></Support>} />
+        <Route path="/classroom" element={<ClasssRoom />} />
+        <Route path="/eventCrad/:id" element={<EventCard />} />+
+        <Route path="/" element={<Home show={show} setShow={setShow} />} />
+        <Route
+          path="/CapitalGames"
+          element={<CapitalGames show={show} setShow={setShow} />}
+        />
+        <Route path="*" element={<NotFound show={show} setShow={setShow} />} />
+        <Route index element={<Home show={show} setShow={setShow} />} />
+        <Route path="/signIn" element={<SignIn></SignIn>} />
+        <Route path="/signUp" element={<SignUp></SignUp>} />
+        <Route
+          index
+          path="/contact"
+          element={<Contact show={show} setShow={setShow} />}
+        />
+        <Route
+          index
+          path="/certificate"
+          element={<Certificate show={show} setShow={setShow} />}
+        />
+        <Route
+          index
+          path="/support"
+          element={<Support show={show} setShow={setShow} />}
+        />
+        <Route path="/support" element={<Support></Support>} />
+        <Route path="/classroom" element={<ClasssRoom />} />
         <Route path="/typelearn" element={<TypeWord></TypeWord>} />
         <Route path="/classroom" element={<ClasssRoom />} />
-
+        <Route path="/translator" element={<Translator />} />
+        <Route path="/canvas" element={<Canvas />}></Route>
         {/* joy */}
         <Route path="/audio" element={<Audio />}>
           <Route path="search" element={<Search />}></Route>
@@ -106,68 +156,82 @@ const DevSixer = ({ show, setShow }) => {
           <Route path="englishaudio" element={<EnglishAudio />}></Route>
           <Route path="hindiaudio" element={<HindiAudio />}></Route>
         </Route>
-
         <Route path="/video" element={<Video />}>
           <Route path="banglavideo" element={<BanglaVideo />}></Route>
           <Route path="hindivideo" element={<HindiVideo />}></Route>
           <Route path="englishvideo" element={<EnglishVideo />}></Route>
         </Route>
-
+        <Route path="/assignment" element={<Assignment />}>
+          <Route path="assignment1quiz" element={<Assignemnt1Quiz />}></Route>
+          <Route path="assignment2quiz" element={<Assignemnt2Quiz />}></Route>
+          <Route path="assignment3quiz" element={<Assignemnt3Quiz />}></Route>
+        </Route>
         <Route path="/bangla" element={<Bangla />}>
           <Route path="easy" element={<Easy />}></Route>
           <Route path="medium" element={<Medium />}></Route>
           <Route path="hard" element={<Hard />}></Route>
         </Route>
-
+        <Route path="/bangla" element={<Bangla />}>
+          <Route path="easy" element={<Easy />}></Route>
+          <Route path="medium" element={<Medium />}></Route>
+          <Route path="hard" element={<Hard />}></Route>
+        </Route>
         <Route path="quiz/easyquiz1" element={<EasyQuiz1 />}></Route>
         <Route path="quiz/easyquiz2" element={<EasyQuiz2 />}></Route>
         <Route path="quiz/easyquiz3" element={<EasyQuiz3 />}></Route>
         <Route path="quiz/easyquiz4" element={<EasyQuiz4 />}></Route>
         <Route path="quiz/easyquiz5" element={<EasyQuiz5 />}></Route>
         {/* joy */}
-
-
-        <Route path="/bangla" element={<Bangla />} >
-          <Route path="easy" element={<Easy />} ></Route>
-          <Route path="medium" element={<Medium />} ></Route>
-          <Route path="hard" element={<Hard />} ></Route>
+        <Route path="/bangla" element={<Bangla />}>
+          <Route path="easy" element={<Easy />}></Route>
+          <Route path="medium" element={<Medium />}></Route>
+          <Route path="hard" element={<Hard />}></Route>
         </Route>
-
-        <Route path='quiz/easyquiz1' element={<EasyQuiz1 />}></Route>
-        <Route path='quiz/easyquiz2' element={<EasyQuiz2 />}></Route>
-        <Route path='quiz/easyquiz3' element={<EasyQuiz3 />}></Route>
-        <Route path='quiz/easyquiz4' element={<EasyQuiz4 />}></Route>
-        <Route path='quiz/easyquiz5' element={<EasyQuiz5 />}></Route>
-
-
-        <Route path='medium/mediumquiz1' element={<MediumQuiz1 />}></Route>
-        <Route path='medium/mediumquiz2' element={<MediumQuiz2 />}></Route>
-        <Route path='medium/mediumquiz3' element={<MediumQuiz3 />}></Route>
-        <Route path='medium/mediumquiz4' element={<MediumQuiz4 />}></Route>
-        <Route path='medium/mediumquiz5' element={<MediumQuiz5 />}></Route>
-
-
-        <Route path='hard/hardquiz1' element={<HardQuiz1 />}></Route>
-        <Route path='hard/hardquiz2' element={<HardQuiz2 />}></Route>
-        <Route path='hard/hardquiz3' element={<HardQuiz3 />}></Route>
-        <Route path='hard/hardquiz4' element={<HardQuiz4 />}></Route>
-        <Route path='hard/hardquiz5' element={<HardQuiz5 />}></Route>
+        <Route path="quiz/easyquiz1" element={<EasyQuiz1 />}></Route>
+        <Route path="quiz/easyquiz2" element={<EasyQuiz2 />}></Route>
+        <Route path="quiz/easyquiz3" element={<EasyQuiz3 />}></Route>
+        <Route path="quiz/easyquiz4" element={<EasyQuiz4 />}></Route>
+        <Route path="quiz/easyquiz5" element={<EasyQuiz5 />}></Route>
+        <Route path="medium/mediumquiz1" element={<MediumQuiz1 />}></Route>
+        <Route path="medium/mediumquiz2" element={<MediumQuiz2 />}></Route>
+        <Route path="medium/mediumquiz3" element={<MediumQuiz3 />}></Route>
+        <Route path="medium/mediumquiz4" element={<MediumQuiz4 />}></Route>
+        <Route path="medium/mediumquiz5" element={<MediumQuiz5 />}></Route>
+        <Route path="hard/hardquiz1" element={<HardQuiz1 />}></Route>
+        <Route path="hard/hardquiz2" element={<HardQuiz2 />}></Route>
+        <Route path="hard/hardquiz3" element={<HardQuiz3 />}></Route>
+        <Route path="hard/hardquiz4" element={<HardQuiz4 />}></Route>
+        <Route path="hard/hardquiz5" element={<HardQuiz5 />}></Route>
         {/* joy */}
-
-
-
         {/* Arfat */}
-        <Route path="/dashboard" element={<RequiredAuth><Dashboard /></RequiredAuth>} >
+        <Route
+          path="/dashboard"
+          element={
+            <RequiredAuth>
+              <Dashboard />
+            </RequiredAuth>
+          }
+        >
           <Route index element={<Profile></Profile>}></Route>
           <Route path="review" element={<AddReview></AddReview>}></Route>
-          <Route path="achievements" element={<Achievements></Achievements>}></Route>
-          <Route path="certificates" element={<Certificate></Certificate>}></Route>
-          <Route path="leaderboard" element={<LeaderBoard></LeaderBoard>}></Route>
+          <Route
+            path="achievements"
+            element={<Achievements></Achievements>}
+          ></Route>
+          <Route
+            path="certificates"
+            element={<Certificate></Certificate>}
+          ></Route>
+          <Route
+            path="leaderboard"
+            element={<LeaderBoard></LeaderBoard>}
+          ></Route>
           <Route path="ask" element={<AskQuestion></AskQuestion>}></Route>
+          <Route path="myboocking" element={<MyBoocking></MyBoocking>}></Route>
         </Route>
         {/* Arfat */}
-
       </Routes>
+      <ToastContainer />
     </div>
   );
 };

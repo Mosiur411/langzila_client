@@ -24,7 +24,7 @@ const Home = ({ show, setShow }) => {
                 <Language />
                 <AboutUs></AboutUs>
                 <UpcomingEvents></UpcomingEvents>
-                <CountsUp></CountsUp>
+                {/* <CountsUp></CountsUp> */}
                 <Feedback></Feedback>
                 <div className='mb-24'>
                     <LatestBlog></LatestBlog>

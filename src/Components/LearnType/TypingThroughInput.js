@@ -65,7 +65,7 @@ const TypingThroughInput = ({ text }) => {
       >
         <div
           ref={letterElements}
-          className="tracking-wide pointer-events-none select-none mb-4"
+          className="tracking-wide pointer-events-none select-none my-4 text-3xl"
           tabIndex={0}
         >
           {text.split("").map((letter, index) => {
@@ -95,7 +95,7 @@ const TypingThroughInput = ({ text }) => {
           </span>
         ) : null}
       </div>
-      <p className="text-sm">
+      <p className="text-sm text-center">
         {phase === 2 && startTime && endTime ? (
           <>
             <span className="text-green-500 mr-4">
@@ -107,9 +107,21 @@ const TypingThroughInput = ({ text }) => {
             <span className="text-yellow-500 mr-4">Duration: {duration}s</span>
           </>
         ) : null}
-        <span className="mr-4"> Character Count: {currIndex}</span>
-        <span className="mr-4"> Correct Characters: {correctChar}</span>
-        <span className="mr-4"> Incorrect Characters: {errorChar}</span>
+        <span className="mr-4 font-bold text-black text-xl">
+          {" "}
+          Character Count: {currIndex}
+        </span>
+        <span className="mr-4 font-bold text-black text-xl">
+          {" "}
+          Correct: {correctChar}
+        </span>
+        <span className="mr-4 font-bold text-black text-xl">
+          {" "}
+          Incorrect: {errorChar}
+        </span>
+        <h5 className="mx-auto border border-gray-300 bg-primary text-white text-sm font-bold rounded-lg block lg:w-1/2 p-2.5 text-center my-4">
+          Press ESC to reset
+        </h5>
       </p>
     </div>
   );

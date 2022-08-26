@@ -5,7 +5,7 @@ const OurInstructors = () => {
         <div>
             <section class="bg-secondary">
                 <img className='w-full' src="https://i.ibb.co/4J5w3Jp/events-rectangle1.png" alt="" />
-                <div class="container px-20 py-12">
+                <div class="px-20 py-12">
                     <div class="flex flex-wrap -mx-4">
                         <div class="w-full px-4">
                             <div class="text-center mx-auto mb-[60px] max-w-[510px]">
