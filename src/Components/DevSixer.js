@@ -45,6 +45,13 @@ import HardQuiz5 from "./Home/Language/Bangla/HardQuiz/HardQuiz5";
 import EventCard from "./Home/UpcomingEvents/EventCard";
 import TypeWord from "./LearnType/TypeWord";
 import Certificate from "./Certificate/Certificate";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import MyBoocking from "./Dashboard/MyBoocking";
+import Assignment from "./Assignment/Assignment";
+import Assignemnt1Quiz from "./Assignment/Assignemnt1Quiz/Assignemnt1Quiz";
+import Assignemnt2Quiz from "./Assignment/Assignemnt2Quiz/Assignemnt2Quiz";
+import Assignemnt3Quiz from "./Assignment/Assignemnt3Quiz/Assignemnt3Quiz";
 import Translator from "./LanguageTranslator/Translator";
 import Canvas from "./Canvas/Canvas";
 
@@ -61,6 +68,24 @@ const DevSixer = ({ show, setShow }) => {
         <Route index element={<Home show={show} setShow={setShow} />} />
         <Route path="/signIn" element={<SignIn></SignIn>} />
         <Route path="/signUp" element={<SignUp></SignUp>} />
+        <Route
+          index
+          path="/contact"
+          element={<Contact show={show} setShow={setShow} />}
+        />
+        <Route
+          index
+          path="/certificate"
+          element={<Certificate show={show} setShow={setShow} />}
+        />
+        <Route
+          index
+          path="/support"
+          element={<Support show={show} setShow={setShow} />}
+        />
+        <Route path="/support" element={<Support></Support>} />
+        <Route path="/classroom" element={<ClasssRoom />} />
+        <Route path="/eventCrad/:id" element={<EventCard />} />
         <Route
           index
           path="/contact"
@@ -121,6 +146,16 @@ const DevSixer = ({ show, setShow }) => {
           <Route path="hindivideo" element={<HindiVideo />}></Route>
           <Route path="englishvideo" element={<EnglishVideo />}></Route>
         </Route>
+        <Route path="/assignment" element={<Assignment />}>
+          <Route path="assignment1quiz" element={<Assignemnt1Quiz />}></Route>
+          <Route path="assignment2quiz" element={<Assignemnt2Quiz />}></Route>
+          <Route path="assignment3quiz" element={<Assignemnt3Quiz />}></Route>
+        </Route>
+        <Route path="/bangla" element={<Bangla />}>
+          <Route path="easy" element={<Easy />}></Route>
+          <Route path="medium" element={<Medium />}></Route>
+          <Route path="hard" element={<Hard />}></Route>
+        </Route>
         <Route path="/bangla" element={<Bangla />}>
           <Route path="easy" element={<Easy />}></Route>
           <Route path="medium" element={<Medium />}></Route>
@@ -177,9 +212,11 @@ const DevSixer = ({ show, setShow }) => {
             element={<LeaderBoard></LeaderBoard>}
           ></Route>
           <Route path="ask" element={<AskQuestion></AskQuestion>}></Route>
+          <Route path="myboocking" element={<MyBoocking></MyBoocking>}></Route>
         </Route>
         {/* Arfat */}
       </Routes>
+      <ToastContainer />
     </div>
   );
 };
