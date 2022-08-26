@@ -69,9 +69,7 @@ const DevSixer = ({ show, setShow }) => {
         <Route index path="/support" element={<Support show={show} setShow={setShow} />} />
         <Route path='/support' element={<Support></Support>} />
         <Route path='/classroom' element={<ClasssRoom />} />
-        {/* <Route path='/playGames' element={<PlayGames show={show} setShow={setShow} />} />
-        <Route path='/playGames/ticTacToe' element={<TicTacToe show={show} setShow={setShow} />} /> */}
-        {/* <Route path='/playGames/chessboardUI' element={<ChessBoardUI show={show} setShow={setShow} />} /> */}
+       
         <Route path='/eventCrad/:id' element={<EventCard />} />+
 
     {/* habib */}
