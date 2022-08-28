@@ -11,6 +11,8 @@ import ru from 'javascript-time-ago/locale/ru.json'
 import {
   QueryClient, QueryClientProvider
 } from 'react-query'
+import { Provider } from 'react-redux';
+import store from "./redux/store";
 const queryClient = new QueryClient()
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -20,7 +22,9 @@ root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
+      <Provider store={store}>
         <App />
+        </Provider>
       </BrowserRouter>
     </QueryClientProvider>
   </React.StrictMode>

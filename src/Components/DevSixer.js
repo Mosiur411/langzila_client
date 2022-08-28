@@ -65,6 +65,7 @@ import Addquestion from './Community/Addquestion';
 import Questionpage from './Community/Questionpage';
 import Voice from './Voice/Voice';
 import Speech from './Voice/Speech';
+import Cart from './Courses/Cart';
 const DevSixer = ({ show, setShow }) => {
   return (
     <div>
@@ -72,6 +73,7 @@ const DevSixer = ({ show, setShow }) => {
         <Route path='/' element={<Home show={show} setShow={setShow} />} />
         <Route path='/about' element={<AboutUs show={show} setShow={setShow} />} />
         <Route path='/courses' element={<Courses show={show} setShow={setShow} />} />
+        <Route path='/cart' element={<Cart show={show} setShow={setShow} />} />
         <Route path='/CapitalGames' element={<CapitalGames show={show} setShow={setShow} />} />
         <Route path='*' element={<NotFound show={show} setShow={setShow} />} />
         <Route index element={<Home show={show} setShow={setShow} />} />

@@ -8,11 +8,11 @@ import "@fontsource/nunito";
 import { BiCaretLeft } from "react-icons/bi";
 import { HiOutlineChevronDown } from "react-icons/hi";
 import { CgToggleOff, CgToggleOn } from "react-icons/cg";
-
-
+import { useSelector } from 'react-redux';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 const Navbar = ({ show, setShow, theme, setTheme }) => {
-
+    const cart = useSelector((state) => state.courses.totalItem);
     // Declaration
     const navigate = useNavigate()
 
@@ -21,14 +21,14 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
     const menuItem = <>
         <NavLink
             to={'/'}
-            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0  mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0  mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
         >
             <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
             >Home</p>
         </NavLink>
         <NavLink
             to={'/about'}
-            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0  mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0  mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
         >
             <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
             >About Us</p>
@@ -36,7 +36,7 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
 
         <NavLink
             to={'/classroom'}
-            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
         >
             <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
             >Classroom</p>
@@ -51,7 +51,7 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
 
         <NavLink
             to={'/courses'}
-            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
         >
             <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
             >Courses</p>
@@ -59,28 +59,28 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
 
         <NavLink
             to={'/playGames'}
-            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
         >
             <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
             >Play Games</p>
         </NavLink>
         <NavLink
             to={'/voicetotext'}
-            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
         >
             <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
             >V to T</p>
         </NavLink>
         <NavLink
             to={'/texttovoice'}
-            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
         >
             <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
             >T to V</p>
         </NavLink>
         <NavLink
             to={'/canvas'}
-            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
         >
             <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
             >Canvas</p>
@@ -88,22 +88,21 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
 
         <NavLink
             to={'/contact'}
-            className={({ isActive }) => (` text-md font-medium  my-4 lg:my-0  mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+            className={({ isActive }) => (` text-md font-medium  my-4 lg:my-0  mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
         >
             <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
             >Contact</p>
         </NavLink>
 
-
-    {
-        user&&<NavLink
-        to={'/dashboard'}
-        className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
-    >
-        <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
-        >Dashboard</p>
-    </NavLink>
-    }
+        {
+            user && <NavLink
+                to={'/dashboard'}
+                className={({ isActive }) => (` text-md font-medium my-4 lg:my-0  mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+            >
+                <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
+                >Dashboard</p>
+            </NavLink>
+        }
     </>
 
     return (
@@ -133,6 +132,13 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
                             </ul>
                         </div>
                         <div className="navbar-end">
+                            <NavLink
+                                to={'/cart'}
+                                className={({ isActive }) => (` text-md font-medium  my-4 lg:my-0  mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+                            >
+                                <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
+                                ><AiOutlineShoppingCart className='text-4xl text-primary relative mr-3' /> <span className='absolute -mt-10 ml-6 bg-primary text-white px-1.5 rounded-full text-sm'>{cart}</span></p>
+                            </NavLink>
                             {
                                 user?.uid ? <button style={{ fontFamily: "Nunito" }} onClick={() => signOut(auth)} className=" bg-red-500 text-white font-medium rounded py-[6px] px-5"><Link to=''>Logout</Link></button>
                                     :
