@@ -58,6 +58,12 @@ import AboutUs from './AboutUs/AboutUs';
 import PlayGames from './PlayGames/PlayGames';
 import TicTacToe from './PlayGames/TicTacToe';
 import ChessBoardUI from './PlayGames/ChessBoardUI';
+import MakeAdmin from './Dashboard/MakeAdmin';
+import Community from './Community/Community';
+import Addquestion from './Community/Addquestion';
+import Questionpage from './Community/Questionpage';
+import Voice from './Voice/Voice';
+import Speech from './Voice/Speech';
 const DevSixer = ({ show, setShow }) => {
   return (
     <div>
@@ -70,6 +76,8 @@ const DevSixer = ({ show, setShow }) => {
         <Route path="/signIn" element={<SignIn></SignIn>} />
         <Route path="/signUp" element={<SignUp></SignUp>} />
         <Route index path="/contact" element={<Contact show={show} setShow={setShow} />} />
+        <Route path="texttovoice" element={<Voice/>}></Route>
+        <Route path="voicetotext" element={<Speech/>}></Route>
         <Route index path="/certificate" element={<Certificate show={show} setShow={setShow} />} />
         <Route index path="/support" element={<Support show={show} setShow={setShow} />} />
         <Route path='/support' element={<Support></Support>} />
@@ -154,6 +162,9 @@ const DevSixer = ({ show, setShow }) => {
         <Route path="/classroom" element={<ClasssRoom />} />
         <Route path="/translator" element={<Translator />} />
         <Route path="/canvas" element={<Canvas />}></Route>
+        <Route path="/forum" element={<Community/>}></Route>
+        <Route path="/addquestion" element={<Addquestion/>}></Route>
+        <Route path="/question/:id" element={<Questionpage/>}></Route>
         {/* joy */}
         <Route path="/audio" element={<Audio />}>
           <Route path="search" element={<Search />}></Route>
@@ -233,6 +244,7 @@ const DevSixer = ({ show, setShow }) => {
           ></Route>
           <Route path="ask" element={<AskQuestion></AskQuestion>}></Route>
           <Route path="myboocking" element={<MyBoocking></MyBoocking>}></Route>
+          <Route path="alluser" element={<MakeAdmin></MakeAdmin>}></Route>
         </Route>
         {/* Arfat */}
       </Routes>
