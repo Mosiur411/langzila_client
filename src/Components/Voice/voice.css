@@ -1,0 +1,23 @@
+
+
+  .Speech {
+  width: 50px;
+  }
+  .group {
+  margin: 7px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .text-area {
+  width: 70%;
+  padding: 5px 10px;
+  border: 1px solid rgb(228, 20, 20);
+  outline: none;
+  border-radius: 3px;
+  }
+ 
+  h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  }
