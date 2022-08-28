@@ -58,6 +58,7 @@ import AboutUs from './AboutUs/AboutUs';
 import PlayGames from './PlayGames/PlayGames';
 import TicTacToe from './PlayGames/TicTacToe';
 import ChessBoardUI from './PlayGames/ChessBoardUI';
+import Courses from './Courses/Courses';
 import MakeAdmin from './Dashboard/MakeAdmin';
 import Community from './Community/Community';
 import Addquestion from './Community/Addquestion';
@@ -70,6 +71,7 @@ const DevSixer = ({ show, setShow }) => {
       <Routes>
         <Route path='/' element={<Home show={show} setShow={setShow} />} />
         <Route path='/about' element={<AboutUs show={show} setShow={setShow} />} />
+        <Route path='/courses' element={<Courses show={show} setShow={setShow} />} />
         <Route path='/CapitalGames' element={<CapitalGames show={show} setShow={setShow} />} />
         <Route path='*' element={<NotFound show={show} setShow={setShow} />} />
         <Route index element={<Home show={show} setShow={setShow} />} />
