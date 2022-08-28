@@ -41,6 +41,13 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
             <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
             >Classroom</p>
         </NavLink>
+        <NavLink
+            to={'/forum'}
+            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+        >
+            <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
+            >Community</p>
+        </NavLink>
 
         <NavLink
             to={'/courses'}
