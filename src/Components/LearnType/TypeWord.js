@@ -3,7 +3,7 @@ import TypingThroughInput from "./TypingThroughInput";
 import "./TypeWord.css";
 const TypeWord = () => {
   return (
-    <div className="container mx-auto flex flex-col p-4">
+    <div className="mx-auto flex flex-col p-4">
       <div className="mb-4">
         <h1 className="text-4xl font-bold text-accent text-center py-8">
           Improve your writing skill in English
