@@ -82,7 +82,7 @@ const TicTacToe = () => {
              <button onClick={()=>navigate('/playGames')} className=' absolute left-10 top-5 border border-red-500 flex items-center justify-center  px-2 pr-3 rounded-full text-red-500 hover:bg-red-500 hover:text-white font-medium'><BiCaretLeft className=' text-xl' /></button>
             <h3 className='font-bold text-2xl mb-4 text-primary text-center'>Tic Tac Toe</h3>
             <div className='flex justify-center items-center mx-auto w-[500px]'>
-                <table >
+                <table className='tic-table'>
                     <tbody >
                         <tr>
                             <Cell num={0} />

@@ -82,7 +82,7 @@ const AskQuestion = () => {
             })} />
           <textarea
             placeholder="Your Question Here"
-            className="input  input-bordered  textarea textarea-primary max-w-xs "
+            className=" textarea-primary rounded"
             {...register("question", {
               required: {
                 value: true,

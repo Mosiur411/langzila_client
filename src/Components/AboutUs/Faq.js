@@ -8,7 +8,7 @@ const Faq1 = () => {
 
     return (
         <div className="mx-auto lg:py-12 lg:px-20 md:px-6 py-9 px-4">
-           <h3 className='uppercase text-primary font-semibold text-center mb-3 text-xl'>FAQ</h3>
+            <h3 className='uppercase text-primary font-semibold text-center mb-3 text-xl'>FAQ</h3>
             <h2 className=" font-semibold lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-gray-800 text-center">Frequently Asked Questions</h2>
             <p className=" font-normal text-base leading-6 text-gray-600 text-center mt-4">Here are few of the most frequently asked questions by our valueable customers</p>
             <div className=" flex lg:flex-row md:flex-col flex-col md:space-x-8 md:mt-16 mt-8">
@@ -37,7 +37,7 @@ const Faq1 = () => {
 
                     <div>
                         <div className=" flex justify-between items-center cursor-pointer">
-                            <h3 className=" font-semibold text-xl leading-5 text-gray-800">I have already placed my order but still want to add products. Is this still possible?</h3>
+                            <h3 className=" font-semibold text-xl leading-5 text-gray-800">I have already placed my order but still want to add courses. Is this still possible?</h3>
                             <button aria-label="too" className=" cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" onClick={() => setShow2(!show2)}>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path className={show2 ? "hidden" : "block"} d="M10 4.1665V15.8332" stroke="#1F2937" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />

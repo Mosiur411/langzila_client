@@ -8,8 +8,11 @@ import "@fontsource/nunito";
 import { BiCaretLeft } from "react-icons/bi";
 import { HiOutlineChevronDown } from "react-icons/hi";
 import { CgToggleOff, CgToggleOn } from "react-icons/cg";
+import { useSelector } from "react-redux";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const Navbar = ({ show, setShow, theme, setTheme }) => {
+  const cart = useSelector((state) => state.courses.totalItem);
   // Declaration
   const navigate = useNavigate();
 
@@ -19,7 +22,7 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
       <NavLink
         to={"/"}
         className={({ isActive }) =>
-          ` text-md font-medium my-4 lg:my-0  mx-4 ${
+          ` text-md font-medium my-4 lg:my-0  mx-2 ${
             isActive ? "text-red-500  border-b border-red-500" : "text-black"
           }`
         }
@@ -37,7 +40,7 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
       <NavLink
         to={"/about"}
         className={({ isActive }) =>
-          ` text-md font-medium my-4 lg:my-0  mx-4 ${
+          ` text-md font-medium my-4 lg:my-0  mx-2 ${
             isActive ? "text-red-500  border-b border-red-500" : "text-black"
           }`
         }
@@ -56,7 +59,7 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
       <NavLink
         to={"/classroom"}
         className={({ isActive }) =>
-          ` text-md font-medium my-4 lg:my-0   mx-4 ${
+          ` text-md font-medium my-4 lg:my-0   mx-2 ${
             isActive ? "text-red-500  border-b border-red-500" : "text-black"
           }`
         }
@@ -71,11 +74,48 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
           Classroom
         </p>
       </NavLink>
+      <NavLink
+        to={"/forum"}
+        className={({ isActive }) =>
+          ` text-md font-medium my-4 lg:my-0   mx-4 ${
+            isActive ? "text-red-500  border-b border-red-500" : "text-black"
+          }`
+        }
+      >
+        <p
+          className={({ isActive }) =>
+            `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
+              isActive ? "text-red-500" : "text-black"
+            }`
+          }
+        >
+          Community
+        </p>
+      </NavLink>
+
+      <NavLink
+        to={"/courses"}
+        className={({ isActive }) =>
+          ` text-md font-medium my-4 lg:my-0   mx-2 ${
+            isActive ? "text-red-500  border-b border-red-500" : "text-black"
+          }`
+        }
+      >
+        <p
+          className={({ isActive }) =>
+            `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
+              isActive ? "text-red-500" : "text-black"
+            }`
+          }
+        >
+          Courses
+        </p>
+      </NavLink>
 
       <NavLink
         to={"/playGames"}
         className={({ isActive }) =>
-          ` text-md font-medium my-4 lg:my-0   mx-4 ${
+          ` text-md font-medium my-4 lg:my-0   mx-2 ${
             isActive ? "text-red-500  border-b border-red-500" : "text-black"
           }`
         }
@@ -90,11 +130,65 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
           Play Games
         </p>
       </NavLink>
+      <NavLink
+        to={"/voicetotext"}
+        className={({ isActive }) =>
+          ` text-md font-medium my-4 lg:my-0   mx-2 ${
+            isActive ? "text-red-500  border-b border-red-500" : "text-black"
+          }`
+        }
+      >
+        <p
+          className={({ isActive }) =>
+            `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
+              isActive ? "text-red-500" : "text-black"
+            }`
+          }
+        >
+          V to T
+        </p>
+      </NavLink>
+      <NavLink
+        to={"/texttovoice"}
+        className={({ isActive }) =>
+          ` text-md font-medium my-4 lg:my-0   mx-2 ${
+            isActive ? "text-red-500  border-b border-red-500" : "text-black"
+          }`
+        }
+      >
+        <p
+          className={({ isActive }) =>
+            `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
+              isActive ? "text-red-500" : "text-black"
+            }`
+          }
+        >
+          T to V
+        </p>
+      </NavLink>
+      <NavLink
+        to={"/canvas"}
+        className={({ isActive }) =>
+          ` text-md font-medium my-4 lg:my-0   mx-2 ${
+            isActive ? "text-red-500  border-b border-red-500" : "text-black"
+          }`
+        }
+      >
+        <p
+          className={({ isActive }) =>
+            `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
+              isActive ? "text-red-500" : "text-black"
+            }`
+          }
+        >
+          Canvas
+        </p>
+      </NavLink>
 
       <NavLink
         to={"/contact"}
         className={({ isActive }) =>
-          ` text-md font-medium  my-4 lg:my-0  mx-4 ${
+          ` text-md font-medium  my-4 lg:my-0  mx-2 ${
             isActive ? "text-red-500  border-b border-red-500" : "text-black"
           }`
         }
@@ -110,43 +204,26 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
         </p>
       </NavLink>
 
-      <NavLink
-        to={"/dashboard"}
-        className={({ isActive }) =>
-          ` text-md font-medium my-4 lg:my-0   mx-4 ${
-            isActive ? "text-red-500  border-b border-red-500" : "text-black"
-          }`
-        }
-      >
-        <p
+      {user && (
+        <NavLink
+          to={"/dashboard"}
           className={({ isActive }) =>
-            `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-              isActive ? "text-red-500" : "text-black"
+            ` text-md font-medium my-4 lg:my-0  mx-2 ${
+              isActive ? "text-red-500  border-b border-red-500" : "text-black"
             }`
           }
         >
-          Dashboard
-        </p>
-      </NavLink>
-
-      <NavLink
-        to={"/translator"}
-        className={({ isActive }) =>
-          ` text-md font-medium my-4 lg:my-0   mx-4 ${
-            isActive ? "text-red-500  border-b border-red-500" : "text-black"
-          }`
-        }
-      >
-        <p
-          className={({ isActive }) =>
-            `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-              isActive ? "text-red-500" : "text-black"
-            }`
-          }
-        >
-          Translator
-        </p>
-      </NavLink>
+          <p
+            className={({ isActive }) =>
+              `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
+                isActive ? "text-red-500" : "text-black"
+              }`
+            }
+          >
+            Dashboard
+          </p>
+        </NavLink>
+      )}
     </>
   );
 
@@ -198,6 +275,29 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
               <ul class="menu menu-horizontal p-0 gap-3 ">{menuItem}</ul>
             </div>
             <div className="navbar-end">
+              <NavLink
+                to={"/cart"}
+                className={({ isActive }) =>
+                  ` text-md font-medium  my-4 lg:my-0  mx-2 ${
+                    isActive
+                      ? "text-red-500  border-b border-red-500"
+                      : "text-black"
+                  }`
+                }
+              >
+                <p
+                  className={({ isActive }) =>
+                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
+                      isActive ? "text-red-500" : "text-black"
+                    }`
+                  }
+                >
+                  <AiOutlineShoppingCart className="text-4xl text-primary relative mr-3" />{" "}
+                  <span className="absolute -mt-10 ml-6 bg-primary text-white px-1.5 rounded-full text-sm">
+                    {cart}
+                  </span>
+                </p>
+              </NavLink>
               {user?.uid ? (
                 <button
                   style={{ fontFamily: "Nunito" }}
