@@ -6,13 +6,13 @@ const CertificateBanner = () => {
     const navigate = useNavigate();
     return (
         <div className='lg:px-20 px-5 py-24 pb-36 text-center bg-secondary'>
-            <span class="font-semibold text-md uppercase text-primary mb-3 block">
+            <span className="font-semibold text-md uppercase text-primary mb-3 block">
                 ONLINE CERTIFICATION
             </span>
-            <h2 class=" font-bold text-xl lg:text-4xl text-gray-900 mb-2 " >
+            <h2 className=" font-bold text-xl lg:text-4xl text-gray-900 mb-2 " >
                 Get Your Quality Skills Certificate Through Online Quizes
             </h2>
-            <h2 class="font-bold text-xl lg:text-4xl text-gray-900 mb-4" >Through Online Exam
+            <h2 className="font-bold text-xl lg:text-4xl text-gray-900 mb-4" >Through Online Exam
             </h2>
             <p>Students friendly pricing for the certificate programs helps individuals to get their skill certificate easier than ever!</p>
 

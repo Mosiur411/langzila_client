@@ -116,10 +116,10 @@ const SignUp = () => {
                 <button onClick={() => signInWithGoogle()} className="flex items-center justify-center bg-gray-50 border font-bold border-gray-300 text-accent text-sm rounded-lg focus:ring-blue-900 focus:border-blue-900 w-full p-2.5"> <img className='w-6 pr-2' src={GoogleLogo} alt='' /> Continue with Google</button>
                 <ToastContainer></ToastContainer>
             </div>
-            <input type="checkbox" id="my-modal-6" class="modal-toggle" />
-            <div class="modal modal-bottom sm:modal-middle">
-                <div class="modal-box">
-                    <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-2 bottom-5">✕</label>
+            <input type="checkbox" id="my-modal-6" className="modal-toggle" />
+            <div className="modal modal-bottom sm:modal-middle">
+                <div className="modal-box">
+                    <label for="my-modal-6" className="btn btn-sm btn-circle absolute right-2 top-2 bottom-5">✕</label>
                     
                     <input
                         type="email"

@@ -38,12 +38,12 @@ const UpcomingEvents = () => {
                                             <div className=' h-60 w-2/3 rounded-lg '>
                                                 <img className='h-full py-5 w-full rounded-l-2xl bg-slate-400' src={event.image} alt="Movie" />
                                             </div>
-                                            <div class="  h-60 px-3 ml-3">
+                                            <div className="  h-60 px-3 ml-3">
                                                 <div className=' w-40 relative'>
                                                     <img className='w-40 mt-4  relative' src="https://i.ibb.co/0cFPTM5/rectangle2.png" alt="image" />
                                                     <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]  w-full text-center text-white font-semibold text-sm'>{event.data}</div>
                                                 </div>
-                                                <h2 class="text-2xl py-2 font-bold mt-4 text-gray-900">{event.title}</h2>
+                                                <h2 className="text-2xl py-2 font-bold mt-4 text-gray-900">{event.title}</h2>
                                                 <p className=' mt-1 text-justify mb-3 text-sm pr-3'>{event.text}</p>
                                                 <div className=' flex items-center justify-between pr-3'>
                                                     <div className=' flex items-center'>

@@ -59,12 +59,12 @@ const Support = () => {
                     <h2 data-aos="zoom-in" className='text-6xl font-bold text-accent py-4'>Wanna Study <span className=' text-red-600'>Support?</span></h2>
                     <p data-aos="fade-right" className='text-lg py-4 text-justify'>Welcome to LangZila support center. If you have trouble understanding something. Course related or website related or something else. Then please come to our meet support session by clicking the button below. We love to help you.</p>
 
-                    <label data-aos="fade-up-left" for="my-modal" class="bg-red-600 py-2 my-2 flex lg:w-1/3 text-white rounded font-semibold font-mono items-center justify-center hover:bg-purple-900">Live Support <BiSupport className='ml-2' /> </label>
-                    <input type="checkbox" id="my-modal" class="modal-toggle" />
-                    <div class="modal">
-                        <div class="modal-box">
-                            <label for="my-modal" class="btn btn-sm btn-circle absolute right-2 top-2 bg-red-600 border-none text-white">✕</label>
-                            <h3 class="font-bold text-accent text-2xl py-2">Tell us your problem</h3>
+                    <label data-aos="fade-up-left" for="my-modal" className="bg-red-600 py-2 my-2 flex lg:w-1/3 text-white rounded font-semibold font-mono items-center justify-center hover:bg-purple-900">Live Support <BiSupport className='ml-2' /> </label>
+                    <input type="checkbox" id="my-modal" className="modal-toggle" />
+                    <div className="modal">
+                        <div className="modal-box">
+                            <label for="my-modal" className="btn btn-sm btn-circle absolute right-2 top-2 bg-red-600 border-none text-white">✕</label>
+                            <h3 className="font-bold text-accent text-2xl py-2">Tell us your problem</h3>
                             {show ? <form onSubmit={handalSubmit}>
                                 <input type="text" name="subject" placeholder='Subject' className='w-full py-2 my-4  rounded px-2  bg-white border-sky-900 border-2 outline-none ' />
                                 <br />
@@ -76,7 +76,7 @@ const Support = () => {
                                 {/* Submit Button */}
 
                             </form> : <div>
-                                <a onClick={changeButton} href='https://meet.google.com/ypa-bdyu-doc' target="_blank" class="SubmitButton py-2 my-2 flex lg:w-1/2 items-center justify-center">Join Now <BiSupport className='ml-2' /></a>
+                                <a onClick={changeButton} href='https://meet.google.com/ypa-bdyu-doc' target="_blank" className="SubmitButton py-2 my-2 flex lg:w-1/2 items-center justify-center">Join Now <BiSupport className='ml-2' /></a>
                             </div>}
 
 

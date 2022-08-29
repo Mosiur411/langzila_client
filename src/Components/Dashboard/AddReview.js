@@ -65,7 +65,7 @@ const AddReview = () => {
             <h1 className='text-3xl text-primary'>Add Review</h1>
 
             <form onSubmit={handlereview} action="">
-                {/* <select name='review' class="select  max-w-xs m-10 border-2 border-gray-100 ">
+                {/* <select name='review' className="select  max-w-xs m-10 border-2 border-gray-100 ">
                     <option disabled selected className='text-primary'>Rate Your Experience</option>
                     <option className='text-primary' >1</option>
                     <option className='text-primary'>2</option>
@@ -96,7 +96,7 @@ const AddReview = () => {
                         })}
                     </div>
                 </div>
-                <input type="text" placeholder="Type Your Experience and give us valuable suggestion " name='comment' class="input input-bordered input-lg w-full max-w-xs mb-5" /><br />
+                <input type="text" placeholder="Type Your Experience and give us valuable suggestion " name='comment' className="input input-bordered input-lg w-full max-w-xs mb-5" /><br />
                 <button type='submit' className='btn btn-primary  text-white'>Submit</button>
             </form>
             <ToastContainer></ToastContainer>

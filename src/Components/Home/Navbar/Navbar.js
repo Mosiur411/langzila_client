@@ -15,13 +15,14 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
 
     // Declaration
     const navigate = useNavigate()
+    const [blear, setblear] = useState(false)
 
 
     const [user] = useAuthState(auth);
     const menuItem = <>
         <NavLink
             to={'/'}
-            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0  mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+            className={({ isActive }) => (` text-md  font-medium my-4 lg:my-0  mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
         >
             <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
             >Home</p>
@@ -71,24 +72,23 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
     return (
         <>
             {
-                <div className={`navbar md:px-[64px]  mx-auto  py-0 my-0  ${show ? 'bg-orange-300' : ''}`}>
-                    <div class="navbar  bg-base-100 py-0 my-0 ">
-                        <div class="navbar-start  ">
-                            <div class="dropdown ">
-                                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                <div className={`w-full bg-base-500  mx-auto  ${show ? 'bg-orange-300' : ''} `}>
+                    <div className="navbar md:px-20 bg-base-500">
+                        <div className="navbar-start  ">
+                            <div className="dropdown ">
+                                <label onClick={() => setblear(!blear)} tabIndex="0" className="btn btn-ghost z-50  lg:hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                                 </label>
-                                <ul tabindex="0" class="bg-white  menu menu-compact dropdown-content mt-3 px-2 py-0 shadow rounded-box w-52">
+                                <ul tabIndex="0" className="bg-white  menu menu-compact dropdown-content mt-3 px-2 py-0 shadow rounded-box w-52">
                                     {
-                                        menuItem
+                                       blear&&menuItem
                                     }
                                 </ul>
                             </div>
                             <NavLink to={'/'} style={{ fontFamily: "Nunito" }} className=" font-bold text-xl text-black"><span className=' text-red-500'>L</span>ang<span className=' text-red-500'>Zil</span>a</NavLink>
-                            {/* <button onClick={() => setShow(!show)}>{show ? <CgToggleOn /> : <CgToggleOff />} </button> */}
                         </div>
-                        <div class="navbar-center hidden lg:flex">
-                            <ul class="menu menu-horizontal p-0 gap-3 ">
+                        <div className="navbar-center hidden lg:flex">
+                            <ul className="menu menu-horizontal p-0 gap-3 ">
                                 {
                                     menuItem
                                 }
@@ -106,6 +106,11 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
                 </div >
 
             }
+            {
+                blear && <div onClick={() => setblear(!blear)} className='w-full min-h-full absolute inset-0 mx-auto bg-black bg-opacity-20 z-40  lg:hidden'></div>
+            }
+
+
         </>
     );
 };

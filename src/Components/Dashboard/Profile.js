@@ -57,18 +57,18 @@ const Profile = () => {
         <div>
             <div className='mx-12 shadow-md border border-gray-100 lg:w-[900px] rounded-lg'>
                 <div className='lg:flex flex-wrap justify-between'>
-                    <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                        <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                    <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                        <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10" viewBox="0 0 24 24">
                                 <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                                 <circle cx="12" cy="7" r="4"></circle>
                             </svg>
                         </div>
-                        <div class="flex flex-col items-center text-center justify-center">
-                            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">{user?.displayName}</h2>
-                            <div class="w-12 h-1 bg-primary rounded mt-2 mb-4"></div>
-                            <p class="text-base">
-                                <lebel class='font-bold'>Describe Yourself</lebel>
+                        <div className="flex flex-col items-center text-center justify-center">
+                            <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">{user?.displayName}</h2>
+                            <div className="w-12 h-1 bg-primary rounded mt-2 mb-4"></div>
+                            <p className="text-base">
+                                <lebel className='font-bold'>Describe Yourself</lebel>
                                 <p>{user?.desc}</p>
                             </p>
                         </div>
@@ -76,31 +76,31 @@ const Profile = () => {
                     <div className='lg:w-2/3  pr-6 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left'>
                         <div className='flex justify-between items-center '>
                             <h1 className='mb-5 font-bold text-2xl'>Personal Information</h1>
-                            <label for="my-modal" class="flex items-center -mt-14 text-primary modal-button mb-2 font-medium text-lg w-full sm:w-auto text-center">Edit<BiEdit className='ml-1' /></label>
+                            <label for="my-modal" className="flex items-center -mt-14 text-primary modal-button mb-2 font-medium text-lg w-full sm:w-auto text-center">Edit<BiEdit className='ml-1' /></label>
                         </div>
                         <hr className='py-3' />
                         <div className="relative z-0 w-full mb-6 group">
-                            <lebel class='font-bold'>Email</lebel>
+                            <lebel className='font-bold'>Email</lebel>
                             <p>{user?.email}</p>
                         </div>
                         <div className="relative z-0 w-full mb-6 group">
-                            <lebel class='font-bold'>Address</lebel>
+                            <lebel className='font-bold'>Address</lebel>
                             <p>{userInfo?.address}</p>
                         </div>
                         <div className="relative z-0 w-full mb-6 group">
-                            <lebel class='font-bold'>Phone Number</lebel>
+                            <lebel className='font-bold'>Phone Number</lebel>
                             <p>{userInfo?.phone}</p>
                         </div>
                         <div className="relative z-0 w-full mb-6 group">
-                            <lebel class='font-bold'>Country</lebel>
+                            <lebel className='font-bold'>Country</lebel>
                             <p>{userInfo?.country}</p>
                         </div>
                         <div className="relative z-0 w-full mb-6 group">
-                            <lebel class='font-bold'>Age</lebel>
+                            <lebel className='font-bold'>Age</lebel>
                             <p>{userInfo?.age}</p>
                         </div>
                         <div className="relative z-0 w-full group mb-1">
-                            <lebel class='font-bold'>Birth Date</lebel>
+                            <lebel className='font-bold'>Birth Date</lebel>
                             <p>{userInfo?.date}</p>
                         </div>
                     </div>
@@ -108,21 +108,21 @@ const Profile = () => {
                 </div>
 
             </div>
-            <input type="checkbox" id="my-modal" class="modal-toggle" />
+            <input type="checkbox" id="my-modal" className="modal-toggle" />
 
-            <div class="modal">
-                <div class="modal-box">
+            <div className="modal">
+                <div className="modal-box">
                     <form onSubmit={updateMyProfile}>
                         <div className="relative z-0 w-full mb-6 group">
-                            <lebel class='font-bold'>Name</lebel>
+                            <lebel className='font-bold'>Name</lebel>
                             <input type="name" name="name" className="block py-2.5 px-0 w-full text-sm text-gray-900 border-0 border-b-2 border-gray-300 appearance-none" value={user?.displayName} />
                         </div>
                         <div className="relative z-0 w-full mb-6 group">
-                            <lebel class='font-bold'>Email</lebel>
+                            <lebel className='font-bold'>Email</lebel>
                             <input type="email" name="email" id="floating_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer" value={user?.email} />
                         </div>
                         <div className="relative z-0 w-full mb-6 group">
-                            <lebel class='font-bold'>Description</lebel>
+                            <lebel className='font-bold'>Description</lebel>
                             <input type="text" name="desc" id="floating_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
                         </div>
                         <div className="relative z-0 w-full mb-6 group">
@@ -151,8 +151,8 @@ const Profile = () => {
                         </div>
                         <button type="submit" className="text-white bg-primary font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Update</button>
                     </form>
-                    <div class="modal-action">
-                        <label for="my-modal" class="btn">Close</label>
+                    <div className="modal-action">
+                        <label for="my-modal" className="btn">Close</label>
                     </div>
                 </div>
             </div>
