@@ -4,14 +4,16 @@ import { Link, Outlet } from 'react-router-dom';
 import auth from '../Firebase/firebase.init';
 import { AiOutlineMenuUnfold, AiOutlineHome } from 'react-icons/ai';
 import { MdOutlineRateReview, MdOutlineLeaderboard } from 'react-icons/md';
-import { RiQuestionAnswerFill } from 'react-icons/ri';
+import { RiAdminFill, RiQuestionAnswerFill } from 'react-icons/ri';
 import { GiAchievement } from 'react-icons/gi';
 import { BiUserCircle } from 'react-icons/bi';
 import { BsBookmarkCheckFill } from "react-icons/bs";
 import Navbar from '../Home/Navbar/Navbar';
+import useAdmin from '../../Hooks/useAdmin';
 
 const Dashboard = ({ show, setShow }) => {
     const [user] = useAuthState(auth);
+    const [admin] = useAdmin(user)
     return (
         <div>
             <Navbar show={show} setShow={setShow} />
@@ -40,7 +42,16 @@ const Dashboard = ({ show, setShow }) => {
                                 <li><Link to="/dashboard/achievements"><GiAchievement className='text-2xl text-primary' />Achievements</Link></li>
                                 <li><Link to="/dashboard/leaderboard"><MdOutlineLeaderboard className='text-2xl text-primary' />Leaderboard</Link></li>
                                 <li><Link to="/dashboard/myboocking"><BsBookmarkCheckFill className='text-2xl text-primary' />My Boocking</Link></li>
+                               
                             </>}
+                            {
+                                admin && <>
+                                 <li><Link to='/dashboard/alluser'><RiAdminFill className='text-2xl text-primary' /> Make Admin</Link></li>
+                                
+                                
+                                
+                                </>
+                            }
                         </ul>
                     </div>
                 </div></div>

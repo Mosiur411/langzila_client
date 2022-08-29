@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../Firebase/firebase.init';
 import Spinner from '../Spinner/Spinner';
+import useToken from '../../Hooks/useToken';
 
 const SignUp = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -21,6 +22,7 @@ const SignUp = () => {
     const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password);
         await updateProfile({ displayName: data.name });
+
         console.log(data)
     };
     let signUpError;
@@ -28,12 +30,19 @@ const SignUp = () => {
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
 
-    useEffect(() => {
-        if (user || googleUser) {
+    const [Token, setToken] = useToken(user || googleUser )  
+  
+    if (Token) {
+        navigate(from, { replace: true });
+    
+      }
+  
+    // useEffect(() => {
+    //     if (user || googleUser) {
 
-            navigate(from, { replace: true });
-        }
-    }, [user, googleUser, from, navigate]);
+    //         navigate(from, { replace: true });
+    //     }
+    // }, [user, googleUser, from, navigate]);
 
     if (loading || googleloading || updating || sending) {
         return <Spinner></Spinner>
