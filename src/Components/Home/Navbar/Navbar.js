@@ -42,14 +42,6 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
             >Classroom</p>
         </NavLink>
         <NavLink
-            to={'/forum'}
-            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-4 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
-        >
-            <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
-            >Community</p>
-        </NavLink>
-
-        <NavLink
             to={'/courses'}
             className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
         >
@@ -58,32 +50,11 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
         </NavLink>
 
         <NavLink
-            to={'/playGames'}
+            to={'/support'}
             className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
         >
             <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
-            >Play Games</p>
-        </NavLink>
-        <NavLink
-            to={'/voicetotext'}
-            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
-        >
-            <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
-            >V to T</p>
-        </NavLink>
-        <NavLink
-            to={'/texttovoice'}
-            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
-        >
-            <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
-            >T to V</p>
-        </NavLink>
-        <NavLink
-            to={'/canvas'}
-            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
-        >
-            <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
-            >Canvas</p>
+            >Support</p>
         </NavLink>
 
         <NavLink
@@ -93,6 +64,64 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
             <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
             >Contact</p>
         </NavLink>
+        <NavLink
+            to={'/forum'}
+            className={({ isActive }) => (` text-md font-medium  my-4 lg:my-0  mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+        >
+            <div class="dropdown dropdown-hover">
+                <label tabindex="0" className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}>Features</label>
+                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li>
+                        <NavLink
+                            to={'/forum'}
+                            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0 mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+                        >
+                            <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
+                            >Community</p>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to={'/translator'}
+                            className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+                        >
+                            <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
+                            >Translator</p>
+                        </NavLink>
+                    </li>
+
+                    <li> <NavLink
+                        to={'/playGames'}
+                        className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+                    >
+                        <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
+                        >Play Games</p>
+                    </NavLink></li>
+                    <li> <NavLink
+                        to={'/voicetotext'}
+                        className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+                    >
+                        <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
+                        >Voice to Text</p>
+                    </NavLink></li>
+                    <li> <NavLink
+                        to={'/texttovoice'}
+                        className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+                    >
+                        <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
+                        >Text to Voice</p>
+                    </NavLink></li>
+                    <li><NavLink
+                        to={'/canvas'}
+                        className={({ isActive }) => (` text-md font-medium my-4 lg:my-0   mx-2 ${isActive ? 'text-red-500  border-b border-red-500' : 'text-black'}`)}
+                    >
+                        <p className={({ isActive }) => (`  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? 'text-red-500' : 'text-black'}`)}
+                        >Canvas</p>
+                    </NavLink></li>
+                </ul>
+            </div>
+        </NavLink>
+
 
         {
             user && <NavLink
