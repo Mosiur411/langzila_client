@@ -1,5 +1,5 @@
-/* The container */
-.container {
+/* The container1 */
+.container1 {
     display: block;
     background: rgb(237, 178, 178);
     position: relative;
@@ -11,7 +11,7 @@
   }
   
   /* Hide the browser's default radio button */
-  .container input {
+  .container1 input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -31,12 +31,12 @@
   }
   
   /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
+  .container1:hover input ~ .checkmark {
     background-color: #ccc;
   }
   
   /* When the radio button is checked, add a blue background */
-  .container input:checked ~ .checkmark {
+  .container1 input:checked ~ .checkmark {
     background-color: #2196F3;
     color: #ffffff;
   }

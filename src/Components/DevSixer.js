@@ -54,6 +54,32 @@ import Assignemnt2Quiz from "./Assignment/Assignemnt2Quiz/Assignemnt2Quiz";
 import Assignemnt3Quiz from "./Assignment/Assignemnt3Quiz/Assignemnt3Quiz";
 import Translator from "./LanguageTranslator/Translator";
 import Canvas from "./Canvas/Canvas";
+import Hindi from "./Home/Language/Hindi/Hindi";
+import HindiEasy from "./Home/Language/Hindi/HindiEasy";
+import HindiMedium from "./Home/Language/Hindi/HindiMedium";
+import HindiHard from "./Home/Language/Hindi/HindiHard";
+import HindiEasyQ1 from "./Home/Language/Hindi/HindiEasyQ/HindiEasyQ1";
+import HindiEasyQ2 from "./Home/Language/Hindi/HindiEasyQ/HindiEasyQ2";
+import HindiEasyQ3 from "./Home/Language/Hindi/HindiEasyQ/HindiEasyQ3";
+import HindiEasyQ4 from "./Home/Language/Hindi/HindiEasyQ/HindiEasyQ4";
+import HindiMediumQ1 from "./Home/Language/Hindi/HIndiMedium/HindiMediumQ1";
+import HindiMediumQ2 from "./Home/Language/Hindi/HIndiMedium/HindiMediumQ2";
+import HindiMediumQ3 from "./Home/Language/Hindi/HIndiMedium/HindiMediumQ3";
+import HindiMediumQ4 from "./Home/Language/Hindi/HIndiMedium/HindiMediumQ4";
+import HindiHardQ1 from "./Home/Language/Hindi/HindiHard/HindiHardQ1";
+import HindiHardQ2 from "./Home/Language/Hindi/HindiHard/HindiHardQ2";
+import HindiHardQ3 from "./Home/Language/Hindi/HindiHard/HindiHardQ3";
+import HindiHardQ4 from "./Home/Language/Hindi/HindiHard/HindiHardQ4";
+import HindiHardQ5 from "./Home/Language/Hindi/HindiHard/HindiHardQ5";
+import English from "./Home/Language/English/English";
+import EnglishEasy from "./Home/Language/English/EnglishEasy";
+import EnglishMedium from "./Home/Language/English/EnglishMedium";
+import EnglishHard from "./Home/Language/English/EnglishHard";
+import EnglishEasyQ1 from "./Home/Language/English/EnglishEasy/EnglishEasyQ1";
+import EnglishEasyQ5 from "./Home/Language/English/EnglishEasy/EnglishEasyQ5";
+import EnglishEasyQ4 from "./Home/Language/English/EnglishEasy/EnglishEasyQ3";
+import EnglishEasyQ3 from "./Home/Language/English/EnglishEasy/EnglishEasyQ3";
+import EnglishEasyQ2 from "./Home/Language/English/EnglishEasy/EnglishEasyQ2";
 
 const DevSixer = ({ show, setShow }) => {
   return (
@@ -128,13 +154,19 @@ const DevSixer = ({ show, setShow }) => {
           path="/support"
           element={<Support show={show} setShow={setShow} />}
         />
-        <Route path="/support" element={<Support></Support>} />
-        <Route path="/classroom" element={<ClasssRoom />} />
+
         <Route path="/typelearn" element={<TypeWord></TypeWord>} />
-        <Route path="/classroom" element={<ClasssRoom />} />
+
         <Route path="/translator" element={<Translator />} />
         <Route path="/canvas" element={<Canvas />}></Route>
+
+
         {/* joy */}
+        {/* JOy ClassRoom */}
+
+        <Route path="/classroom" element={<ClasssRoom />} />
+        <Route path="/support" element={<Support></Support>} />
+
         <Route path="/audio" element={<Audio />}>
           <Route path="search" element={<Search />}></Route>
           <Route path="banglaaudio" element={<BanglaAudio />}></Route>
@@ -151,27 +183,15 @@ const DevSixer = ({ show, setShow }) => {
           <Route path="assignment2quiz" element={<Assignemnt2Quiz />}></Route>
           <Route path="assignment3quiz" element={<Assignemnt3Quiz />}></Route>
         </Route>
+        {/* JOy ClassRoom */}
+
+        {/* JOy Bangla Quiz */}
         <Route path="/bangla" element={<Bangla />}>
           <Route path="easy" element={<Easy />}></Route>
           <Route path="medium" element={<Medium />}></Route>
           <Route path="hard" element={<Hard />}></Route>
         </Route>
-        <Route path="/bangla" element={<Bangla />}>
-          <Route path="easy" element={<Easy />}></Route>
-          <Route path="medium" element={<Medium />}></Route>
-          <Route path="hard" element={<Hard />}></Route>
-        </Route>
-        <Route path="quiz/easyquiz1" element={<EasyQuiz1 />}></Route>
-        <Route path="quiz/easyquiz2" element={<EasyQuiz2 />}></Route>
-        <Route path="quiz/easyquiz3" element={<EasyQuiz3 />}></Route>
-        <Route path="quiz/easyquiz4" element={<EasyQuiz4 />}></Route>
-        <Route path="quiz/easyquiz5" element={<EasyQuiz5 />}></Route>
-        {/* joy */}
-        <Route path="/bangla" element={<Bangla />}>
-          <Route path="easy" element={<Easy />}></Route>
-          <Route path="medium" element={<Medium />}></Route>
-          <Route path="hard" element={<Hard />}></Route>
-        </Route>
+        {/* joy Bangla Quiz Card */}
         <Route path="quiz/easyquiz1" element={<EasyQuiz1 />}></Route>
         <Route path="quiz/easyquiz2" element={<EasyQuiz2 />}></Route>
         <Route path="quiz/easyquiz3" element={<EasyQuiz3 />}></Route>
@@ -187,7 +207,66 @@ const DevSixer = ({ show, setShow }) => {
         <Route path="hard/hardquiz3" element={<HardQuiz3 />}></Route>
         <Route path="hard/hardquiz4" element={<HardQuiz4 />}></Route>
         <Route path="hard/hardquiz5" element={<HardQuiz5 />}></Route>
-        {/* joy */}
+        {/* joy Bangla Quiz Card */}
+
+
+
+        {/* JOy Hindi Quiz */}
+        <Route path="/hindi" element={<Hindi />}>
+          <Route path="hindieasy" element={<HindiEasy />}></Route>
+          <Route path="hindimedium" element={<HindiMedium />}></Route>
+          <Route path="hindihard" element={<HindiHard />}></Route>
+        </Route>
+
+        {/* joy Hindi Quiz Card */}
+        <Route path="hindiquiz/hindieasyQ1" element={<HindiEasyQ1 />}></Route>
+        <Route path="hindiquiz/hindieasyQ2" element={<HindiEasyQ2 />}></Route>
+        <Route path="hindiquiz/hindieasyQ3" element={<HindiEasyQ3 />}></Route>
+        <Route path="hindiquiz/hindieasyQ4" element={<HindiEasyQ4 />}></Route>
+
+        <Route path="hindimedium/mediumquiz1" element={<HindiMediumQ1 />}></Route>
+        <Route path="hindimedium/mediumquiz2" element={<HindiMediumQ2 />}></Route>
+        <Route path="hindimedium/mediumquiz3" element={<HindiMediumQ3 />}></Route>
+        <Route path="hindimedium/mediumquiz4" element={<HindiMediumQ4 />}></Route>
+
+        <Route path="hindihard/hindihardquiz1" element={<HindiHardQ1 />}></Route>
+        <Route path="hindihard/hindihardquiz2" element={<HindiHardQ2 />}></Route>
+        <Route path="hindihard/hindihardquiz3" element={<HindiHardQ3 />}></Route>
+        <Route path="hindihard/hindihardquiz4" element={<HindiHardQ4 />}></Route>
+        <Route path="hindihard/hindihardquiz5" element={<HindiHardQ5 />}></Route>
+
+        {/* joy Hindi Quiz Card */}
+
+
+        {/* JOy English Quiz */}
+        <Route path="/english" element={<English />}>
+          <Route path="englisheasy" element={<EnglishEasy />}></Route>
+          <Route path="englishmedium" element={<EnglishMedium />}></Route>
+          <Route path="englishhard" element={<EnglishHard />}></Route>
+        </Route>
+
+        {/* joy English Quiz Card */}
+        <Route path="englishquiz/englisheasyQ1" element={<EnglishEasyQ1 />}></Route>
+        <Route path="englishquiz/englisheasyQ2" element={<EnglishEasyQ2 />}></Route>
+        <Route path="englishquiz/englisheasyQ3" element={<EnglishEasyQ3 />}></Route>
+        <Route path="englishquiz/englisheasyQ4" element={<EnglishEasyQ4 />}></Route>
+        <Route path="englishquiz/englisheasyQ5" element={<EnglishEasyQ5 />}></Route>
+
+        <Route path="hindimedium/mediumquiz1" element={<HindiMediumQ1 />}></Route>
+        <Route path="hindimedium/mediumquiz2" element={<HindiMediumQ2 />}></Route>
+        <Route path="hindimedium/mediumquiz3" element={<HindiMediumQ3 />}></Route>
+        <Route path="hindimedium/mediumquiz4" element={<HindiMediumQ4 />}></Route>
+
+        <Route path="hindihard/hindihardquiz1" element={<HindiHardQ1 />}></Route>
+        <Route path="hindihard/hindihardquiz2" element={<HindiHardQ2 />}></Route>
+        <Route path="hindihard/hindihardquiz3" element={<HindiHardQ3 />}></Route>
+        <Route path="hindihard/hindihardquiz4" element={<HindiHardQ4 />}></Route>
+        <Route path="hindihard/hindihardquiz5" element={<HindiHardQ5 />}></Route>
+
+        {/* joy English Quiz Card */}
+        {/* joy Quiz*/}
+
+
         {/* Arfat */}
         <Route
           path="/dashboard"

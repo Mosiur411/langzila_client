@@ -1,0 +1,123 @@
+[
+    {
+        "id":1,
+        "question":"What is the correct voice of 'Ka'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "घ", "isCorrect": false, "isSelect" : false},
+            {"answere": "ग", "isCorrect": false, "isSelect" : false},
+            {"answere": "क", "isCorrect": true, "isSelect" : false},
+            {"answere": "ख", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":2,
+        "question":"What is the correct voice of 'Kha'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "क", "isCorrect": false, "isSelect" : false},
+            {"answere": "ग", "isCorrect": false, "isSelect" : false},
+            {"answere": "ग", "isCorrect": false, "isSelect" : false},
+            {"answere": "ख", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":3,
+        "question":"What is the correct voice of 'Ga'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "क", "isCorrect": false, "isSelect" : false},
+            {"answere": "ग", "isCorrect": true, "isSelect" : false},
+            {"answere": "ग", "isCorrect": false, "isSelect" : false},
+            {"answere": "ख", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":4,
+        "question":"What is the correct voice of 'Gha'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "क", "isCorrect": false, "isSelect" : false},
+            {"answere": "ग", "isCorrect": false, "isSelect" : false},
+            {"answere": "घ", "isCorrect": true, "isSelect" : false},
+            {"answere": "ख", "isCorrect": false, "isSelect" : false}
+        ]
+
+    },
+    {
+        "id":5,
+        "question":"What is the correct voice of 'Uo'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "ङ", "isCorrect": true, "isSelect" : false},
+            {"answere": "ग", "isCorrect": false, "isSelect" : false},
+            {"answere": "छ", "isCorrect": false, "isSelect" : false},
+            {"answere": "ख", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":6,
+        "question":"What is the correct voice of 'Ca'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "क", "isCorrect": false, "isSelect" : false},
+            {"answere": "च", "isCorrect": true, "isSelect" : false},
+            {"answere": "ज", "isCorrect": false, "isSelect" : false},
+            {"answere": "ङ", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":7,
+        "question":"What is the correct voice of 'Cha'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "ङ", "isCorrect": false, "isSelect" : false},
+            {"answere": "ज", "isCorrect": false, "isSelect" : false},
+            {"answere": "घ", "isCorrect": false, "isSelect" : false},
+            {"answere": "छ", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":8,
+        "question":"What is the correct voice of 'Ja'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "छ", "isCorrect": false, "isSelect" : false},
+            {"answere": "ज", "isCorrect": true, "isSelect" : false},
+            {"answere": "घ", "isCorrect": false, "isSelect" : false},
+            {"answere": "ङ", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":9,
+        "question":"What is the correct voice of 'Jha'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "छ", "isCorrect": false, "isSelect" : false},
+            {"answere": "ज", "isCorrect": false, "isSelect" : false},
+            {"answere": "घ", "isCorrect": false, "isSelect" : false},
+            {"answere": "झ", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":10,
+        "question":"What is the correct voice of 'Yuo'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "ञ", "isCorrect": true, "isSelect" : false},
+            {"answere": "ग", "isCorrect": false, "isSelect" : false},
+            {"answere": "छ", "isCorrect": false, "isSelect" : false},
+            {"answere": "झ", "isCorrect": false, "isSelect" : false}
+        ]
+    }
+]

@@ -1,0 +1,123 @@
+[
+    {
+        "id":1,
+        "Latter":"What is the correct spelling of 'ट'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Tya", "isCorrect": false, "isSelect" : false},
+            {"answere": "Tha ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Da ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ta", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":2,
+        "Latter":"What is the correct spelling of 'ठ'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "kha", "isCorrect": false, "isSelect" : false},
+            {"answere": "Tha", "isCorrect": true, "isSelect" : false},
+            {"answere": "Gya", "isCorrect": false, "isSelect" : false},
+            {"answere": "Rha", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":3,
+        "Latter":"What is the correct spelling of 'ड'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Da", "isCorrect": true, "isSelect" : false},
+            {"answere": "Ee", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ga", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ha", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":4,
+        "Latter":"What is the correct spelling of 'ढ'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Gha", "isCorrect": false, "isSelect" : false},
+            {"answere": "Rha", "isCorrect": false, "isSelect" : false},
+            {"answere": "Dha", "isCorrect": true, "isSelect" : false},
+            {"answere": "Fha", "isCorrect": false, "isSelect" : false}
+        ]
+
+    },
+    {
+        "id":5,
+        "Latter":"What is the correct spelling of 'ण'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Na", "isCorrect": true, "isSelect" : false},
+            {"answere": "Qi ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ty ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ra", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":6,
+        "Latter":"What is the correct spelling of 'त'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Ca", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ci ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ra", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ta", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":7,
+        "Latter":"What is the correct spelling of 'थ'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Cha", "isCorrect": false, "isSelect" : false},
+            {"answere": "Tha", "isCorrect": true, "isSelect" : false},
+            {"answere": "Gha", "isCorrect": false, "isSelect" : false},
+            {"answere": "Hha", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":8,
+        "Latter":"What is the correct spelling of 'द'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Ja", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ta", "isCorrect": false, "isSelect" : false},
+            {"answere": "La", "isCorrect": false, "isSelect" : false},
+            {"answere": "Da", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":9,
+        "Latter":"What is the correct spelling of 'ध'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Pha", "isCorrect": false, "isSelect" : false},
+            {"answere": "Jya", "isCorrect": false, "isSelect" : false},
+            {"answere": "Dha", "isCorrect": true, "isSelect" : false},
+            {"answere": "Jpa", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":10,
+        "Latter":"What is the correct spelling of 'न'?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Na", "isCorrect": true, "isSelect" : false},
+            {"answere": "Pa", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ca", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ja", "isCorrect": false, "isSelect" : false}
+        ]
+    }
+]

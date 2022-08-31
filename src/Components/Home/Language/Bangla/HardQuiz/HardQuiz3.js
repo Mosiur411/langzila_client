@@ -18,6 +18,8 @@ import { GiCottonFlower } from "react-icons/gi";
 import { SiSitepoint } from "react-icons/si";
 import { ImHappy, ImSad } from "react-icons/im";
 import { GiSkullCrossedBones, GiChessKing, GiSpeaker } from "react-icons/gi";
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../../Firebase/firebase.init';
 
 
 
@@ -26,6 +28,7 @@ const HardQuiz3 = () => {
 
 
     // All state
+    const [user] = useAuthState(auth);
     const [showScore, setShowScore] = useState(false)
     const [quizs, setQuizs] = useState([]);
     const [count, setCount] = useState(0);
@@ -37,7 +40,7 @@ const HardQuiz3 = () => {
     const [finalValue, setFinalValue] = useState(0);
 
     // Diclaration
-    const email = 'joypaul123@gmail.com'
+    const email = user?.email;
     const isData = quizData?.email;
     const navigate = useNavigate()
 
@@ -52,7 +55,7 @@ const HardQuiz3 = () => {
     console.log(quizs);
     // Get Quiz Ans Data
     useEffect(() => {
-        fetch(`/getQuizAns1/${email}`, {
+        fetch(`http://localhost:5000/BangHardQAns3/${email}`, {
             method: 'GET'
         })
             .then(res => res.json())
@@ -91,7 +94,7 @@ const HardQuiz3 = () => {
 
             if (QuizData) {
                 try {
-                    const { data } = await axios.post(`/BngQuiz1`, QuizData, {
+                    const { data } = await axios.post(`http://localhost:5000/BangHardQ3`, QuizData, {
                         method: 'POST'
                     });
 

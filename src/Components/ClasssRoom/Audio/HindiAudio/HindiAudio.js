@@ -18,7 +18,7 @@ const HindiAudio = () => {
     const [CapitalLetter, setCapitalLetter] = useState([])
 
     useEffect(() => {
-        fetch('/Hindi1.json')
+        fetch('/HindiEasyq1.json')
             .then(res => res.json())
             .then(data => setCapitalLetter(data))
     }, [])

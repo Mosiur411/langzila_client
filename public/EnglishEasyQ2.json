@@ -1,0 +1,123 @@
+[
+    {
+        "id":1,
+        "Latter":"________ is sleeping in the dorm room.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Sleeping", "isCorrect": false, "isSelect" : false},
+            {"answere": "Dorm", "isCorrect": false, "isSelect" : false},
+            {"answere": "Room", "isCorrect": false, "isSelect" : false},
+            {"answere": "Everyone", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":2,
+        "Latter":"___ were playing scrabble.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Playing", "isCorrect": false, "isSelect" : false},
+            {"answere": "We", "isCorrect": true, "isSelect" : false},
+            {"answere": "Were", "isCorrect": false, "isSelect" : false},
+            {"answere": "Scrabble", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":3,
+        "Latter":" Look at Ellen, ____ is a beautiful artist.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "She", "isCorrect": true, "isSelect" : false},
+            {"answere": "Beautiful", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ellen", "isCorrect": false, "isSelect" : false},
+            {"answere": "Artist", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":4,
+        "Latter":"___ is good at cricket.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "At", "isCorrect": false, "isSelect" : false},
+            {"answere": "Good", "isCorrect": false, "isSelect" : false},
+            {"answere": "He", "isCorrect": true, "isSelect" : false},
+            {"answere": "Cricket", "isCorrect": false, "isSelect" : false}
+        ]
+
+    },
+    {
+        "id":5,
+        "Latter":"Would ___ like to have coffee?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "You", "isCorrect": true, "isSelect" : false},
+            {"answere": "Coffee ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Have ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Would", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":6,
+        "Latter":"This house is ____.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "This", "isCorrect": false, "isSelect" : false},
+            {"answere": "House ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Is", "isCorrect": false, "isSelect" : false},
+            {"answere": "Mine", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":7,
+        "Latter":"Did you hear ______?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Did", "isCorrect": false, "isSelect" : false},
+            {"answere": "That", "isCorrect": true, "isSelect" : false},
+            {"answere": "You", "isCorrect": false, "isSelect" : false},
+            {"answere": "Hha", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":8,
+        "Latter":"The monkey ___ by the door.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Monkey", "isCorrect": false, "isSelect" : false},
+            {"answere": "By", "isCorrect": false, "isSelect" : false},
+            {"answere": "Door", "isCorrect": false, "isSelect" : false},
+            {"answere": "Sat", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":9,
+        "Latter":"Jack __ in a hurry.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "A", "isCorrect": false, "isSelect" : false},
+            {"answere": "Hurry", "isCorrect": false, "isSelect" : false},
+            {"answere": "Left", "isCorrect": true, "isSelect" : false},
+            {"answere": "Jack", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":10,
+        "Latter":"Michelle __ her elbow while ___.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Hurt, playing", "isCorrect": true, "isSelect" : false},
+            {"answere": "Hurt", "isCorrect": false, "isSelect" : false},
+            {"answere": "Elbow", "isCorrect": false, "isSelect" : false},
+            {"answere": "Michelle", "isCorrect": false, "isSelect" : false}
+        ]
+    }
+]
