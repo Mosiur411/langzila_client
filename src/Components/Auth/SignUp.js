@@ -18,6 +18,14 @@ const SignUp = () => {
     const [updateProfile, updating, updatError] = useUpdateProfile(auth);
     const [email, setEmail] = useState('');
     const [showPass, setShowPass] = useState(false);
+    /* =================================== try to user ======================== */
+    if (user) {
+        console.log(user)
+    }
+
+
+
+
 
     const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password);
@@ -30,13 +38,16 @@ const SignUp = () => {
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
 
-    const [Token, setToken] = useToken(user || googleUser )  
-  
+    const [Token, setToken] = useToken(user || googleUser)
+
     if (Token) {
         navigate(from, { replace: true });
-    
-      }
-  
+
+    }
+
+
+
+
     // useEffect(() => {
     //     if (user || googleUser) {
 
@@ -129,7 +140,7 @@ const SignUp = () => {
             <div className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box">
                     <label for="my-modal-6" className="btn btn-sm btn-circle absolute right-2 top-2 bottom-5">✕</label>
-                    
+
                     <input
                         type="email"
                         placeholder='Please put your email'
@@ -138,7 +149,7 @@ const SignUp = () => {
                         onChange={(e) => setEmail(e.target.value)}
                     />
                     <button
-                         className="mt-3 border border-gray-300 bg-primary text-white text-sm uppercase font-bold rounded-lg block w-full p-2.5"
+                        className="mt-3 border border-gray-300 bg-primary text-white text-sm uppercase font-bold rounded-lg block w-full p-2.5"
                         onClick={async () => {
                             await sendPasswordResetEmail(email);
                             toast('Sent email');

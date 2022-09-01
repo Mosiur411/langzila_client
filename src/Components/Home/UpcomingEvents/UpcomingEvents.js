@@ -26,7 +26,7 @@ const UpcomingEvents = () => {
                         <div className='text-center lg:w-[760px] mx-auto'>
                             <h3 className='uppercase text-primary font-semibold'>Events</h3>
                             <h1 className='py-2 text-3xl font-bold text-accent'>Our Upcoming Events</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>This is monthly events. You can learn by booking an event. You can choose an event and booking it.This will help you to improve your learning language.</p>
                         </div>
                         <div className="grid md:grid-cols-2 grid-cols-1 py-16">
                             {
