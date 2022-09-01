@@ -10,7 +10,7 @@ export default function TodoList() {
 
   return (
     <>
-      <div className="mt-2 text-gray-700 text-sm max-h-[300px] overflow-y-auto">
+      <div className="mt-2 text-gray-700 text-sm max-h-[300px]  overflow-y-auto">
         {completedTodo.map((todo) => (
           <TodoCompleted todo={todo} key={todo.id} />
         ))}

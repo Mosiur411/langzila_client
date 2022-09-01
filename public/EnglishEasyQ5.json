@@ -1,0 +1,123 @@
+[
+    {
+        "id":1,
+        "Latter":"Sophie is a _____ worker at the salon.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Sophie", "isCorrect": false, "isSelect" : false},
+            {"answere": "Part-time ", "isCorrect": true, "isSelect" : false},
+            {"answere": "Worker ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Salon", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":2,
+        "Latter":"Meera lost her ______ bag.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Brown", "isCorrect": true, "isSelect" : false},
+            {"answere": "Meera", "isCorrect": false, "isSelect" : false},
+            {"answere": "Bag", "isCorrect": false, "isSelect" : false},
+            {"answere": "Lost", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":3,
+        "Latter":"Paul tries to help _____ people.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Tries", "isCorrect": false, "isSelect" : false},
+            {"answere": "Help", "isCorrect": false, "isSelect" : false},
+            {"answere": "Homeless", "isCorrect": true, "isSelect" : false},
+            {"answere": "Paul", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":4,
+        "Latter":"The students are _______ their notes.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Writing", "isCorrect": true, "isSelect" : false},
+            {"answere": "Wrote", "isCorrect": false, "isSelect" : false},
+            {"answere": "Written", "isCorrect": false, "isSelect" : false},
+            {"answere": "Write", "isCorrect": false, "isSelect" : false}
+        ]
+
+    },
+    {
+        "id":5,
+        "Latter":"The doctor _____ out for ten minutes.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Go", "isCorrect": false, "isSelect" : false},
+            {"answere": "Going ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Gone ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Went", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":6,
+        "Latter":"The new restaurant ______ last week.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Opened", "isCorrect": true, "isSelect" : false},
+            {"answere": "Open", "isCorrect": false, "isSelect" : false},
+            {"answere": "Opening", "isCorrect": false, "isSelect" : false},
+            {"answere": "Start", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":7,
+        "Latter":"I will see you ____ Saturday.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Will", "isCorrect": false, "isSelect" : false},
+            {"answere": "On", "isCorrect": true, "isSelect" : false},
+            {"answere": "You", "isCorrect": false, "isSelect" : false},
+            {"answere": "See", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":8,
+        "Latter":"The class will start at 9:30am.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "The", "isCorrect": false, "isSelect" : false},
+            {"answere": "Start", "isCorrect": false, "isSelect" : false},
+            {"answere": "At", "isCorrect": true, "isSelect" : false},
+            {"answere": "Will", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":9,
+        "Latter":"There is a bee _____ the room.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Is", "isCorrect": false, "isSelect" : false},
+            {"answere": "In", "isCorrect": true, "isSelect" : false},
+            {"answere": "The", "isCorrect": false, "isSelect" : false},
+            {"answere": "A", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":10,
+        "Latter":"She comes ____ Australia.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "From", "isCorrect": true, "isSelect" : false},
+            {"answere": "She", "isCorrect": false, "isSelect" : false},
+            {"answere": "Comes", "isCorrect": false, "isSelect" : false},
+            {"answere": "Australia", "isCorrect": false, "isSelect" : false}
+        ]
+    }
+]

@@ -1,0 +1,123 @@
+[
+    {
+        "id":1,
+        "Latter":" I visited the ________",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "The", "isCorrect": false, "isSelect" : false, "id": 1},
+            {"answere": "Eiffel Tower and Paris", "isCorrect": true, "isSelect" : false, "id": 2},
+            {"answere": "Paris", "isCorrect": false, "isSelect" : false, "id": 3},
+            {"answere": "Eiffel Tower", "isCorrect": false, "isSelect" : false, "id": 4}
+        ]
+    },
+    {
+        "id":2,
+        "Latter":"_______ is a beautiful country.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Bhutan", "isCorrect": true, "isSelect" : false, "id": 5},
+            {"answere": "A", "isCorrect": false, "isSelect" : false, "id": 6},
+            {"answere": "Country", "isCorrect": false, "isSelect" : false, "id": 7},
+            {"answere": "Beautiful", "isCorrect": false, "isSelect" : false, "id": 8}
+        ]
+    },
+    {
+        "id":3,
+        "Latter":"________ is very hot.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Hot", "isCorrect": false, "isSelect" : false, "id": 9},
+            {"answere": "Very", "isCorrect": false, "isSelect" : false, "id": 10},
+            {"answere": "Summer", "isCorrect": true, "isSelect" : false, "id": 11},
+            {"answere": "Is", "isCorrect": false, "isSelect" : false, "id": 12}
+        ]
+    },
+    {
+        "id":4,
+        "Latter":"The ________ looks so beautiful.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Moon", "isCorrect": true, "isSelect" : false, "id": 13},
+            {"answere": "Looks", "isCorrect": false, "isSelect" : false, "id": 14},
+            {"answere": "The", "isCorrect": false, "isSelect" : false, "id": 15},
+            {"answere": "Beautiful", "isCorrect": false, "isSelect" : false, "id": 16}
+        ]
+
+    },
+    {
+        "id":5,
+        "Latter":"The _______ is an expert in his field.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "His", "isCorrect": false, "isSelect" : false, "id": 17},
+            {"answere": "Expert", "isCorrect": false, "isSelect" : false, "id": 18},
+            {"answere": "Field", "isCorrect": false, "isSelect" : false, "id": 19},
+            {"answere": "Doctor", "isCorrect": true, "isSelect" : false, "id": 20}
+        ]
+    },
+    {
+        "id":6,
+        "Latter":"The mailman _____________",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Mailman, Mr. Joe and postcards", "isCorrect": true, "isSelect" : false, "id": 21},
+            {"answere": "Mailman", "isCorrect": false, "isSelect" : false, "id": 22},
+            {"answere": "Mr.Joe", "isCorrect": false, "isSelect" : false, "id": 23},
+            {"answere": "Postcards", "isCorrect": false, "isSelect" : false, "id": 24}
+        ]
+    },
+    {
+        "id":7,
+        "Latter":"Are these _______ tasty?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Tasty", "isCorrect": false, "isSelect" : false, "id": 25},
+            {"answere": "Mangoes", "isCorrect": true, "isSelect" : false, "id": 26},
+            {"answere": "These", "isCorrect": false, "isSelect" : false, "id": 27},
+            {"answere": "Are", "isCorrect": false, "isSelect" : false, "id": 28}
+        ]
+    },
+    {
+        "id":8,
+        "Latter":"________ were having dinner.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Dinner", "isCorrect": false, "isSelect" : false, "id": 29},
+            {"answere": "Were", "isCorrect": false, "isSelect" : false, "id": 31},
+            {"answere": "They", "isCorrect": true, "isSelect" : false, "id": 32},
+            {"answere": "Having", "isCorrect": false, "isSelect" : false, "id": 33}
+        ]
+    },
+    {
+        "id":9,
+        "Latter":" I ___ to sleep.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "To", "isCorrect": false, "isSelect" : false, "id": 34},
+            {"answere": "Sleep", "isCorrect": false, "isSelect" : false, "id": 35},
+            {"answere": "Want", "isCorrect": true, "isSelect" : false, "id": 36},
+            {"answere": "I", "isCorrect": false, "isSelect" : false, "id": 37}
+        ]
+    },
+    {
+        "id":10,
+        "Latter":"Is that ___ laptop?",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "My", "isCorrect": true, "isSelect" : false, "id": 38},
+            {"answere": "Laptop", "isCorrect": false, "isSelect" : false, "id": 39},
+            {"answere": "Is", "isCorrect": false, "isSelect" : false, "id": 40},
+            {"answere": "That", "isCorrect": false, "isSelect" : false, "id": 41}
+        ]
+    }
+]

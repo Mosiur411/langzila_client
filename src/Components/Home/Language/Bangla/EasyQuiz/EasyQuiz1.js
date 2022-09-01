@@ -30,6 +30,8 @@ import Audio7 from '../../../../assets/QuizImg/Quiz1Audio/audio7.mp3'
 import Audio8 from '../../../../assets/QuizImg/Quiz1Audio/audio8.mp3'
 import Audio9 from '../../../../assets/QuizImg/Quiz1Audio/audio9.mp3'
 import Audio10 from '../../../../assets/QuizImg/Quiz1Audio/audio10.mp3'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../../Firebase/firebase.init';
 
 
 
@@ -37,6 +39,7 @@ const EasyQuiz1 = () => {
 
 
     // All state
+    const [user] = useAuthState(auth);
     const [showScore, setShowScore] = useState(false)
     const [quizs, setQuizs] = useState([]);
     const [count, setCount] = useState(0);
@@ -48,23 +51,22 @@ const EasyQuiz1 = () => {
     const [finalValue, setFinalValue] = useState(0);
 
     // Diclaration
-    const email = 'joypaul123@gmail.com'
+    const email = user?.email;
     const isData = quizData?.email;
     const navigate = useNavigate()
 
 
     // Get The Quiz Questions
     useEffect(() => {
-
-        fetch('https://polar-peak-58919.herokuapp.com/GetBgQuizQs1')
+        fetch('/Bangla1.json')
             .then(res => res.json())
-            .then(data => setQuizs(data.data))
+            .then(data => setQuizs(data))
     }, [reload])
 
 
     // Get Quiz Ans Data
     useEffect(() => {
-        fetch(`https://polar-peak-58919.herokuapp.com/getQuizAns1/${email}`, {
+        fetch(`http://localhost:5000/getQuizAns1/${email}`, {
             method: 'GET'
         })
             .then(res => res.json())
@@ -103,7 +105,7 @@ const EasyQuiz1 = () => {
 
             if (QuizData) {
                 try {
-                    const { data } = await axios.post(`https://polar-peak-58919.herokuapp.com/BngQuiz1`, QuizData, {
+                    const { data } = await axios.post(`http://localhost:5000/BngQuiz1`, QuizData, {
                         method: 'POST'
                     });
 

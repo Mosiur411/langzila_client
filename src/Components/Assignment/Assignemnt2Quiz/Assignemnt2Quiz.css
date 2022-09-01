@@ -1,4 +1,5 @@
 /* The container */
+
 .container1 {
     display: block;
     background: rgb(237, 178, 178);
@@ -31,11 +32,13 @@
   }
   
   /* On mouse-over, add a grey background color */
+
   .container1:hover input ~ .checkmark {
     background-color: #ccc;
   }
   
   /* When the radio button is checked, add a blue background */
+
   .container1 input:checked ~ .checkmark {
     background-color: #2196F3;
     color: #ffffff;

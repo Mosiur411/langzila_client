@@ -61,7 +61,7 @@ const TypingThroughInput = ({ text }) => {
         onKeyDown={(e) => handleKeyDown(e.key, e.ctrlKey)}
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
-        className={`text-xl outline-none relative font-serif`}
+        className={`text-lg outline-none relative `}
       >
         <div
           ref={letterElements}
@@ -74,8 +74,8 @@ const TypingThroughInput = ({ text }) => {
               state === 0
                 ? "text-gray-900"
                 : state === 1
-                ? "text-gray-400,"
-                : "text-red-900";
+                  ? "text-gray-400,"
+                  : "text-red-900";
             return (
               <span key={letter + index} className={`${color}`}>
                 {letter}

@@ -68,10 +68,9 @@ const Assignemnt1Quiz = () => {
     }
 
 
-    console.log(count)
 
     return (
-        <>
+        <div>
             {
                 timer ?
                     <div className='  mt-[25%]'>
@@ -87,7 +86,7 @@ const Assignemnt1Quiz = () => {
                         </FlipClockCountdown>
 
                     </div> :
-                    <div >
+                    <div>
                         <h1 style={{ fontFamily: "Nunito" }} className=' text-2xl text-gray-800 font-bold'>Hay! <span className=' text-blue-900'>{userName}</span></h1>
                         <h1 style={{ fontFamily: "Nunito" }} className=' font-medium text-gray-600 '>Let's start the Quick Test.</h1>
                         <div className=' flex items-center justify-between mt-2'>
@@ -103,6 +102,7 @@ const Assignemnt1Quiz = () => {
                             <div className=' mt-4'>
                                 <h1 className=' flex items-center text-gray-700'><MdQuiz className=' mr-2 text-blue-900' />What is the correct spelling of 'অ'?</h1>
                                 <div className=' grid grid-cols-2 gap-3 mt-3  items-center justify-center pl-12'>
+
                                     <label className="container1 1  w-2/3 shadow-md">
                                         <input type="radio" name="radio1" value="Fa" />
                                         <span className="checkmark text-center font-mono ">Fa</span>
@@ -179,6 +179,7 @@ const Assignemnt1Quiz = () => {
                             <div className=' mt-4'>
                                 <h1 className=' flex items-center text-gray-700'><MdQuiz className=' mr-2 text-blue-900' />What is the correct spelling of 'ঈ'?</h1>
                                 <div className=' grid grid-cols-2 gap-3 mt-3  items-center justify-center pl-12'>
+
                                     <label className="container1   w-2/3 shadow-md">
                                         <input type="radio" name="radio4" value="Ehi" />
                                         <span className="checkmark text-center font-mono ">Ehi</span>
@@ -205,6 +206,7 @@ const Assignemnt1Quiz = () => {
                             <div className=' mt-4'>
                                 <h1 className=' flex items-center text-gray-700'><MdQuiz className=' mr-2 text-blue-900' />What is the correct spelling of 'উ'?</h1>
                                 <div className=' grid grid-cols-2 gap-3 mt-3  items-center justify-center pl-12'>
+
                                     <label className="container1   w-2/3 shadow-md">
                                         <input type="radio" name="radio5" value="Up" />
                                         <span className="checkmark text-center font-mono ">Up</span>
@@ -231,10 +233,12 @@ const Assignemnt1Quiz = () => {
                             <div className=' mt-4'>
                                 <h1 className=' flex items-center text-gray-700'><MdQuiz className=' mr-2 text-blue-900' />What is the correct spelling of 'ঊ'?</h1>
                                 <div className=' grid grid-cols-2 gap-3 mt-3  items-center justify-center pl-12'>
+
                                     <label className="container1   w-2/3 shadow-md">
                                         <input type="radio" name="radio6" value="Uui" />
                                         <span className="checkmark text-center font-mono ">Uui</span>
                                     </label>
+
 
                                     <label className="container1   w-2/3  shadow-md">
                                         <input type="radio" name="radio6" value="Chi" />
@@ -281,6 +285,7 @@ const Assignemnt1Quiz = () => {
                             <div className=' mt-4'>
                                 <h1 className=' flex items-center text-gray-700'><MdQuiz className=' mr-2 text-blue-900' />What is the correct spelling of 'ঐ'?</h1>
                                 <div className=' grid grid-cols-2 gap-3 mt-3  items-center justify-center pl-12'>
+
                                     <label className="container1  w-2/3 shadow-md">
                                         <input type="radio" name="radio8" value="Ja" />
                                         <span className="checkmark text-center font-mono ">Ja</span>
@@ -357,21 +362,14 @@ const Assignemnt1Quiz = () => {
                             <div className=' text-center mt-5'>
                                 <input type="submit" value='submit' className=' bg-red-400 py-1 px-3 rounded text-white' />
                             </div>
+
                         </form >
                     </div >
             }
 
-
-
-
-
-        </>
-    );
+        </div>
+    )
 };
 
 export default Assignemnt1Quiz;
 
-{/* <option className={`  text-black text-center bg-red-200 py-2 text-sm font-semibold label-text `}>Ab</option>
-                    <option className={`  text-black text-center bg-red-200 py-2 text-sm font-semibold label-text `}>b</option>
-                    <option className={`  text-black text-center bg-red-200 py-2 text-sm font-semibold label-text `}>c</option>
-                    <option className={`  text-black text-center bg-red-200 py-2  text-sm font-semibold label-text `}>d</option> */}
