@@ -1,0 +1,44 @@
+.ql-toolbar.ql-snow {
+  border-bottom: 1px solid #fe4854 !important;
+}
+
+.ql-editor.ql-blank {
+  height: 200px;
+}
+
+.ql-editor {
+  height: 200px !important;
+}
+
+
+
+.inputtag {
+
+  outline: none;
+  padding: 5px 10px;
+  color: #777;
+  font-size: 16px;
+}
+
+
+.containertag {
+  border: 1px solid #fe4854;
+  margin-top: 10px;
+
+  width: 100%;
+  max-width: 700px;
+  padding: 12px;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.tag {
+  margin: 5px;
+  padding: 6px 14px;
+
+  border-radius: 50px;
+}

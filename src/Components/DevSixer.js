@@ -80,11 +80,73 @@ import EnglishEasyQ5 from "./Home/Language/English/EnglishEasy/EnglishEasyQ5";
 import EnglishEasyQ4 from "./Home/Language/English/EnglishEasy/EnglishEasyQ3";
 import EnglishEasyQ3 from "./Home/Language/English/EnglishEasy/EnglishEasyQ3";
 import EnglishEasyQ2 from "./Home/Language/English/EnglishEasy/EnglishEasyQ2";
-
+import AboutUs from "./AboutUs/AboutUs";
+import PlayGames from "./PlayGames/PlayGames";
+import TicTacToe from "./PlayGames/TicTacToe";
+import ChessBoardUI from "./PlayGames/ChessBoardUI";
+import Courses from "./Courses/Courses";
+import MakeAdmin from "./Dashboard/MakeAdmin";
+import Community from "./Community/Community";
+import Addquestion from "./Community/Addquestion";
+import Questionpage from "./Community/Questionpage";
+import Voice from "./Voice/Voice";
+import Speech from "./Voice/Speech";
+import Cart from "./Courses/Cart";
+import Todo from "./Todo/Todo";
 const DevSixer = ({ show, setShow }) => {
   return (
     <div>
       <Routes>
+        <Route path="/" element={<Home show={show} setShow={setShow} />} />
+        <Route
+          path="/about"
+          element={<AboutUs show={show} setShow={setShow} />}
+        />
+        <Route
+          path="/courses"
+          element={<Courses show={show} setShow={setShow} />}
+        />
+        <Route path="/cart" element={<Cart show={show} setShow={setShow} />} />
+        <Route
+          path="/CapitalGames"
+          element={<CapitalGames show={show} setShow={setShow} />}
+        />
+        <Route path="*" element={<NotFound show={show} setShow={setShow} />} />
+        <Route index element={<Home show={show} setShow={setShow} />} />
+        <Route path="/signIn" element={<SignIn></SignIn>} />
+        <Route path="/signUp" element={<SignUp></SignUp>} />
+        <Route
+          index
+          path="/contact"
+          element={<Contact show={show} setShow={setShow} />}
+        />
+        <Route path="texttovoice" element={<Voice />}></Route>
+        <Route path="voicetotext" element={<Speech />}></Route>
+        <Route
+          index
+          path="/certificate"
+          element={<Certificate show={show} setShow={setShow} />}
+        />
+        <Route
+          index
+          path="/support"
+          element={<Support show={show} setShow={setShow} />}
+        />
+        <Route path="/support" element={<Support></Support>} />
+        <Route path="/classroom" element={<ClasssRoom />} />
+        <Route
+          path="/playGames"
+          element={<PlayGames show={show} setShow={setShow} />}
+        />
+        <Route
+          path="/playGames/ticTacToe"
+          element={<TicTacToe show={show} setShow={setShow} />}
+        />
+        <Route
+          path="/playGames/chessboardUI"
+          element={<ChessBoardUI show={show} setShow={setShow} />}
+        />
+        <Route path="/eventCrad/:id" element={<EventCard />} />+
         <Route path="/" element={<Home show={show} setShow={setShow} />} />
         <Route
           path="/CapitalGames"
@@ -158,9 +220,13 @@ const DevSixer = ({ show, setShow }) => {
         <Route path="/typelearn" element={<TypeWord></TypeWord>} />
 
         <Route path="/translator" element={<Translator />} />
+        <Route path="/todo" element={<Todo />} />
         <Route path="/canvas" element={<Canvas />}></Route>
 
 
+        <Route path="/forum" element={<Community />}></Route>
+        <Route path="/addquestion" element={<Addquestion />}></Route>
+        <Route path="/question/:id" element={<Questionpage />}></Route>
         {/* joy */}
         {/* JOy ClassRoom */}
 
@@ -292,6 +358,7 @@ const DevSixer = ({ show, setShow }) => {
           ></Route>
           <Route path="ask" element={<AskQuestion></AskQuestion>}></Route>
           <Route path="myboocking" element={<MyBoocking></MyBoocking>}></Route>
+          <Route path="alluser" element={<MakeAdmin></MakeAdmin>}></Route>
         </Route>
         {/* Arfat */}
       </Routes>
