@@ -1,0 +1,123 @@
+[
+    {
+        "id":1,
+        "question":"What is the correct voice of 'Aa'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "उ", "isCorrect": false, "isSelect" : false},
+            {"answere": "इ", "isCorrect": false, "isSelect" : false},
+            {"answere": "अ", "isCorrect": true, "isSelect" : false},
+            {"answere": "ओ", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":2,
+        "question":"What is the correct voice of 'Aha'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "आ", "isCorrect": false, "isSelect" : false},
+            {"answere": "इ", "isCorrect": false, "isSelect" : false},
+            {"answere": "उ", "isCorrect": true, "isSelect" : false},
+            {"answere": "ओ", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":3,
+        "question":"What is the correct voice of 'Ee'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "आ", "isCorrect": false, "isSelect" : false},
+            {"answere": "इ", "isCorrect": true, "isSelect" : false},
+            {"answere": "उ", "isCorrect": false, "isSelect" : false},
+            {"answere": "ओ", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":4,
+        "question":"What is the correct voice of 'Ehi'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "आ", "isCorrect": false, "isSelect" : false},
+            {"answere": "उ", "isCorrect": false, "isSelect" : false},
+            {"answere": "ओ", "isCorrect": false, "isSelect" : false},
+            {"answere": "ई", "isCorrect": true, "isSelect" : false}
+        ]
+
+    },
+    {
+        "id":5,
+        "question":"What is the correct voice of 'Uu'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "ई", "isCorrect": false, "isSelect" : false},
+            {"answere": "उ", "isCorrect": true, "isSelect" : false},
+            {"answere": "ओ", "isCorrect": false, "isSelect" : false},
+            {"answere": "आ", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":6,
+        "question":"What is the correct voice of 'Uhu'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "ऊ", "isCorrect": true, "isSelect" : false},
+            {"answere": "ई", "isCorrect": false, "isSelect" : false},
+            {"answere": "ओ", "isCorrect": false, "isSelect" : false},
+            {"answere": "आ", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":7,
+        "question":"What is the correct voice of 'A'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "आ", "isCorrect": false, "isSelect" : false},
+            {"answere": "उ", "isCorrect": false, "isSelect" : false},
+            {"answere": "ए", "isCorrect": true, "isSelect" : false},
+            {"answere": "ई", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":8,
+        "question":"What is the correct voice of 'Oi'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "उ", "isCorrect": false, "isSelect" : false},
+            {"answere": "आ", "isCorrect": false, "isSelect" : false},
+            {"answere": "ई", "isCorrect": false, "isSelect" : false},
+            {"answere": "ऐ", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":9,
+        "question":"What is the correct voice of 'Oo'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "ओ", "isCorrect": true, "isSelect" : false},
+            {"answere": "ई", "isCorrect": false, "isSelect" : false},
+            {"answere": "उ", "isCorrect": false, "isSelect" : false},
+            {"answere": "आ", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":10,
+        "question":"What is the correct voice of 'Oii'?",
+        "category": "Bangla",
+        "difficulty": "medium",
+        "quiz_answers": [
+            {"answere": "आ", "isCorrect": false, "isSelect" : false},
+            {"answere": "औ", "isCorrect": true, "isSelect" : false},
+            {"answere": "उ", "isCorrect": false, "isSelect" : false},
+            {"answere": "इ", "isCorrect": false, "isSelect" : false}
+        ]
+    }
+]

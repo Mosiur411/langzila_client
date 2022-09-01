@@ -61,21 +61,12 @@ const AddReview = () => {
 
     };
     return (
-        <div className='text-center py-24 shadow-md border border-gray-100 mx-12 rounded-lg'>
-            <h1 className='text-3xl text-primary'>Add Review</h1>
-
-            <form onSubmit={handlereview} action="">
-                {/* <select name='review' className="select  max-w-xs m-10 border-2 border-gray-100 ">
-                    <option disabled selected className='text-primary'>Rate Your Experience</option>
-                    <option className='text-primary' >1</option>
-                    <option className='text-primary'>2</option>
-                    <option className='text-primary'>3</option>
-                    <option className='text-primary'>4</option>
-                    <option className='text-primary'>5</option>
-                </select><br /> */}
+        <div className='text-center py-24 shadow-md border  mx-12 rounded-lg'>
+            <h1 className='text-3xl text-primary font-bold'>Add Review</h1>
+            <form onSubmit={handlereview} >
                 <div>
-                    <h3 className='text-xl text-center text-accent mt-4'>Give Your Honest Review </h3>
-                    <div className='flex flex-raw justify-center items-center my-5 shadow-sm'>
+
+                    <div className='flex flex-raw justify-center items-center my-5 '>
 
                         {stars.map((_, index) => {
                             return (
@@ -85,6 +76,7 @@ const AddReview = () => {
                                     onClick={() => handleClick(index + 1)}
                                     onMouseOver={() => handleMouseOver(index + 1)}
                                     onMouseLeave={handleMouseLeave}
+                                    className='border-none'
                                     color={(hoverValue || currentValue) > index ? colors.orange : colors.grey}
                                     style={{
                                         marginRight: 10,
@@ -98,8 +90,12 @@ const AddReview = () => {
                 </div>
                 <input type="text" placeholder="Type Your Experience and give us valuable suggestion " name='comment' className="input input-bordered input-lg w-full max-w-xs mb-5" /><br />
                 <button type='submit' className='btn btn-primary  text-white'>Submit</button>
+
+                <input type="text" name='comment' placeholder='Add you review' className='border py-2 px-3 rounded md:w-1/2 w-full mt-2' /> <br />
+                <button type='submit' className='py-1 px-3 bg-red-500 rounded mt-4  text-white'>Submit</button>
             </form>
             <ToastContainer></ToastContainer>
+
 
         </div>
     );
