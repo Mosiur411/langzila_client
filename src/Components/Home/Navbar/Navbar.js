@@ -22,15 +22,13 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
       <NavLink
         to={"/"}
         className={({ isActive }) =>
-          ` text-md font-medium my-4 lg:my-0  mx-2 ${
-            isActive ? "text-red-500  border-b border-red-500" : "text-black"
+          ` text-md font-medium my-4 lg:my-0  mx-2 ${isActive ? "text-red-500  border-b border-red-500" : "text-black"
           }`
         }
       >
         <p
           className={({ isActive }) =>
-            `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-              isActive ? "text-red-500" : "text-black"
+            `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? "text-red-500" : "text-black"
             }`
           }
         >
@@ -40,15 +38,13 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
       <NavLink
         to={"/about"}
         className={({ isActive }) =>
-          ` text-md font-medium my-4 lg:my-0  mx-2 ${
-            isActive ? "text-red-500  border-b border-red-500" : "text-black"
+          ` text-md font-medium my-4 lg:my-0  mx-2 ${isActive ? "text-red-500  border-b border-red-500" : "text-black"
           }`
         }
       >
         <p
           className={({ isActive }) =>
-            `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-              isActive ? "text-red-500" : "text-black"
+            `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? "text-red-500" : "text-black"
             }`
           }
         >
@@ -59,15 +55,13 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
       <NavLink
         to={"/classroom"}
         className={({ isActive }) =>
-          ` text-md font-medium my-4 lg:my-0   mx-2 ${
-            isActive ? "text-red-500  border-b border-red-500" : "text-black"
+          ` text-md font-medium my-4 lg:my-0   mx-2 ${isActive ? "text-red-500  border-b border-red-500" : "text-black"
           }`
         }
       >
         <p
           className={({ isActive }) =>
-            `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-              isActive ? "text-red-500" : "text-black"
+            `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? "text-red-500" : "text-black"
             }`
           }
         >
@@ -77,15 +71,13 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
       <NavLink
         to={"/courses"}
         className={({ isActive }) =>
-          ` text-md font-medium my-4 lg:my-0   mx-2 ${
-            isActive ? "text-red-500  border-b border-red-500" : "text-black"
+          ` text-md font-medium my-4 lg:my-0   mx-2 ${isActive ? "text-red-500  border-b border-red-500" : "text-black"
           }`
         }
       >
         <p
           className={({ isActive }) =>
-            `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-              isActive ? "text-red-500" : "text-black"
+            `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? "text-red-500" : "text-black"
             }`
           }
         >
@@ -94,36 +86,15 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
       </NavLink>
 
       <NavLink
-        to={"/support"}
-        className={({ isActive }) =>
-          ` text-md font-medium my-4 lg:my-0   mx-2 ${
-            isActive ? "text-red-500  border-b border-red-500" : "text-black"
-          }`
-        }
-      >
-        <p
-          className={({ isActive }) =>
-            `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-              isActive ? "text-red-500" : "text-black"
-            }`
-          }
-        >
-          Support
-        </p>
-      </NavLink>
-
-      <NavLink
         to={"/contact"}
         className={({ isActive }) =>
-          ` text-md font-medium  my-4 lg:my-0  mx-2 ${
-            isActive ? "text-red-500  border-b border-red-500" : "text-black"
+          ` text-md font-medium  my-4 lg:my-0  mx-2 ${isActive ? "text-red-500  border-b border-red-500" : "text-black"
           }`
         }
       >
         <p
           className={({ isActive }) =>
-            `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-              isActive ? "text-red-500" : "text-black"
+            `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? "text-red-500" : "text-black"
             }`
           }
         >
@@ -133,8 +104,7 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
       <NavLink
         to={"/forum"}
         className={({ isActive }) =>
-          ` text-md font-medium  my-4 lg:my-0  mx-2 ${
-            isActive ? "text-red-500  border-b border-red-500" : "text-black"
+          ` text-md font-medium  my-4 lg:my-0  mx-2 ${isActive ? "text-red-500  border-b border-red-500" : "text-black"
           }`
         }
       >
@@ -142,8 +112,7 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
           <label
             tabindex="0"
             className={({ isActive }) =>
-              `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-                isActive ? "text-red-500" : "text-black"
+              `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? "text-red-500" : "text-black"
               }`
             }
           >
@@ -157,17 +126,15 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
               <NavLink
                 to={"/forum"}
                 className={({ isActive }) =>
-                  ` text-md font-medium my-4 lg:my-0 mx-2 ${
-                    isActive
-                      ? "text-red-500  border-b border-red-500"
-                      : "text-black"
+                  ` text-md font-medium my-4 lg:my-0 mx-2 ${isActive
+                    ? "text-red-500  border-b border-red-500"
+                    : "text-black"
                   }`
                 }
               >
                 <p
                   className={({ isActive }) =>
-                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-                      isActive ? "text-red-500" : "text-black"
+                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? "text-red-500" : "text-black"
                     }`
                   }
                 >
@@ -179,17 +146,15 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
               <NavLink
                 to={"/translator"}
                 className={({ isActive }) =>
-                  ` text-md font-medium my-4 lg:my-0   mx-2 ${
-                    isActive
-                      ? "text-red-500  border-b border-red-500"
-                      : "text-black"
+                  ` text-md font-medium my-4 lg:my-0   mx-2 ${isActive
+                    ? "text-red-500  border-b border-red-500"
+                    : "text-black"
                   }`
                 }
               >
                 <p
                   className={({ isActive }) =>
-                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-                      isActive ? "text-red-500" : "text-black"
+                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? "text-red-500" : "text-black"
                     }`
                   }
                 >
@@ -203,17 +168,15 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
               <NavLink
                 to={"/playGames"}
                 className={({ isActive }) =>
-                  ` text-md font-medium my-4 lg:my-0   mx-2 ${
-                    isActive
-                      ? "text-red-500  border-b border-red-500"
-                      : "text-black"
+                  ` text-md font-medium my-4 lg:my-0   mx-2 ${isActive
+                    ? "text-red-500  border-b border-red-500"
+                    : "text-black"
                   }`
                 }
               >
                 <p
                   className={({ isActive }) =>
-                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-                      isActive ? "text-red-500" : "text-black"
+                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? "text-red-500" : "text-black"
                     }`
                   }
                 >
@@ -226,17 +189,15 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
               <NavLink
                 to={"/voicetotext"}
                 className={({ isActive }) =>
-                  ` text-md font-medium my-4 lg:my-0   mx-2 ${
-                    isActive
-                      ? "text-red-500  border-b border-red-500"
-                      : "text-black"
+                  ` text-md font-medium my-4 lg:my-0   mx-2 ${isActive
+                    ? "text-red-500  border-b border-red-500"
+                    : "text-black"
                   }`
                 }
               >
                 <p
                   className={({ isActive }) =>
-                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-                      isActive ? "text-red-500" : "text-black"
+                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? "text-red-500" : "text-black"
                     }`
                   }
                 >
@@ -249,17 +210,15 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
               <NavLink
                 to={"/texttovoice"}
                 className={({ isActive }) =>
-                  ` text-md font-medium my-4 lg:my-0   mx-2 ${
-                    isActive
-                      ? "text-red-500  border-b border-red-500"
-                      : "text-black"
+                  ` text-md font-medium my-4 lg:my-0   mx-2 ${isActive
+                    ? "text-red-500  border-b border-red-500"
+                    : "text-black"
                   }`
                 }
               >
                 <p
                   className={({ isActive }) =>
-                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-                      isActive ? "text-red-500" : "text-black"
+                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? "text-red-500" : "text-black"
                     }`
                   }
                 >
@@ -271,17 +230,15 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
               <NavLink
                 to={"/canvas"}
                 className={({ isActive }) =>
-                  ` text-md font-medium my-4 lg:my-0   mx-2 ${
-                    isActive
-                      ? "text-red-500  border-b border-red-500"
-                      : "text-black"
+                  ` text-md font-medium my-4 lg:my-0   mx-2 ${isActive
+                    ? "text-red-500  border-b border-red-500"
+                    : "text-black"
                   }`
                 }
               >
                 <p
                   className={({ isActive }) =>
-                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-                      isActive ? "text-red-500" : "text-black"
+                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? "text-red-500" : "text-black"
                     }`
                   }
                 >
@@ -293,17 +250,15 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
               <NavLink
                 to={"/todo"}
                 className={({ isActive }) =>
-                  ` text-md font-medium my-4 lg:my-0   mx-2 ${
-                    isActive
-                      ? "text-red-500  border-b border-red-500"
-                      : "text-black"
+                  ` text-md font-medium my-4 lg:my-0   mx-2 ${isActive
+                    ? "text-red-500  border-b border-red-500"
+                    : "text-black"
                   }`
                 }
               >
                 <p
                   className={({ isActive }) =>
-                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-                      isActive ? "text-red-500" : "text-black"
+                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? "text-red-500" : "text-black"
                     }`
                   }
                 >
@@ -315,17 +270,15 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
               <NavLink
                 to={"/typelearn"}
                 className={({ isActive }) =>
-                  ` text-md font-medium my-4 lg:my-0   mx-2 ${
-                    isActive
-                      ? "text-red-500  border-b border-red-500"
-                      : "text-black"
+                  ` text-md font-medium my-4 lg:my-0   mx-2 ${isActive
+                    ? "text-red-500  border-b border-red-500"
+                    : "text-black"
                   }`
                 }
               >
                 <p
                   className={({ isActive }) =>
-                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-                      isActive ? "text-red-500" : "text-black"
+                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? "text-red-500" : "text-black"
                     }`
                   }
                 >
@@ -341,15 +294,13 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
         <NavLink
           to={"/dashboard"}
           className={({ isActive }) =>
-            ` text-md font-medium my-4 lg:my-0  mx-2 ${
-              isActive ? "text-red-500  border-b border-red-500" : "text-black"
+            ` text-md font-medium my-4 lg:my-0  mx-2 ${isActive ? "text-red-500  border-b border-red-500" : "text-black"
             }`
           }
         >
           <p
             className={({ isActive }) =>
-              `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-                isActive ? "text-red-500" : "text-black"
+              `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? "text-red-500" : "text-black"
               }`
             }
           >
@@ -364,9 +315,8 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
     <>
       {
         <div
-          className={`navbar md:px-[64px]  mx-auto  py-0 my-0  ${
-            show ? "bg-orange-300" : ""
-          }`}
+          className={`navbar md:px-[64px]  mx-auto  py-0 my-0  ${show ? "bg-orange-300" : ""
+            }`}
         >
           <div class="navbar  bg-base-100 py-0 my-0 ">
             <div class="navbar-start  ">
@@ -411,17 +361,15 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
               <NavLink
                 to={"/cart"}
                 className={({ isActive }) =>
-                  ` text-md font-medium  my-4 lg:my-0  mx-2 ${
-                    isActive
-                      ? "text-red-500  border-b border-red-500"
-                      : "text-black"
+                  ` text-md font-medium  my-4 lg:my-0  mx-2 ${isActive
+                    ? "text-red-500  border-b border-red-500"
+                    : "text-black"
                   }`
                 }
               >
                 <p
                   className={({ isActive }) =>
-                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
-                      isActive ? "text-red-500" : "text-black"
+                    `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${isActive ? "text-red-500" : "text-black"
                     }`
                   }
                 >

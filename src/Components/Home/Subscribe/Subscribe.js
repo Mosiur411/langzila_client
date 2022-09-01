@@ -1,6 +1,7 @@
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 const Subscribe = () => {
+    const navigate = useNavigate();
     return (
         <section>
             <div className='bg-secondary py-16 relative'>
@@ -12,10 +13,10 @@ const Subscribe = () => {
                     </div>
                     <div data-aos="fade-left" className='flex-1 text-center md:text-left'>
                         <h1 className='text-3xl font-bold py-2 text-accent'>Subscribe to Our Newsletter</h1>
-                        <p className='py-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p className='py-2'>This is our Subscribe sectrion , here you can subscribe and get extra feature of this website.</p>
                         <form className='flex'>
                             <input type="text" className='w-full rounded-l-lg px-2 text-gray-800 border-gray-200 bg-white' placeholder="your@mail.com" />
-                            <button className="px-2 md:px-8 rounded-r-lg SubmitButton  text-white  p-4 uppercase  border-t border-b border-r">Subscribe</button>
+                            <button onClick={() => navigate('/courses')} className="px-2 md:px-8 rounded-r-lg SubmitButton  text-white  p-4 uppercase  border-t border-b border-r">Subscribe</button>
                         </form>
 
                     </div>
