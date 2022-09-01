@@ -30,6 +30,8 @@ import Audio7 from '../../../../assets/QuizImg/Quiz3Audio/থ.mp3'
 import Audio8 from '../../../../assets/QuizImg/Quiz3Audio/দ.mp3'
 import Audio9 from '../../../../assets/QuizImg/Quiz3Audio/ধ.mp3'
 import Audio10 from '../../../../assets/QuizImg/Quiz3Audio/ন.mp3'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../../Firebase/firebase.init';
 
 
 
@@ -37,6 +39,7 @@ const MediumQuiz3 = () => {
 
 
     // All state
+    const [user] = useAuthState(auth);
     const [showScore, setShowScore] = useState(false)
     const [quizs, setQuizs] = useState([]);
     const [count, setCount] = useState(0);
@@ -48,7 +51,7 @@ const MediumQuiz3 = () => {
     const [finalValue, setFinalValue] = useState(0);
 
     // Diclaration
-    const email = 'joypaul123@gmail.com'
+    const email = user?.email;
     const isData = quizData?.email;
     const navigate = useNavigate()
 

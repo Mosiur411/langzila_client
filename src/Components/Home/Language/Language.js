@@ -55,7 +55,7 @@ const Language = () => {
                             </div>
                         </div>
                         <h1 className=' text-xl font-mono text-blue-700 font-medium'>Hindi Language</h1>
-                        <button onClick={() => navigate('/bangla/easy')} style={{ fontFamily: "Nunito" }} className=' px-4 py-1  bg-red-500 rounded font-medium text-white text-md mt-2 mb-12'>Start Now</button>
+                        <button onClick={() => navigate('/hindi/hindieasy')} style={{ fontFamily: "Nunito" }} className=' px-4 py-1  bg-red-500 rounded font-medium text-white text-md mt-2 mb-12'>Start Now</button>
                     </div>
 
 
@@ -71,7 +71,7 @@ const Language = () => {
                             </div>
                         </div>
                         <h1 className=' text-xl font-mono text-blue-700 font-medium'>English Language</h1>
-                        <button onClick={() => navigate('/bangla/easy')} style={{ fontFamily: "Nunito" }} className=' px-4 py-1  bg-red-500 rounded font-medium text-white text-md mt-2 mb-12'>Start Now</button>
+                        <button onClick={() => navigate('/english/englisheasy')} style={{ fontFamily: "Nunito" }} className=' px-4 py-1  bg-red-500 rounded font-medium text-white text-md mt-2 mb-12'>Start Now</button>
                     </div>
 
 

@@ -6,8 +6,8 @@ const PlayGames = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <h1 className='text-4xl font-bold text-accent text-center py-8'>Enjoy The Games</h1>
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 px-5 lg:px-20 gap-3 mb-20'>
+            <h1 className='text-4xl font-bold mb-8 text-center py-8 text-red-500'>Enjoy The Games</h1>
+            <div className='md:flex items-center justify-evenly px-5 lg:px-20 gap-8 mb-20'>
                 <div class="card w-96 bg-base-100 shadow-xl image-full">
                     <figure><img src="https://www.youcubed.org/wp-content/uploads/2017/03/Tic-Tac-Toe-Product.jpg" alt="Shoes" /></figure>
                     <div class="card-body">
@@ -19,7 +19,7 @@ const PlayGames = () => {
                     </div>
                 </div>
                 <div class="card w-96 bg-base-100 shadow-xl image-full">
-                    <figure><img  src="https://st.depositphotos.com/1009864/4132/v/600/depositphotos_41322663-stock-illustration-chess-board-and-pieces-on.jpg" alt="Shoes" /></figure>
+                    <figure><img src="https://st.depositphotos.com/1009864/4132/v/600/depositphotos_41322663-stock-illustration-chess-board-and-pieces-on.jpg" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title text-white">ChessBoard!</h2>
                         <p className='text-white'>Have a fun, Just Play The Game!</p>

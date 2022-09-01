@@ -59,7 +59,7 @@ const Addquestion = () => {
     const formData = new FormData()
     formData.append('image', image)
 
-    
+
     const url = `https://api.imgbb.com/1/upload?key=${imageStorageKey}`
     fetch(url, {
       method: "POST",
@@ -109,7 +109,7 @@ const Addquestion = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className='container mx-auto mt-9 border shadow-sm py-5 '>
+      <div className='max-w-6xl mb-10 mx-auto mt-9 border shadow-sm py-5 '>
         <div className='px-10'>
           <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -128,7 +128,7 @@ const Addquestion = () => {
               <label className="label">
                 <span className="label-text text-xl font-bold"> <span className='text-xs text-red-600  '>REQUIRED</span></span>
               </label>
-              <EditorToolbar toolbarId={'t1'}/>
+              <EditorToolbar toolbarId={'t1'} />
               <ReactQuill
                 id='editor' style={{
                   border: "1px solid #fe4854", color: "black"
@@ -137,7 +137,7 @@ const Addquestion = () => {
                 theme="snow"
 
                 value={valuequil}
-                onChange={setValuequil}   modules={modules('t1')}
+                onChange={setValuequil} modules={modules('t1')}
                 formats={formats} />
 
 
@@ -177,7 +177,7 @@ const Addquestion = () => {
               })} />
             <div className='flex justify-center items-center'>
 
-              <input type="submit" className='btn btn-primary  mt-5 text-white w-full mt-5 ' value={"Submit Question"} />
+              <input type="submit" className='btn btn-primary  text-white w-full mt-5 ' value={"Submit Question"} />
             </div>
           </form>
         </div>

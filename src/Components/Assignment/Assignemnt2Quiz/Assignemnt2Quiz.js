@@ -103,10 +103,12 @@ const Assignemnt2Quiz = () => {
                             <div className=' mt-4'>
                                 <h1 className=' flex items-center text-gray-700'><MdQuiz className=' mr-2 text-blue-900' />What is the correct spelling of 'ক'?</h1>
                                 <div className=' grid grid-cols-2 gap-3 mt-3  items-center justify-center pl-12'>
+
                                     <label className="container1  w-2/3 shadow-md">
                                         <input type="radio" name="radio1" value="kr" />
                                         <span className="checkmark text-center font-mono ">kr</span>
                                     </label>
+
 
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio1" value="ka" />
@@ -129,15 +131,18 @@ const Assignemnt2Quiz = () => {
                             <div className=' mt-4'>
                                 <h1 className=' flex items-center text-gray-700'><MdQuiz className=' mr-2 text-blue-900' />What is the correct spelling of 'খ'?</h1>
                                 <div className=' grid grid-cols-2 gap-3 mt-3  items-center justify-center pl-12'>
+
                                     <label className="container1  w-2/3 shadow-md">
                                         <input type="radio" name="radio2" value="kha" />
                                         <span className="checkmark text-center font-mono ">kha</span>
                                     </label>
 
+
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio2" value="Kua" />
                                         <span className="checkmark text-center font-mono ">Kua</span>
                                     </label>
+
 
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio2" value="Gya" />
@@ -158,7 +163,6 @@ const Assignemnt2Quiz = () => {
                                         <input type="radio" name="radio3" value="Gii" />
                                         <span className="checkmark text-center font-mono ">Gii</span>
                                     </label>
-
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio3" value="Ee" />
                                         <span className="checkmark text-center font-mono ">Ee</span>
@@ -205,15 +209,18 @@ const Assignemnt2Quiz = () => {
                             <div className=' mt-4'>
                                 <h1 className=' flex items-center text-gray-700'><MdQuiz className=' mr-2 text-blue-900' />What is the correct spelling of 'ঙ'?</h1>
                                 <div className=' grid grid-cols-2 gap-3 mt-3  items-center justify-center pl-12'>
+
                                     <label className="container1  w-2/3 shadow-md">
                                         <input type="radio" name="radio5" value="Up" />
                                         <span className="checkmark text-center font-mono ">Up</span>
                                     </label>
 
+
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio5" value="Qi" />
                                         <span className="checkmark text-center font-mono ">Qi</span>
                                     </label>
+
 
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio5" value="Ty" />
@@ -231,20 +238,24 @@ const Assignemnt2Quiz = () => {
                             <div className=' mt-4'>
                                 <h1 className=' flex items-center text-gray-700'><MdQuiz className=' mr-2 text-blue-900' />What is the correct spelling of 'চ'?</h1>
                                 <div className=' grid grid-cols-2 gap-3 mt-3  items-center justify-center pl-12'>
+
                                     <label className="container1  w-2/3 shadow-md">
                                         <input type="radio" name="radio6" value="Ca" />
                                         <span className="checkmark text-center font-mono ">Ca</span>
                                     </label>
+
 
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio6" value="Ci" />
                                         <span className="checkmark text-center font-mono ">Ci</span>
                                     </label>
 
+
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio6" value="Fa" />
                                         <span className="checkmark text-center font-mono ">Fa</span>
                                     </label>
+
 
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio6" value="Ra" />
@@ -256,15 +267,18 @@ const Assignemnt2Quiz = () => {
                             <div className=' mt-4'>
                                 <h1 className=' flex items-center text-gray-700'><MdQuiz className=' mr-2 text-blue-900' />What is the correct spelling of 'ছ'?</h1>
                                 <div className=' grid grid-cols-2 gap-3 mt-3  items-center justify-center pl-12'>
+
                                     <label className="container1  w-2/3 shadow-md">
                                         <input type="radio" name="radio7" value="Ch" />
                                         <span className="checkmark text-center font-mono ">Ch</span>
                                     </label>
 
+
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio7" value="Cha" />
                                         <span className="checkmark text-center font-mono ">Cha</span>
                                     </label>
+
 
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio7" value="Ga" />
@@ -281,20 +295,24 @@ const Assignemnt2Quiz = () => {
                             <div className=' mt-4'>
                                 <h1 className=' flex items-center text-gray-700'><MdQuiz className=' mr-2 text-blue-900' />What is the correct spelling of 'জ'?</h1>
                                 <div className=' grid grid-cols-2 gap-3 mt-3  items-center justify-center pl-12'>
+
                                     <label className="container1  w-2/3 shadow-md">
                                         <input type="radio" name="radio8" value="Jha" />
                                         <span className="checkmark text-center font-mono ">Jha</span>
                                     </label>
+
 
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio8" value="Fi" />
                                         <span className="checkmark text-center font-mono ">Fi</span>
                                     </label>
 
+
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio8" value="Oi" />
                                         <span className="checkmark text-center font-mono ">Oi</span>
                                     </label>
+
 
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio8" value="Ti" />
@@ -306,20 +324,24 @@ const Assignemnt2Quiz = () => {
                             <div className=' mt-4'>
                                 <h1 className=' flex items-center text-gray-700'><MdQuiz className=' mr-2 text-blue-900' />What is the correct spelling of 'ঝ'?</h1>
                                 <div className=' grid grid-cols-2 gap-3 mt-3  items-center justify-center pl-12'>
+
                                     <label className="container1  w-2/3 shadow-md">
                                         <input type="radio" name="radio9" value="Pha" />
                                         <span className="checkmark text-center font-mono ">Pha</span>
                                     </label>
+
 
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio9" value="Jya" />
                                         <span className="checkmark text-center font-mono ">Jya</span>
                                     </label>
 
+
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio9" value="Jha" />
                                         <span className="checkmark text-center font-mono ">Jha</span>
                                     </label>
+
 
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio9" value="Jpa" />
@@ -331,15 +353,18 @@ const Assignemnt2Quiz = () => {
                             <div className=' mt-4'>
                                 <h1 className=' flex items-center text-gray-700'><MdQuiz className=' mr-2 text-blue-900' />What is the correct spelling of 'ঞ'?</h1>
                                 <div className=' grid grid-cols-2 gap-3 mt-3  items-center justify-center pl-12'>
+
                                     <label className="container1  w-2/3 shadow-md">
                                         <input type="radio" name="radio10" value="Oi" />
                                         <span className="checkmark text-center font-mono ">Yu</span>
                                     </label>
 
+
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio10" value="Pa" />
                                         <span className="checkmark text-center font-mono ">Pa</span>
                                     </label>
+
 
                                     <label className="container1  w-2/3  shadow-md">
                                         <input type="radio" name="radio10" value="Ca" />
