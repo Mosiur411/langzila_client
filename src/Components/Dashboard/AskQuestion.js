@@ -4,12 +4,13 @@ import { useForm } from 'react-hook-form';
 // import { useQuery } from 'react-query'
 import { toast, ToastContainer } from 'react-toastify';
 import auth from '../Firebase/firebase.init';
+import askimg from '../assets/Ask.png'
 // import Spinner from '../Spinner/Spinner';
 import Answer from './Answer';
 const AskQuestion = () => {
   const [user] = useAuthState(auth);
   const { register, formState: { errors }, handleSubmit, reset } = useForm();
-  // const { data, isLoading, refetch } = useQuery("tools", () => fetch("http://localhost:5000/ask").then(res => res.json()));
+  // const { data, isLoading, refetch } = useQuery("tools", () => fetch("https://langzila.herokuapp.com/ask").then(res => res.json()));
 
 
 
@@ -42,7 +43,7 @@ const AskQuestion = () => {
             email: user.email,
             name: user.name,
           }
-          fetch('http://localhost:5000/ask', {
+          fetch('https://langzila.herokuapp.com/ask', {
             method: "POST",
             headers: {
               'content-type': 'application/json; charset=UTF-8',
@@ -65,15 +66,16 @@ const AskQuestion = () => {
 
   }
   return (
-    <div className='mx-12 py-24 shadow-md border border-gray-100 lg:w-[900px] flex justify-center items-center'>
+    <div className='mx-12 pb-20 shadow-md border border-gray-100 lg:w-[900px] flex justify-center items-center'>
       <div className=''> <form onSubmit={handleSubmit(onSubmit)}>
 
         <div className="form-control text-center">
+          <img className=' h-60' src={askimg} alt="askimg" />
           <label className="label">
-            <span className="mb-2 font-bold text-2xl text-accent">Ask Your Question </span>
+            <span className="mb-2 font-bold text-2xl text-red-500 text-center mx-auto">Ask Your Question </span>
 
           </label>
-          <input type="text" placeholder="Question tittle" name='tittle' className="input input-bordered input-primary input-lg max-w-xs mb-5"
+          <input type="text" placeholder="Question tittle" name='tittle' className=" border py-2 px-3 mb-5 rounded max-w-xs "
             {...register("tittle", {
               required: {
                 value: true,
@@ -82,7 +84,7 @@ const AskQuestion = () => {
             })} />
           <textarea
             placeholder="Your Question Here"
-            className="input  input-bordered  textarea textarea-primary max-w-xs "
+            className=" border py-2 px-3 rounded max-w-xs "
             {...register("question", {
               required: {
                 value: true,
@@ -95,7 +97,7 @@ const AskQuestion = () => {
 
         <input type="file"
           placeholder="Choose File Here"
-          className="mt-5 items-center max-w-xs"
+          className="mt-5 items-center border py-2 px-3 rounded max-w-xs"
           {...register("image", {
             required: {
 
@@ -105,7 +107,9 @@ const AskQuestion = () => {
 
           })} />
         <br />
-        <input type="submit" className='btn btn-primary  mt-5 text-white max-w-xs ' value={"Add Question"} />
+        <div className=' text-center '>
+          <input type="submit" className='py-1.5 mt-5 px-3 bg-red-500 text-white rounded ' value={"Add Question"} />
+        </div>
       </form>
       </div>
       <div>

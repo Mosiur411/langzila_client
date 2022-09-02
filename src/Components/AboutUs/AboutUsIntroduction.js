@@ -10,22 +10,22 @@ const AboutUsIntroduction = () => {
     const navigate = useNavigate();
 
     return (
-        <section class="mb-12 lg:bg-none bg-secondary">
+        <section className="mb-12 lg:bg-none bg-secondary">
             <img className='w-full absolute lg:block hidden' src="https://themes.envytheme.com/ecademy/wp-content/themes/ecademy/assets/img/white-bg.jpg" alt="" />
-            <div class="relative mx-auto flex pt-12 pb-24 lg:flex-row md:flex-col flex-col items-center px-5 lg:px-20">
-                <div class="lg:w-1/2 md:w-full md:mb-4 w-5/6 mb-10">
-                    <img class="object-cover object-center rounded lg:pr-12" alt="hero" src="https://i.ibb.co/cJ2kcHk/about.png" />
+            <div className="relative mx-auto flex pt-12 pb-24 lg:flex-row md:flex-col flex-col items-center px-5 lg:px-20">
+                <div className="lg:w-1/2 md:w-full md:mb-4 w-5/6 mb-10">
+                    <img className="object-cover object-center rounded lg:pr-12" alt="hero" src="https://i.ibb.co/cJ2kcHk/about.png" />
                 </div>
-                <div class="lg:flex-grow lg:w-1/2 md:w-full flex flex-col md:items-start md:text-left items-center">
+                <div className="lg:flex-grow lg:w-1/2 md:w-full flex flex-col md:items-start md:text-left items-center">
                     <span className='text-primary text-lg uppercase font-bold mb-3 text-center'>About us</span>
-                    <h1 class="title-font text-xl lg:text-3xl md:text-2xl mb-4 font-bold text-gray-900 leading-5">Develop Your Skills, Learn Something New, and Grow Your Skills From Anywhere in the World!
+                    <h1 className="title-font text-xl lg:text-3xl md:text-2xl mb-4 font-bold text-gray-900 leading-5">Develop Your Skills, Learn Something New, and Grow Your Skills From Anywhere in the World!
                     </h1>
-                    <p class="mb-8 leading-relaxed">We understand better that online-based learning can make a significant change to reach students from all over the world! Giving options to learn better always can offer the best outcomes!​</p>
-                    <div class="lg:flex block justify-between text-xl font-bold gap-20 mb-4">
+                    <p className="mb-8 leading-relaxed">We understand better that online-based learning can make a significant change to reach students from all over the world! Giving options to learn better always can offer the best outcomes!​</p>
+                    <div className="lg:flex block justify-between text-xl font-bold gap-20 mb-4">
                         <span className='flex lg:mb-0 mb-4'><BiUserVoice className='text-primary font-bold text-2xl mr-3' />Expert Instructors</span>
                         <span className='flex'><TbAccessPoint className='text-primary font-bold text-2xl mr-3' />Lifetime Access</span>
                     </div>
-                    <div class="lg:flex block justify-between text-xl font-bold gap-20 mb-6">
+                    <div className="lg:flex block justify-between text-xl font-bold gap-20 mb-6">
                         <span className='flex lg:mb-0 mb-4'><VscRemoteExplorer className='text-primary font-bold text-2xl mr-3' />Remote Learning</span>
                         <span className='flex'><MdSelfImprovement className='text-primary font-bold text-2xl mr-3' />Self Development</span>
                     </div>

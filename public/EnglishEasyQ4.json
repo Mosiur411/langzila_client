@@ -1,0 +1,123 @@
+[
+    {
+        "id":1,
+        "Latter":"The show is starting ____.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Starting", "isCorrect": false, "isSelect" : false},
+            {"answere": "Now ", "isCorrect": true, "isSelect" : false},
+            {"answere": "The ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Show", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":2,
+        "Latter":"The dog looked at his owner ______.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Curiously", "isCorrect": true, "isSelect" : false},
+            {"answere": "Dog", "isCorrect": false, "isSelect" : false},
+            {"answere": "Looked", "isCorrect": false, "isSelect" : false},
+            {"answere": "At", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":3,
+        "Latter":"The soccer team _____ quit.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Soccer", "isCorrect": false, "isSelect" : false},
+            {"answere": "Team", "isCorrect": false, "isSelect" : false},
+            {"answere": "Almost", "isCorrect": true, "isSelect" : false},
+            {"answere": "Quit", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":4,
+        "Latter":"Ria lives in a _____ house.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Beautiful", "isCorrect": true, "isSelect" : false},
+            {"answere": "Ria", "isCorrect": false, "isSelect" : false},
+            {"answere": "House", "isCorrect": false, "isSelect" : false},
+            {"answere": "Lives", "isCorrect": false, "isSelect" : false}
+        ]
+
+    },
+    {
+        "id":5,
+        "Latter":"This store has a _____ collection of shoes.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Store", "isCorrect": false, "isSelect" : false},
+            {"answere": "Collection ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Shoes ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Nice", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":6,
+        "Latter":"Linda McKenzie has ___ children.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Five", "isCorrect": true, "isSelect" : false},
+            {"answere": "Linda", "isCorrect": false, "isSelect" : false},
+            {"answere": "Has", "isCorrect": false, "isSelect" : false},
+            {"answere": "Children", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":7,
+        "Latter":"There were ___ chairs in the auditorium.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Were", "isCorrect": false, "isSelect" : false},
+            {"answere": "80", "isCorrect": true, "isSelect" : false},
+            {"answere": "Auditorium", "isCorrect": false, "isSelect" : false},
+            {"answere": "Chairs", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":8,
+        "Latter":"A ________ butterfly was sitting in the garden.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Garden", "isCorrect": false, "isSelect" : false},
+            {"answere": "Sitting", "isCorrect": false, "isSelect" : false},
+            {"answere": "Colorful", "isCorrect": true, "isSelect" : false},
+            {"answere": "Butterfly", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":9,
+        "Latter":"Only ______ mangoes are remaining in the basket.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Basket", "isCorrect": false, "isSelect" : false},
+            {"answere": "A few", "isCorrect": true, "isSelect" : false},
+            {"answere": "Mangoes", "isCorrect": false, "isSelect" : false},
+            {"answere": "Remaining", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":10,
+        "Latter":"This ________ weather is exhausting.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Hot", "isCorrect": true, "isSelect" : false},
+            {"answere": "Humid", "isCorrect": false, "isSelect" : false},
+            {"answere": "Hot and humid", "isCorrect": false, "isSelect" : false},
+            {"answere": "Exhausting", "isCorrect": false, "isSelect" : false}
+        ]
+    }
+]

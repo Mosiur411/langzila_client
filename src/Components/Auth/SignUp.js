@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../Firebase/firebase.init';
 import Spinner from '../Spinner/Spinner';
+import useToken from '../../Hooks/useToken';
 
 const SignUp = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -17,23 +18,36 @@ const SignUp = () => {
     const [updateProfile, updating, updatError] = useUpdateProfile(auth);
     const [email, setEmail] = useState('');
     const [showPass, setShowPass] = useState(false);
+    /* =================================== try to user ======================== */
+  
+
+
+
+
 
     const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password);
         await updateProfile({ displayName: data.name });
-        console.log(data)
     };
     let signUpError;
     const navigate = useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
 
-    useEffect(() => {
-        if (user || googleUser) {
+    const [Token, setToken] = useToken(user || googleUser)
 
-            navigate(from, { replace: true });
-        }
-    }, [user, googleUser, from, navigate]);
+    if (Token) {
+        navigate(from, { replace: true });
+
+    }
+   
+
+    // useEffect(() => {
+    //     if (user || googleUser) {
+
+    //         navigate(from, { replace: true });
+    //     }
+    // }, [user, googleUser, from, navigate]);
 
     if (loading || googleloading || updating || sending) {
         return <Spinner></Spinner>
@@ -116,11 +130,11 @@ const SignUp = () => {
                 <button onClick={() => signInWithGoogle()} className="flex items-center justify-center bg-gray-50 border font-bold border-gray-300 text-accent text-sm rounded-lg focus:ring-blue-900 focus:border-blue-900 w-full p-2.5"> <img className='w-6 pr-2' src={GoogleLogo} alt='' /> Continue with Google</button>
                 <ToastContainer></ToastContainer>
             </div>
-            <input type="checkbox" id="my-modal-6" class="modal-toggle" />
-            <div class="modal modal-bottom sm:modal-middle">
-                <div class="modal-box">
-                    <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-2 bottom-5">✕</label>
-                    
+            <input type="checkbox" id="my-modal-6" className="modal-toggle" />
+            <div className="modal modal-bottom sm:modal-middle">
+                <div className="modal-box">
+                    <label for="my-modal-6" className="btn btn-sm btn-circle absolute right-2 top-2 bottom-5">✕</label>
+
                     <input
                         type="email"
                         placeholder='Please put your email'
@@ -129,7 +143,7 @@ const SignUp = () => {
                         onChange={(e) => setEmail(e.target.value)}
                     />
                     <button
-                         className="mt-3 border border-gray-300 bg-primary text-white text-sm uppercase font-bold rounded-lg block w-full p-2.5"
+                        className="mt-3 border border-gray-300 bg-primary text-white text-sm uppercase font-bold rounded-lg block w-full p-2.5"
                         onClick={async () => {
                             await sendPasswordResetEmail(email);
                             toast('Sent email');

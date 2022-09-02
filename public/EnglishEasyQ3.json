@@ -1,0 +1,123 @@
+[
+    {
+        "id":1,
+        "Latter":" Please _____ the door.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "The", "isCorrect": false, "isSelect" : false},
+            {"answere": "Open", "isCorrect": true, "isSelect" : false},
+            {"answere": "Please ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Door", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":2,
+        "Latter":"Joe _______ the job offer.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Accepted", "isCorrect": true, "isSelect" : false},
+            {"answere": "The", "isCorrect": false, "isSelect" : false},
+            {"answere": "Job", "isCorrect": false, "isSelect" : false},
+            {"answere": "Joe", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":3,
+        "Latter":"Kelly _____ hip-hop music.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Kelly", "isCorrect": false, "isSelect" : false},
+            {"answere": "Hip-hop", "isCorrect": false, "isSelect" : false},
+            {"answere": "Enjoys", "isCorrect": true, "isSelect" : false},
+            {"answere": "Music", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":4,
+        "Latter":"Marcus ____ arrives early.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Always", "isCorrect": true, "isSelect" : false},
+            {"answere": "Early", "isCorrect": false, "isSelect" : false},
+            {"answere": "Arrives", "isCorrect": false, "isSelect" : false},
+            {"answere": "Marcus", "isCorrect": false, "isSelect" : false}
+        ]
+
+    },
+    {
+        "id":5,
+        "Latter":"Their pets go ______ together.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Their", "isCorrect": false, "isSelect" : false},
+            {"answere": "Go ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Together ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Everywhere", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":6,
+        "Latter":"The little kid ran ______.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Excitedly", "isCorrect": true, "isSelect" : false},
+            {"answere": "The ", "isCorrect": false, "isSelect" : false},
+            {"answere": "Little", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ran", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":7,
+        "Latter":"They ran ______ to catch the bus.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Catch", "isCorrect": false, "isSelect" : false},
+            {"answere": "Quickly", "isCorrect": true, "isSelect" : false},
+            {"answere": "Ran", "isCorrect": false, "isSelect" : false},
+            {"answere": "Bus", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":8,
+        "Latter":"The students had worked very ______.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Students", "isCorrect": false, "isSelect" : false},
+            {"answere": "Worked", "isCorrect": false, "isSelect" : false},
+            {"answere": "Very", "isCorrect": false, "isSelect" : false},
+            {"answere": "Hard", "isCorrect": true, "isSelect" : false}
+        ]
+    },
+    {
+        "id":9,
+        "Latter":"The musical concert ended ________.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Concert", "isCorrect": false, "isSelect" : false},
+            {"answere": "Ended", "isCorrect": false, "isSelect" : false},
+            {"answere": "Abruptly", "isCorrect": true, "isSelect" : false},
+            {"answere": "Musical", "isCorrect": false, "isSelect" : false}
+        ]
+    },
+    {
+        "id":10,
+        "Latter":"______ walking is a healthy exercise.",
+        "category": "Bangla",
+        "difficulty": "easy",
+        "quiz_answers": [
+            {"answere": "Brisk", "isCorrect": true, "isSelect" : false},
+            {"answere": "Healthy", "isCorrect": false, "isSelect" : false},
+            {"answere": "A", "isCorrect": false, "isSelect" : false},
+            {"answere": "Walking", "isCorrect": false, "isSelect" : false}
+        ]
+    }
+]

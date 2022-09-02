@@ -30,6 +30,8 @@ import Audio7 from '../../../../assets/QuizImg/Quiz3Audio/থ.mp3'
 import Audio8 from '../../../../assets/QuizImg/Quiz3Audio/দ.mp3'
 import Audio9 from '../../../../assets/QuizImg/Quiz3Audio/ধ.mp3'
 import Audio10 from '../../../../assets/QuizImg/Quiz3Audio/ন.mp3'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../../Firebase/firebase.init';
 
 
 
@@ -37,6 +39,7 @@ const EasyQuiz3 = () => {
 
 
     // All state
+    const [user] = useAuthState(auth);
     const [showScore, setShowScore] = useState(false)
     const [quizs, setQuizs] = useState([]);
     const [count, setCount] = useState(0);
@@ -48,23 +51,22 @@ const EasyQuiz3 = () => {
     const [finalValue, setFinalValue] = useState(0);
 
     // Diclaration
-    const email = 'joypaul123@gmail.com'
+    const email = user?.email;
     const isData = quizData?.email;
     const navigate = useNavigate()
 
 
     // Get The Quiz Questions
     useEffect(() => {
-
-        fetch('http://localhost:5000/GetBgQuizQs3')
+        fetch('/Bangla3.json')
             .then(res => res.json())
-            .then(data => setQuizs(data.data))
+            .then(data => setQuizs(data))
     }, [reload])
 
     // console.log(quizs)
     // Get Quiz Ans Data
     useEffect(() => {
-        fetch(`http://localhost:5000/getQuizAns3/${email}`, {
+        fetch(`https://langzila.herokuapp.com/getQuizAns3/${email}`, {
             method: 'GET'
         })
             .then(res => res.json())
@@ -107,7 +109,7 @@ const EasyQuiz3 = () => {
 
             if (QuizData) {
                 try {
-                    const { data } = await axios.post(`http://localhost:5000/BngQuiz3`, QuizData, {
+                    const { data } = await axios.post(`https://langzila.herokuapp.com/BngQuiz3`, QuizData, {
                         method: 'POST'
                     });
 

@@ -40,12 +40,15 @@ import Audio17 from '../../../../assets/QuizImg/Quiz3Audio/থ.mp3'
 import Audio18 from '../../../../assets/QuizImg/Quiz3Audio/দ.mp3'
 import Audio19 from '../../../../assets/QuizImg/Quiz3Audio/ধ.mp3'
 import Audio20 from '../../../../assets/QuizImg/Quiz3Audio/ন.mp3'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../../Firebase/firebase.init';
 
 
 const MediumQuiz5 = () => {
 
 
     // All state
+    const [user] = useAuthState(auth);
     const [showScore, setShowScore] = useState(false)
     const [quizs, setQuizs] = useState([]);
     const [count, setCount] = useState(0);
@@ -57,7 +60,7 @@ const MediumQuiz5 = () => {
     const [finalValue, setFinalValue] = useState(0);
 
     // Diclaration
-    const email = 'joypaul123@gmail.com'
+    const email = user?.email;
     const isData = quizData?.email;
     const navigate = useNavigate()
 
@@ -73,7 +76,7 @@ const MediumQuiz5 = () => {
     console.log(quizs);
     // Get Quiz Ans Data
     useEffect(() => {
-        fetch(`http://localhost:5000/getMdQuizAns5/${email}`, {
+        fetch(`https://langzila.herokuapp.com/getMdQuizAns5/${email}`, {
             method: 'GET'
         })
             .then(res => res.json())
@@ -113,7 +116,7 @@ const MediumQuiz5 = () => {
 
             if (QuizData) {
                 try {
-                    const { data } = await axios.post(`http://localhost:5000/BngMdQuiz5`, QuizData, {
+                    const { data } = await axios.post(`https://langzila.herokuapp.com/BngMdQuiz5`, QuizData, {
                         method: 'POST'
                     });
 

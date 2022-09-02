@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
+import { useAuthState, useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
@@ -8,6 +8,8 @@ import { BsEyeSlash } from "@react-icons/all-files/bs/BsEyeSlash";
 import GoogleLogo from '../assets/google.svg';
 import auth from '../Firebase/firebase.init';
 import Spinner from '../Spinner/Spinner';
+import Navbar from '../Home/Navbar/Navbar';
+import useToken from '../../Hooks/useToken';
 
 const SignIn = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -16,32 +18,37 @@ const SignIn = () => {
     const [sendPasswordResetEmail, sending, passwordResetError] = useSendPasswordResetEmail(auth);
     const [showPass, setShowPass] = useState(false);
     const [email, setEmail] = useState('');
-
+const [user1]=useAuthState(auth)
     const onSubmit = data => {
         signInWithEmailAndPassword(data.email, data.password);
         console.log(data);
     };
+    
     let signInError;
     const navigate = useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
-
-    useEffect(() => {
-        if (user || googleUser) {
-
-            navigate(from, { replace: true });
-        }
-    }, [user, googleUser, from, navigate]);
-
+    console.log(user);
+    
+    const [Token, setToken] = useToken(user || googleUser?._tokenResponse )  
     if (loading || googleLoading || sending) {
         return <Spinner></Spinner>
     }
+  
+    if (user1) {
+      navigate(from, { replace: true });
+    
+      }
+
+  
 
     if (error || googleError || passwordResetError) {
         signInError = <p className='text-primary mb-2'><small>{error?.message || googleError?.message}</small></p>
     }
     return (
-        <div className='py-16'>
+      <div>
+       <Navbar/>
+          <div className='py-16'>
             < div className="w-[400px] p-8 mx-auto border-2 border-primary bg-gray-50 items-center text-center shadow-xl rounded-xl">
                 <h1 className='w-56 text-center rounded p-2 mx-auto mb-8 mt-[-50px] bg-primary text-white font-medium text-xl'>Sign In</h1>
                 <div className="avatar mb-8 z-0">
@@ -109,10 +116,10 @@ const SignIn = () => {
                 <ToastContainer></ToastContainer>
 
             </div>
-            <input type="checkbox" id="my-modal-6" class="modal-toggle" />
-            <div class="modal modal-bottom sm:modal-middle">
-                <div class="modal-box">
-                    <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-2 bottom-5">✕</label>
+            <input type="checkbox" id="my-modal-6" className="modal-toggle" />
+            <div className="modal modal-bottom sm:modal-middle">
+                <div className="modal-box">
+                    <label for="my-modal-6" className="btn btn-sm btn-circle absolute right-2 top-2 bottom-5">✕</label>
                     <input
                         type="email"
                         placeholder='Please put your email'
@@ -133,6 +140,7 @@ const SignIn = () => {
             </div>
         </div>
 
+      </div>
     );
 };
 

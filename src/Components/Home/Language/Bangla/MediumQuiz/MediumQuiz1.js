@@ -30,6 +30,8 @@ import Audio7 from '../../../../assets/QuizImg/Quiz2Audio/ছ.mp3'
 import Audio8 from '../../../../assets/QuizImg/Quiz2Audio/জ.mp3'
 import Audio9 from '../../../../assets/QuizImg/Quiz2Audio/ঝ.mp3'
 import Audio10 from '../../../../assets/QuizImg/Quiz2Audio/ঞ.mp3'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../../Firebase/firebase.init';
 
 
 
@@ -37,6 +39,7 @@ const MediumQuiz1 = () => {
 
 
     // All state
+    const [user] = useAuthState(auth);
     const [showScore, setShowScore] = useState(false)
     const [quizs, setQuizs] = useState([]);
     const [count, setCount] = useState(0);
@@ -48,7 +51,7 @@ const MediumQuiz1 = () => {
     const [finalValue, setFinalValue] = useState(0);
 
     // Diclaration
-    const email = 'joypaul123@gmail.com'
+    const email = user?.email;
     const isData = quizData?.email;
     const navigate = useNavigate()
 
@@ -64,7 +67,7 @@ const MediumQuiz1 = () => {
     console.log(quizs);
     // Get Quiz Ans Data
     useEffect(() => {
-        fetch(`http://localhost:5000/getMdQuizAns1/${email}`, {
+        fetch(`https://langzila.herokuapp.com/getMdQuizAns1/${email}`, {
             method: 'GET'
         })
             .then(res => res.json())
@@ -104,7 +107,7 @@ const MediumQuiz1 = () => {
 
             if (QuizData) {
                 try {
-                    const { data } = await axios.post(`http://localhost:5000/BngMdQuiz1`, QuizData, {
+                    const { data } = await axios.post(`https://langzila.herokuapp.com/BngMdQuiz1`, QuizData, {
                         method: 'POST'
                     });
 

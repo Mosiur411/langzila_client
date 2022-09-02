@@ -51,7 +51,7 @@ const EventCard = () => {
     console.log(date);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/eventData/${email}/${course}`)
+        fetch(`https://langzila.herokuapp.com/eventData/${email}/${course}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data?.data)
@@ -102,7 +102,7 @@ const EventCard = () => {
 
         if (EventData) {
             try {
-                const { data } = await axios.patch(`http://localhost:5000/eventData/${email}`, EventData, {
+                const { data } = await axios.patch(`https://langzila.herokuapp.com/eventData/${email}`, EventData, {
                     method: 'PATCH'
                 });
 
@@ -167,22 +167,22 @@ const EventCard = () => {
                                 <p className=' text-sm font-medium'>{selected[0]?.time}</p>
                             </div>
                             <div>
-                                <label data-aos="fade-up-left" for="my-modal" class="bg-red-600 py-[6px] px-3 my-2  text-white rounded font-semibold font-mono hover:bg-purple-900">Book Now</label>
-                                <input type="checkbox" id="my-modal" class="modal-toggle" />
+                                <label data-aos="fade-up-left" for="my-modal" className="bg-red-600 py-[6px] px-3 my-2  text-white rounded font-semibold font-mono hover:bg-purple-900">Book Now</label>
+                                <input type="checkbox" id="my-modal" className="modal-toggle" />
 
 
-                                <div class="modal">
-                                    <div class="modal-box">
-                                        <label for="my-modal" class="btn btn-sm btn-circle absolute right-2 top-2 bg-red-600 border-none text-white">✕</label>
-                                        <h3 class="font-bold text-accent text-2xl py-2">Event Booking From</h3>
+                                <div className="modal">
+                                    <div className="modal-box">
+                                        <label for="my-modal" className="btn btn-sm btn-circle absolute right-2 top-2 bg-red-600 border-none text-white">✕</label>
+                                        <h3 className="font-bold text-accent text-2xl py-2">Event Booking From</h3>
                                         <form onSubmit={handelSubmit}>
                                             <div className="relative z-0 w-full mb-6 group">
                                                 <lebel class='font-bold'>Name</lebel>
-                                                <input type="name" name="name" className="block py-2.5 px-0 w-full text-sm text-gray-900 border-0 border-b-2 border-gray-300 appearance-none" value={user?.displayName} />
+                                                <input type="name" name="name" className="block py-2.5  w-full text-sm text-gray-900 border-0 border-b-2 border-gray-300 appearance-none lowercase px-2" value={user?.displayName} />
                                             </div>
                                             <div className="relative z-0 w-full mb-6 group">
                                                 <lebel class='font-bold'>Email</lebel>
-                                                <input type="email" name="email" id="floating_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer" value={user?.email} />
+                                                <input type="email" name="email" id="floating_password" className="block py-2.5 px-2 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer" value={user?.email} />
                                             </div>
 
                                             <div className="relative z-0 w-full mb-6 group">
