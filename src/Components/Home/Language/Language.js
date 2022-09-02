@@ -26,8 +26,8 @@ const Language = () => {
                 <p className=' xl:w-1/3 w-3/4 mx-auto text-gray-600'>Explore all of our courses and pick your suitable ones to enroll and start learning with us! We ensure that you will never regret it!</p>
             </div>
             <div className='mx-auto mt-20  '>
-                <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  '>
-                    <div data-aos="fade-right" className=' bg-white relative rounded-lg shadow-lg w-[380px] mb-20 mx-auto'>
+                <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 '>
+                    <div data-aos="fade-right" className=' bg-white relative rounded-lg shadow-lg w-[300px]  mb-20 mx-auto'>
                         <h1 className=' text-sm font-semibold text-gray-500 font-mono absolute left-3 top-3'>L A N G U A G E</h1>
                         <div className=' relative '>
                             <div className='relative'>
@@ -43,7 +43,7 @@ const Language = () => {
                     </div>
 
 
-                    <div data-aos="zoom-in-up" className=' bg-white relative rounded-lg shadow-lg w-[380px] mb-20 mx-auto'>
+                    <div data-aos="zoom-in-up" className=' bg-white relative rounded-lg shadow-lg w-[300px] mb-20 mx-auto'>
                         <h1 className=' text-sm font-semibold text-gray-500 font-mono absolute left-3 top-3'>L A N G U A G E</h1>
                         <div className=''>
                             <div className='relative'>
@@ -59,7 +59,7 @@ const Language = () => {
                     </div>
 
 
-                    <div data-aos="fade-left" className=' bg-white relative rounded-lg shadow-lg w-[380px] mb-20 mx-auto'>
+                    <div data-aos="fade-left" className=' bg-white relative rounded-lg shadow-lg w-[300px]  mb-20 mx-auto'>
                         <h1 className=' text-sm font-semibold text-gray-500 font-mono absolute left-3 top-3'>L A N G U A G E</h1>
                         <div className=''>
                             <div className='relative'>

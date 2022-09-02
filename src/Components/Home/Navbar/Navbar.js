@@ -10,7 +10,6 @@ import { HiOutlineChevronDown } from "react-icons/hi";
 import { CgToggleOff, CgToggleOn } from "react-icons/cg";
 import { useSelector } from "react-redux";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { IoIosArrowDown } from "react-icons/io";
 
 const Navbar = ({ show, setShow, theme, setTheme }) => {
   const cart = useSelector((state) => state.courses.totalItem);
@@ -122,15 +121,14 @@ const Navbar = ({ show, setShow, theme, setTheme }) => {
       >
         <div class="dropdown dropdown-hover">
           <label
-            style={{ display: "flex", alignItems: "center" }}
             tabindex="0"
             className={({ isActive }) =>
-              ` absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
+              `  absolute mt-[4px] text-black text-sm font-semibold  context uppercase ${
                 isActive ? "text-red-500" : "text-black"
               }`
             }
           >
-            Features <IoIosArrowDown />
+            Features
           </label>
           <ul
             tabindex="0"

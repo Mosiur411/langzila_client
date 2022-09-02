@@ -25,7 +25,7 @@ export default class CenterMode extends Component {
       <div className=" mx-auto">
 
         <Slider {...settings}>
-          <div className="slide ">
+          <div className="slide">
             <div className="inner-slide">
               <img className=" " src={require('../../assets/Servicsimg/img1.png')} alt="" />
               <h2 className="slider-h">Infants</h2>
