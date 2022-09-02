@@ -14,7 +14,7 @@ const MyBoocking = () => {
     const email = user?.email
 
     useEffect(() => {
-        fetch(`http://localhost:5000/eventData/${email}`)
+        fetch(`https://langzila.herokuapp.com/eventData/${email}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data?.data)
@@ -31,7 +31,7 @@ const MyBoocking = () => {
 
     const handelDelete = async (course) => {
         console.log(course)
-        const url = `http://localhost:5000/eventDelete/${email}/${course}`;
+        const url = `https://langzila.herokuapp.com/eventDelete/${email}/${course}`;
         console.log(url);
 
         if (window.confirm("Delete?")) {

@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 const Tag = () => {
   const [tag, setTag] = useState([])
   useEffect(() => {
-    fetch("http://localhost:5000/topic/")
+    fetch("https://langzila.herokuapp.com/topic/")
       .then(res => res.json())
       .then(data => setTag(data.data))
   }, [])

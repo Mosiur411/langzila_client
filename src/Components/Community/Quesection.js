@@ -7,7 +7,7 @@ import "./quessection.css"
 const Quesection = () => {
   const [query, setQuery] = useState([])
   useEffect(() => {
-    fetch("http://localhost:5000/topic")
+    fetch("https://langzila.herokuapp.com/topic")
       .then(res => res.json())
       .then(res => setQuery(res.data))
   }, [query])

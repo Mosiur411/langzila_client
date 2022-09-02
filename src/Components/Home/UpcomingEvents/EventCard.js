@@ -51,7 +51,7 @@ const EventCard = () => {
     console.log(date);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/eventData/${email}/${course}`)
+        fetch(`https://langzila.herokuapp.com/eventData/${email}/${course}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data?.data)
@@ -102,7 +102,7 @@ const EventCard = () => {
 
         if (EventData) {
             try {
-                const { data } = await axios.patch(`http://localhost:5000/eventData/${email}`, EventData, {
+                const { data } = await axios.patch(`https://langzila.herokuapp.com/eventData/${email}`, EventData, {
                     method: 'PATCH'
                 });
 

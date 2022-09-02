@@ -21,7 +21,7 @@ const Profile = () => {
     const email = user.email;
     console.log(email)
     useEffect(() => {
-        fetch(`http://localhost:5000/userprofile/${email}`)
+        fetch(`https://langzila.herokuapp.com/userprofile/${email}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)
@@ -77,7 +77,7 @@ const Profile = () => {
         }
 
         const email = user.email
-        const url = `http://localhost:5000/userprofile/${email}`;
+        const url = `https://langzila.herokuapp.com/userprofile/${email}`;
         fetch(url, {
             method: 'PUT',
             headers: {

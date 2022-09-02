@@ -9,7 +9,7 @@ const Feedback = () => {
     const [rev, setRev] = useState([])
     const [revmap, setRevmap] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/review')
+        fetch('https://langzila.herokuapp.com/review')
             .then(res => res.json())
             .then(data => {
                 console.log(data.data);

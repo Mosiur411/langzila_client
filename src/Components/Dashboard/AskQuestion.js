@@ -10,7 +10,7 @@ import Answer from './Answer';
 const AskQuestion = () => {
   const [user] = useAuthState(auth);
   const { register, formState: { errors }, handleSubmit, reset } = useForm();
-  // const { data, isLoading, refetch } = useQuery("tools", () => fetch("http://localhost:5000/ask").then(res => res.json()));
+  // const { data, isLoading, refetch } = useQuery("tools", () => fetch("https://langzila.herokuapp.com/ask").then(res => res.json()));
 
 
 
@@ -43,7 +43,7 @@ const AskQuestion = () => {
             email: user.email,
             name: user.name,
           }
-          fetch('http://localhost:5000/ask', {
+          fetch('https://langzila.herokuapp.com/ask', {
             method: "POST",
             headers: {
               'content-type': 'application/json; charset=UTF-8',

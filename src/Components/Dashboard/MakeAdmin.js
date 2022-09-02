@@ -8,7 +8,7 @@ import User from './User';
 
 const MakeAdmin = () => {
  const { isLoading, data: role, refetch } = useQuery('user', () =>
- fetch('http://localhost:5000/roleuser', {
+ fetch('https://langzila.herokuapp.com/roleuser', {
    method: "GET",
  }).then(res => res.json())
 )
@@ -16,7 +16,7 @@ if (isLoading) {
  return <Spinner></Spinner>;
 }
 // const hadndleAdmin=()=>{
-//   fetch(`http://localhost:5000/user/admin/${data.email}`, {
+//   fetch(`https://langzila.herokuapp.com/user/admin/${data.email}`, {
 //       method: "PUT",
 //       headers: {
 //         authorization: `Bearer ${localStorage.getItem('accessToken')}`
