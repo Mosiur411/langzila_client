@@ -8,15 +8,20 @@ import AllCompletedTodos from "./Component/AllCompletedTodos";
 import { useNavigate } from "react-router-dom";
 import { BiCaretLeft } from "react-icons/bi";
 function Todo() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <Provider store={store}>
-
-      <button onClick={() => navigate('/')} className=' z-50 border  bg-white flex items-center justify-center  px-2 pr-3 rounded text-black absolute left-5 top-5 hover:bg-red-500 hover:text-white font-medium'><BiCaretLeft className=' text-xl' />Back</button>
+      <button
+        onClick={() => navigate("/")}
+        className=" z-50 border  bg-white flex items-center justify-center  px-2 pr-3 rounded text-black absolute left-5 top-5 hover:bg-red-500 hover:text-white font-medium"
+      >
+        <BiCaretLeft className=" text-xl" />
+        Back
+      </button>
       <div className="grid place-items-center bg-blue-100 h-[60vh] pt-24 px-6 font-sans">
         <Navbar />
 
-        <div className="w-full max-w-3xl shadow-lg rounded-lg p-6 bg-white">
+        <div className="mt-8 w-full max-w-3xl shadow-lg rounded-lg p-6 bg-white">
           <Header />
 
           <hr className="mt-4" />

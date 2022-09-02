@@ -2,10 +2,21 @@ import React from "react";
 import TypingThroughInput from "./TypingThroughInput";
 import "./TypeWord.css";
 import Navbar from "../Home/Navbar/Navbar";
+import { useNavigate } from "react-router-dom";
+import { BiCaretLeft } from "react-icons/bi";
+
 const TypeWord = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Navbar />
+      <button
+        onClick={() => navigate("/")}
+        className=" z-50 border  bg-white flex items-center justify-center  px-2 pr-3 rounded text-black absolute left-16 top-20 hover:bg-red-500 hover:text-white font-medium"
+      >
+        <BiCaretLeft className=" text-xl" />
+        Back
+      </button>
       <div className="container mx-auto flex flex-col p-4">
         <div className="mb-4">
           <h1 className="text-4xl text-red-500 font-bold  text-center py-8">
@@ -26,7 +37,8 @@ const TypeWord = () => {
             }
           />
         </div>
-      </div></>
+      </div>
+    </>
   );
 };
 
