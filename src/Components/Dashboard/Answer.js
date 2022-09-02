@@ -16,12 +16,12 @@ const Answer = () => {
         question.map((data) => <>
 
 
-          <div class="card card-side bg-base-100 shadow-xl">
+          <div className="card card-side bg-base-100 shadow-xl">
 
-            <div class="card-body">
-              <h2 class="card-title">{data.tittle}</h2>
+            <div className="card-body">
+              <h2 className="card-title">{data.tittle}</h2>
               <p>{data.question}</p>
-              <div class="card-actions justify-start">
+              <div className="card-actions justify-start">
                 <MdQuestionAnswer className='text-primary' size={20} title="Add Your Answer Here " />
                 <BiEdit className='text-primary' size={20} title="Edit your Question " />
               </div>

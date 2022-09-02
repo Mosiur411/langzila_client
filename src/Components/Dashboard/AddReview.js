@@ -63,7 +63,6 @@ const AddReview = () => {
     return (
         <div className='text-center py-24 shadow-md border  mx-12 rounded-lg'>
             <h1 className='text-3xl text-primary font-bold'>Add Review</h1>
-
             <form onSubmit={handlereview} >
                 <div>
 
@@ -89,11 +88,14 @@ const AddReview = () => {
                         })}
                     </div>
                 </div>
+                <input type="text" placeholder="Type Your Experience and give us valuable suggestion " name='comment' className="input input-bordered input-lg w-full max-w-xs mb-5" /><br />
+                <button type='submit' className='btn btn-primary  text-white'>Submit</button>
 
                 <input type="text" name='comment' placeholder='Add you review' className='border py-2 px-3 rounded md:w-1/2 w-full mt-2' /> <br />
                 <button type='submit' className='py-1 px-3 bg-red-500 rounded mt-4  text-white'>Submit</button>
             </form>
             <ToastContainer></ToastContainer>
+
 
         </div>
     );
