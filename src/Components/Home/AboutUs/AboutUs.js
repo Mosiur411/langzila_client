@@ -26,10 +26,10 @@ const AboutUs = () => {
                             </div>
                             <img src={require('../../assets/AboutUs/k-shape7.png')} alt="kindergarten" />
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>This is Awesome website for children. Children can learn and juz them by quiz. they can learn by maney way.</p>
                         <br />
                         <br />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                        <p>We build this awesome website for children. this is awesome website to learn language for children. We focus for user exprience. then can comfort in this website. Children can easyly lean languge in different way, then then can text then by quiz.</p>
                         <div className='flex items-center gap-3 md:gap-16 mb-10'>
                             <div>
                                 <p className='flex items-center gap-2 py-4'>

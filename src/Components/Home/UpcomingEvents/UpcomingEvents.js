@@ -18,7 +18,7 @@ const UpcomingEvents = () => {
 
     return (
         <div>
-            <div className='bg-secondary  mb-32'>
+            <div className='bg-secondary  mt-32 pb-20'>
                 <img className='w-full' src="https://i.ibb.co/4J5w3Jp/events-rectangle1.png" alt="" />
                 <img className='float-right pr-12 mt-5 lg:block hidden covid9' src="https://themes.envytheme.com/ecademy/wp-content/uploads/2020/07/k-shape17.png" alt="" />
                 <div className="text-gray-600 body-font">
@@ -63,7 +63,7 @@ const UpcomingEvents = () => {
                     </div>
                 </div>
                 <img className='-mt-36 lg:block hidden' src="https://themes.envytheme.com/ecademy/wp-content/uploads/2020/07/k-shape18.png" alt="" />
-                <img className='w-full' src="https://i.ibb.co/0Z6Fpc9/events-rectangle2.png" alt="image" />
+                {/* <img className='w-full' src="https://i.ibb.co/0Z6Fpc9/events-rectangle2.png" alt="image" /> */}
             </div>
         </div>
     );
