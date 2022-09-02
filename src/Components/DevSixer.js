@@ -93,6 +93,7 @@ import Voice from "./Voice/Voice";
 import Speech from "./Voice/Speech";
 import Cart from "./Courses/Cart";
 import Todo from "./Todo/Todo";
+import Quesection from "./Community/Quesection";
 const DevSixer = ({ show, setShow }) => {
   return (
     <div>
@@ -223,7 +224,7 @@ const DevSixer = ({ show, setShow }) => {
         <Route path="/todo" element={<Todo />} />
         <Route path="/canvas" element={<Canvas />}></Route>
 
-
+        <Route path="/allquestion" element={<Quesection />}></Route>
         <Route path="/forum" element={<Community />}></Route>
         <Route path="/addquestion" element={<Addquestion />}></Route>
         <Route path="/question/:id" element={<Questionpage />}></Route>
