@@ -23,7 +23,7 @@ const navigate = useNavigate()
 
 
   return (
-    <div >
+    <div className=''>
       <div class="card latest shadow-2xl  ">
         <div className='flex justify-center items-center '>
           <div className='p-2 m-4'>

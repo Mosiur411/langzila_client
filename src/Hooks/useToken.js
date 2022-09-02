@@ -11,7 +11,7 @@ const useToken = (user) => {
 
 
   useEffect(() => {
-    fetch(`http://localhost:5000/user/${email}`, {
+    fetch(`https://langzila.herokuapp.com/user/${email}`, {
       method: "PUT",
       body: JSON.stringify({
         currentUser,

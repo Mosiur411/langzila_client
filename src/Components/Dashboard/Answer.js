@@ -6,7 +6,7 @@ const Answer = () => {
   const [question, setQuestion] = useState([])
   console.log(question);
   useEffect(() => {
-    fetch('http://localhost:5000/ask')
+    fetch('https://langzila.herokuapp.com/ask')
       .then(res => res.json())
       .then(data => setQuestion(data.data))
   }, [])

@@ -55,7 +55,7 @@ const HardQuiz4 = () => {
     console.log(quizs);
     // Get Quiz Ans Data
     useEffect(() => {
-        fetch(`http://localhost:5000/BangHardQAns4/${email}`, {
+        fetch(`https://langzila.herokuapp.com/BangHardQAns4/${email}`, {
             method: 'GET'
         })
             .then(res => res.json())
@@ -94,7 +94,7 @@ const HardQuiz4 = () => {
 
             if (QuizData) {
                 try {
-                    const { data } = await axios.post(`http://localhost:5000/BangHardQ4`, QuizData, {
+                    const { data } = await axios.post(`https://langzila.herokuapp.com/BangHardQ4`, QuizData, {
                         method: 'POST'
                     });
 

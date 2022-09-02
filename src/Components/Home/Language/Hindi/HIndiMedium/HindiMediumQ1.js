@@ -66,7 +66,7 @@ const HindiMediumQ1 = () => {
     console.log(quizs);
     // Get Quiz Ans Data
     useEffect(() => {
-        fetch(`http://localhost:5000/hindiMediumQAns1/${email}`, {
+        fetch(`https://langzila.herokuapp.com/hindiMediumQAns1/${email}`, {
             method: 'GET'
         })
             .then(res => res.json())
@@ -106,7 +106,7 @@ const HindiMediumQ1 = () => {
 
             if (QuizData) {
                 try {
-                    const { data } = await axios.post(`http://localhost:5000/hindiMediumQ1`, QuizData, {
+                    const { data } = await axios.post(`https://langzila.herokuapp.com/hindiMediumQ1`, QuizData, {
                         method: 'POST'
                     });
 

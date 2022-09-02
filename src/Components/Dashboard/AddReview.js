@@ -22,7 +22,7 @@ const AddReview = () => {
         }
         console.log(makereview);
 
-        fetch('http://localhost:5000/review', {
+        fetch('https://langzila.herokuapp.com/review', {
             method: 'POST',
             body: JSON.stringify(makereview),
             headers: {

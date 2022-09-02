@@ -13,7 +13,7 @@ import EditorToolbar, { modules, formats } from "./EditorToolbar";
 const Addquestion = () => {
   const [user] = useAuthState(auth);
   const { register, formState: { errors }, handleSubmit, reset } = useForm();
-  // const { data, isLoading, refetch } = useQuery("tools", () => fetch("http://localhost:5000/ask").then(res => res.json()));
+  // const { data, isLoading, refetch } = useQuery("tools", () => fetch("https://langzila.herokuapp.com/ask").then(res => res.json()));
 
   const [valuequil, setValuequil] = useState('')
   const navigate = useNavigate()
@@ -21,7 +21,7 @@ const Addquestion = () => {
   const COMMA = 188;
   const BACKSPACE = 8;
   const SPACE = 32;
-  const [tags, setTags] = useState(["Bangla", "A", "B"]);
+  const [tags, setTags] = useState(["Bangla", "English", "Hindi"]);
   const [value, setValue] = useState("");
 
   const handleKeyUp = (e) => {
@@ -85,7 +85,7 @@ const Addquestion = () => {
               'default', { month: 'long' }),
             time: new Date().toLocaleTimeString()
           }
-          fetch('http://localhost:5000/topic', {
+          fetch('https://langzila.herokuapp.com/topic', {
             method: "POST",
             headers: {
               'content-type': 'application/json; charset=UTF-8',
@@ -117,7 +117,7 @@ const Addquestion = () => {
               <label className="label">
                 <span className="label-text text-xl font-bold">Title <span className='text-xs text-red-600  '>REQUIRED</span></span>
               </label>
-              <input type="text" name='tittle' className="input input-bordered input-primary input-lg w-full rounded-none  mb-5"
+              <input type="text" name='tittle' className="   rounded-none  mb-5 border border-2 border-primary p-5"
                 {...register("tittle", {
                   required: {
                     value: true,
