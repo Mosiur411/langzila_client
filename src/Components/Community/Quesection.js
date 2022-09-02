@@ -14,12 +14,14 @@ const Quesection = () => {
 
   return (
     <div>
-      <div><Navbar/></div>
-      <div  className='grid mt-10 grid-cols-1 lg:grid-cols-2 md:grid-cols-2  my-5  gap-4'>
-      {
-        query.map((data) => <Perquestion key={data._id} data={data}></Perquestion>)
-      }
-    </div>
+      <div><Navbar /></div>
+      <div className=' max-w-6xl mx-auto mb-8 px-10'>
+        <div className='grid mt-10 grid-cols-1 lg:grid-cols-2 md:grid-cols-2  my-5  gap-4'>
+          {
+            query.map((data) => <Perquestion key={data._id} data={data}></Perquestion>)
+          }
+        </div>
+      </div>
     </div>
   );
 };

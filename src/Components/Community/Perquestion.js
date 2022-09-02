@@ -14,7 +14,7 @@ const Perquestion = ({ data }) => {
 
 
 
-const navigate = useNavigate()
+  const navigate = useNavigate()
   const handleQuestionPage = (id) => {
     console.log(id);
 
@@ -26,7 +26,7 @@ const navigate = useNavigate()
     <div className=''>
       <div class="card latest shadow-2xl  ">
         <div className='flex justify-center items-center '>
-          <div className='p-2 m-4'>
+          <div className='p-2 m-2'>
             <div class="avatar online">
               <div class="w-16 rounded-full">
                 <img src={require("../assets/user1.jpg")} />
@@ -34,22 +34,18 @@ const navigate = useNavigate()
 
             </div>
           </div>
-          <div class="card-body mt-5">
-          <div className='flex justify-between'>
-            <div >  
-            <h2 style={{cursor:"pointer"}} onClick={() => handleQuestionPage(data._id)} class="card-title text-black"><BsFillCircleFill className='text-xs text-primary' /> {
-              data.tittle.slice(0, 50)
-            }</h2></div>
-            <div>  <p className='text-xs'>Posted <ReactTimeAgo date={data?.zone } locale="en-US" timeStyle="round"/></p></div>
-          </div>
+          <div class="card-body mt-5 pl-2">
+            <div className='flex justify-between'>
+              <div >
+                <h2 style={{ cursor: "pointer" }} onClick={() => handleQuestionPage(data._id)} class="card-title text-black text-sm"><BsFillCircleFill className='text-xs text-primary' /> {
+                  data.tittle.slice(0, 50)
+                }</h2></div>
+              <div>  <p className='text-xs'>Posted <ReactTimeAgo date={data?.zone} locale="en-US" timeStyle="round" /></p></div>
+            </div>
             <div className='flex justify-center items-center gap-3'>
 
               <p className='text-xs'>By {data.name},
                 {data.month} {data?.date} in Langzila Questions</p>
-              {/* <small>
-                
-                <ReactTimeAgo date={new Date()} locale="en-US" timeStyle="round" ></ReactTimeAgo>
-              </small> */}
             </div>
 
             <div class="card-actions justify-between">
@@ -61,9 +57,9 @@ const navigate = useNavigate()
               </div>
               <div class="indicator" onClick={() => handleQuestionPage(data._id)}>
 
-  <div style={{cursor:"pointer"}} class="grid  place-items-center"><RiQuestionAnswerLine className='text-5xl text-primary' /></div>
-</div>
-          
+                <div style={{ cursor: "pointer" }} class="grid  place-items-center"><RiQuestionAnswerLine className='text-5xl text-primary' /></div>
+              </div>
+
             </div>
           </div>
         </div>
