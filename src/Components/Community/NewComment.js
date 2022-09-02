@@ -19,7 +19,7 @@ const handleSwap=(id)=>{
       reactmail:user?.email,
 
     }
-    fetch('http://localhost:5000/react', {
+    fetch('https://langzila.herokuapp.com/react', {
       method: 'POST',
       body: JSON.stringify(newvote
        ),
@@ -29,7 +29,7 @@ const handleSwap=(id)=>{
     })
       .then((response) => response.json())
       .then((json) =>  {
-      //   fetch(`http://localhost:5000/vote/${mainid}`)
+      //   fetch(`https://langzila.herokuapp.com/vote/${mainid}`)
       // .then(res=>res.json())
       // .then(voting=>setVote(voting)));
       setReact(true)

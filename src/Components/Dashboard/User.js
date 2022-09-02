@@ -3,7 +3,7 @@ import { toast, ToastContainer } from 'react-toastify';
 
 const User = ({roller,index,refetch}) => {
   const hadndleAdmin=()=>{
-    fetch(`http://localhost:5000/user/admin/${roller.email}`, {
+    fetch(`https://langzila.herokuapp.com/user/admin/${roller.email}`, {
         method: "PUT",
         headers: {
           'Content-type': 'application/json; charset=UTF-8',

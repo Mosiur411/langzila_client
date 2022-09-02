@@ -17,6 +17,8 @@ const Question = () => {
           <p className=" w-2/3 mb-3 mx-auto">This is our Community help section, here you can post yous question and get ans from pro person.</p>
           <Link to={'/addquestion'}>
             <button className='py-1 px-3 bg-red-500 text-white rounded'>Start Now</button></Link>
+            <Link to={'/allquestion'}>
+            <button className='py-1 px-3 ml-3 bg-red-500 text-white rounded'>Answer Now</button></Link>
           <div>
             <div className='sm:w-full lg:w-1/5  pb-5'><Tag></Tag></div>
           </div>

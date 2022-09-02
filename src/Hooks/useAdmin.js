@@ -12,7 +12,7 @@ console.log(user);
 
 
     if (email) {
-      fetch(`http://localhost:5000/admin/${email}`, {
+      fetch(`https://langzila.herokuapp.com/admin/${email}`, {
         method: "GET",
         headers: {
           'Content-type': 'application/json; charset=UTF-8',

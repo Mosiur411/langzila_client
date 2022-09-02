@@ -9,7 +9,7 @@ const Feedback = () => {
     const [rev, setRev] = useState([])
     const [revmap, setRevmap] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/review')
+        fetch('https://langzila.herokuapp.com/review')
             .then(res => res.json())
             .then(data => {
                 console.log(data.data);
@@ -81,7 +81,7 @@ const Feedback = () => {
                                 rev.map(data => <>
                                     <div>
                                         <div className='comment text-center px-[80px] py-16'>
-                                            <p>{data.comment.slice(0, 40)}</p>
+                                            <p>{data.comment.slice(0, 100)}</p>
                                         </div>
                                         <div className='w-[400px]'>
                                             <img src={require('../../assets/user1.jpg')} alt="assets" className='w-16 rounded-full mx-auto border-orange-500 border-2' />

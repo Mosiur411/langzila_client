@@ -55,7 +55,7 @@ const EnglishEasyQ1 = () => {
     console.log(quizs);
     // Get Quiz Ans Data
     useEffect(() => {
-        fetch(`http://localhost:5000/englishEasyQAns1/${email}`, {
+        fetch(`https://langzila.herokuapp.com/englishEasyQAns1/${email}`, {
             method: 'GET'
         })
             .then(res => res.json())
@@ -94,7 +94,7 @@ const EnglishEasyQ1 = () => {
 
             if (QuizData) {
                 try {
-                    const { data } = await axios.post(`http://localhost:5000/englishEasyQ1`, QuizData, {
+                    const { data } = await axios.post(`https://langzila.herokuapp.com/englishEasyQ1`, QuizData, {
                         method: 'POST'
                     });
 

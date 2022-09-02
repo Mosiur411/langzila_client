@@ -31,11 +31,11 @@ const Questionpage = () => {
   const [comment, setComment] = useState([])
   const [votemail,setVoteMail]=useState('')
   useEffect(() => {
-    fetch(`http://localhost:5000/topic/${mainid}`)
+    fetch(`https://langzila.herokuapp.com/topic/${mainid}`)
       .then(res => res.json())
       .then(data =>{
         setPQuestion(data.data)
-     fetch(`http://localhost:5000/vote/${mainid}`)
+     fetch(`https://langzila.herokuapp.com/vote/${mainid}`)
      .then(res=>res.json())
      .then(voting=>setVote(voting))
       })
@@ -43,7 +43,7 @@ const Questionpage = () => {
   console.log(vote);
   console.log(count);
   
-  const { data:commentmake, isLoading, refetch } = useQuery("comment", () => fetch(`http://localhost:5000/comment/${mainid}`).then(res => res.json()));
+  const { data:commentmake, isLoading, refetch } = useQuery("comment", () => fetch(`https://langzila.herokuapp.com/comment/${mainid}`).then(res => res.json()));
 
   if (isLoading) {
    return <Spinner></Spinner>
@@ -70,7 +70,7 @@ const supportUp=()=>{
     id:mainid,
     votemail:user?.email,
   }
-  fetch('http://localhost:5000/vote', {
+  fetch('https://langzila.herokuapp.com/vote', {
     method: 'POST',
     body: JSON.stringify(newvote
      ),
@@ -79,7 +79,7 @@ const supportUp=()=>{
     },
   })
     .then((response) => response.json())
-    .then((json) =>  fetch(`http://localhost:5000/vote/${mainid}`)
+    .then((json) =>  fetch(`https://langzila.herokuapp.com/vote/${mainid}`)
     .then(res=>res.json())
     .then(voting=>setVote(voting)));
     setCount(false)
@@ -105,7 +105,7 @@ const supportUp=()=>{
       date: new Date(),
  
     }
-    fetch('http://localhost:5000/comment', {
+    fetch('https://langzila.herokuapp.com/comment', {
   method: 'POST',
   body: JSON.stringify(maincomment
    ),
@@ -230,7 +230,7 @@ const supportUp=()=>{
                 formats={formats}  />
             
                 <input 
-                type="submit" className='btn btn-primary  mt-5 text-white w-full mt-5 ' value={"Submit Question"} />
+                type="submit" className='btn btn-primary  my-5 text-white  mt-5 ' value={"Submit Answer"} />
 
   </form>
                 </div>
