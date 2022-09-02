@@ -19,9 +19,7 @@ const SignUp = () => {
     const [email, setEmail] = useState('');
     const [showPass, setShowPass] = useState(false);
     /* =================================== try to user ======================== */
-    if (user) {
-        console.log(user)
-    }
+  
 
 
 
@@ -30,8 +28,6 @@ const SignUp = () => {
     const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password);
         await updateProfile({ displayName: data.name });
-
-        console.log(data)
     };
     let signUpError;
     const navigate = useNavigate();
@@ -44,9 +40,7 @@ const SignUp = () => {
         navigate(from, { replace: true });
 
     }
-
-
-
+   
 
     // useEffect(() => {
     //     if (user || googleUser) {
